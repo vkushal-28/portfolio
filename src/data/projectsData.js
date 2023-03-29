@@ -1,0 +1,103 @@
+import * as projImg from "../images/allImages";
+export const projectData = [
+  {
+    id: 1,
+    language_used: [
+      "react",
+      "redux",
+      "node",
+      "mongo",
+      "html",
+      "css",
+      "bootstrap",
+    ],
+    about_avatar: projImg.evIndia,
+    updated_on: "2023-03-13T19:48:35.192055Z",
+    Project_title: "EV India",
+    Project_info:
+      "The purpose of this website is to get all details of existing and upcoming electric vehicles with specifications, price, variants, EMI details, inquiry, reviews and ratings, news, videos, blogs, ratings and charging infrastructure and many more.",
+    project_link: null,
+    demo_link: "https://evindia.online/",
+  },
+  {
+    id: 2,
+    language_used: [
+      "next",
+      "react",
+      "redux",
+      "html",
+      "css",
+      "bootstrap",
+      "node",
+    ],
+    about_avatar: projImg.mragain,
+    updated_on: "2023-03-13T19:48:35.192055Z",
+    Project_title: "Mr Again",
+    Project_info:
+      "Customer can register to this website and can get all details of mobile, laptop or any console repair shops near by location in Netherlands. Customer can easily compare prices, quality and reviews so that they can make a well-considered choice for their repairs.",
+    project_link: null,
+    demo_link: "https://www.mragain.nl/",
+  },
+  {
+    id: 3,
+    language_used: [
+      "react",
+      "redux",
+      "bootstrap",
+      "html",
+      "css",
+      "npm",
+      "node",
+      "mongo",
+    ],
+    about_avatar: projImg.time2Enter,
+    updated_on: "2023-03-13T19:48:35.192055Z",
+    Project_title: "Time2Enter",
+    Project_info:
+      "This site contains multiple accouns (User, secretary, and Admin) where User can view and participate in events, purchase plans, Info center categories and sub categories. Admin can handle users, data exhibitors and all important informations.",
+    project_link: null,
+    demo_link: "https://easy2showdev.com/",
+  },
+  {
+    id: 4,
+    language_used: ["react", "redux", "bootstrap", "html", "css", "npm"],
+    about_avatar: projImg.staffRoster,
+    updated_on: "2023-03-13T19:48:35.192055Z",
+    Project_title: "Staff Roster",
+    Project_info:
+      "This site is created for the Time Umpire Game Management to manage staff, referees, mentors and supervisors in particular timeframe in court number by drag and drop or selection in court as per their availability status and many more.",
+    project_link: null,
+    demo_link: null,
+  },
+  {
+    id: 5,
+    language_used: [
+      "react",
+      "redux",
+      "bootstrap",
+      "html",
+      "css",
+      "js",
+      "node",
+      "mongo",
+    ],
+    about_avatar: projImg.saturncube,
+    updated_on: "2023-03-13T19:48:35.192055Z",
+    Project_title: "Saturncube Technologies",
+    Project_info:
+      "This is an updated brand new website made for Saturncube Technologies where I worked before. cliients can know everything about the company and it's services and also contact to the management team. first phase launched and working on second one",
+    project_link: null,
+    demo_link: "https://saturncube.com/",
+  },
+  {
+    id: 6,
+    language_used: ["react", "redux", "bootstrap", "html", "css"],
+    about_avatar: projImg.memories,
+    updated_on: "2023-03-13T19:48:35.192055Z",
+    Project_title: "Memories",
+    Project_info:
+      "This site is created for the Time Umpire Game Management to manage staff, referees, mentors and supervisors in particular timeframe in court number by drag and drop or selection in court as per their availability status and many more.",
+    project_link: null,
+    demo_link: null,
+  },
+];
