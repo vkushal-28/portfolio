@@ -37,14 +37,22 @@ const ContactMe = () => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa fa-linkedin mr-3" />
+                      <i className="fa fa-linkedin mr-4" />
                     </a>
                     <a href="mailto:vkushal28.ca@gmail.com">
-                      <i className="fa fa-envelope mr-3" />
+                      <i className="fa fa-envelope mr-4" />
                     </a>
                     {/* <a href="#" target="_blank">
                       <i className="fa fa-instagram mr-3" />
                     </a> */}
+                    <a
+                      href="https://github.com/vkushal-28"
+                      target="_blank"
+                      rel="noreferrer"
+                      title="Github"
+                    >
+                      <i className="fa fa-github"></i>
+                    </a>
                   </h4>
                 </div>
               </div>
@@ -75,7 +83,7 @@ const ContactMe = () => {
                 </div>
                 <div className="pl-4">
                   <h4 className="web mt-2">Call me</h4>
-                  <h4 className="web text-white">+1 (647)865-9267</h4>
+                  <h4 className="web text-white">+1 (647)-865-9267</h4>
                 </div>
               </div>
             </div>

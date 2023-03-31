@@ -21,6 +21,8 @@ import mragain from "../images/projects/mragain.png";
 import saturncube from "../images/projects/saturncube.png";
 import time2Enter from "../images/projects/time2Enter2.png";
 import staffRoster from "../images/projects/staff-roster.png";
+import portfolio from "../images/projects/portfolio.png";
+import elumat from "../images/projects/elumat.png";
 
 export {
   reactImg,
@@ -43,4 +45,6 @@ export {
   saturncube,
   time2Enter,
   staffRoster,
+  elumat,
+  portfolio,
 };

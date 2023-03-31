@@ -2,6 +2,17 @@ import * as projImg from "../images/allImages";
 export const projectData = [
   {
     id: 1,
+    language_used: ["react", "html", "css", "bootstrap", "npm"],
+    about_avatar: projImg.portfolio,
+    updated_on: "2023-03-13T19:48:35.192055Z",
+    Project_title: "My Portfolio",
+    Project_info:
+      "This is my personal portfolio website to showcase all my skills details, project details with live preview link, social media profiles, and other contact details. You can cntact me by given email and also connect me on LinkedIn with given profile link.",
+    project_link: "https://github.com/vkushal-28/portfolio/",
+    demo_link: "https://vkushal-28.github.io/portfolio/",
+  },
+  {
+    id: 2,
     language_used: [
       "react",
       "redux",
@@ -21,6 +32,17 @@ export const projectData = [
   },
   {
     id: 2,
+    language_used: ["react", "redux", "html", "css", "bootstrap", "node"],
+    about_avatar: projImg.elumat,
+    updated_on: "2023-03-13T19:48:35.192055Z",
+    Project_title: "Elumat",
+    Project_info:
+      "Elumat is a designed to motivate students to practise mathematics by solving puzzles. It provides a creative way for teachers to combine maths and language into a self-checking and unique puzzle. They illustrate how maths can be catered to a wide variety of student ability. Print sets of PDFs for many purpose.",
+    project_link: null,
+    demo_link: "http://elumat.com/",
+  },
+  {
+    id: 3,
     language_used: [
       "next",
       "react",
@@ -34,12 +56,13 @@ export const projectData = [
     updated_on: "2023-03-13T19:48:35.192055Z",
     Project_title: "Mr Again",
     Project_info:
-      "Customer can register to this website and can get all details of mobile, laptop or any console repair shops near by location in Netherlands. Customer can easily compare prices, quality and reviews so that they can make a well-considered choice for their repairs.",
+      "Customer can register to this website and can get all details of mobile, laptop or any console repair shops near by location in Netherlands. Customer can compare prices, quality and reviews so that they can make a well-considered choice for their repairs.",
     project_link: null,
     demo_link: "https://www.mragain.nl/",
   },
+
   {
-    id: 3,
+    id: 4,
     language_used: [
       "react",
       "redux",
@@ -59,7 +82,7 @@ export const projectData = [
     demo_link: "https://easy2showdev.com/",
   },
   {
-    id: 4,
+    id: 5,
     language_used: ["react", "redux", "bootstrap", "html", "css", "npm"],
     about_avatar: projImg.staffRoster,
     updated_on: "2023-03-13T19:48:35.192055Z",
@@ -70,7 +93,7 @@ export const projectData = [
     demo_link: null,
   },
   {
-    id: 5,
+    id: 6,
     language_used: [
       "react",
       "redux",
@@ -90,7 +113,7 @@ export const projectData = [
     demo_link: "https://saturncube.com/",
   },
   {
-    id: 6,
+    id: 7,
     language_used: ["react", "redux", "bootstrap", "html", "css"],
     about_avatar: projImg.memories,
     updated_on: "2023-03-13T19:48:35.192055Z",

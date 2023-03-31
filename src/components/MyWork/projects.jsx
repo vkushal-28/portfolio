@@ -12,9 +12,9 @@ const Projects = () => {
     responsiveClass: true,
     nav: true,
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     loop: true,
-    navText: false,
+    // navText: false,
     smartSpeed: 1000,
     responsive: {
       0: {
