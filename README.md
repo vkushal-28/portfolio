@@ -1,4 +1,8 @@
-# ReactDjangoPortfolio
+This is my personal portfolio website.
+
+#### DEMO: http://vkushal-28/potfolio/
+
+<!-- # ReactDjangoPortfolio
 
 ####  Use `` /admin `` to use django admin to edit the portfolio info use   ` python manage.py createsuperuser `  to create login details
 #### DEMO: http://wawerujames.herokuapp.com/
@@ -11,10 +15,10 @@
  These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Step 1:Clone the repository
      git clone https://github.com/tech-jamara/DjangoReactPortfolio.git
-### step 2:Navigate to the clone 
+### step 2:Navigate to the clone
      cd your_path/DjangoReactPortfolio
 ### Step 3: Install Node.js dependencies:
-     npm install    
+     npm install
 ### Step 4:
     npm run build
 ### Step 5:
@@ -30,4 +34,4 @@
 ###
 ###
 
-<a href="https://www.buymeacoffee.com/jameswaweru" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a href="https://www.buymeacoffee.com/jameswaweru" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a> -->
