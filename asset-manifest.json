@@ -1,12 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.7fdf6327.css",
-    "main.js": "/portfolio/static/js/main.a3b7139d.js",
+    "main.js": "/portfolio/static/js/main.95e66579.js",
     "static/media/my-profile.png": "/portfolio/static/media/my-profile.0b8564998774c5556240.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.ef99ec577d30e69918b2.png",
     "static/media/ev-india.png": "/portfolio/static/media/ev-india.9086c95fac9253f2d65b.png",
     "static/media/mragain.png": "/portfolio/static/media/mragain.a9f40acec1e4ae9f3de2.png",
     "static/media/memories.png": "/portfolio/static/media/memories.36d79d0a95e476f6c3bd.png",
-    "static/media/Kushal_Vala_Resume.pdf": "/portfolio/static/media/Kushal_Vala_Resume.95fe9f8ae08779a69543.pdf",
+    "static/media/elumat.png": "/portfolio/static/media/elumat.d68fd7a2c63ee580a4a1.png",
+    "static/media/Kushal_Vala_Resume.pdf": "/portfolio/static/media/Kushal_Vala_Resume.1fc6cb4021a6ea919fd1.pdf",
     "static/media/saturncube.png": "/portfolio/static/media/saturncube.9a0ea1e6cf7dffbda763.png",
     "static/media/time2Enter2.png": "/portfolio/static/media/time2Enter2.8253fa0291d4a8b9318b.png",
     "static/media/hero-logo.png": "/portfolio/static/media/hero-logo.c3b4a5d3c644fce23d32.png",
@@ -29,10 +31,10 @@
     "static/media/npm.svg": "/portfolio/static/media/npm.2c362bda3c7fcda8ec0c3cd014152814.svg",
     "static/media/material.svg": "/portfolio/static/media/material.fd510ed8518b192069590b04e2e6348a.svg",
     "main.7fdf6327.css.map": "/portfolio/static/css/main.7fdf6327.css.map",
-    "main.a3b7139d.js.map": "/portfolio/static/js/main.a3b7139d.js.map"
+    "main.95e66579.js.map": "/portfolio/static/js/main.95e66579.js.map"
   },
   "entrypoints": [
     "static/css/main.7fdf6327.css",
-    "static/js/main.a3b7139d.js"
+    "static/js/main.95e66579.js"
   ]
 }
