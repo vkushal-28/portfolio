@@ -6,6 +6,42 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import { images } from "../../images/allImages";
 import { projectData } from "../../data/projectsData";
 
+const options = {
+  margin: 30,
+  responsiveClass: true,
+  nav: true,
+  dots: true,
+  // autoplay: true,
+  loop: true,
+  // navText: false,
+  smartSpeed: 1000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    310: {
+      items: 1,
+    },
+    500: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    740: {
+      items: 2,
+    },
+    1000: {
+      items: 2,
+    },
+    1300: {
+      items: 3,
+    },
+    1440: {
+      items: 3,
+    },
+  },
+};
 const Projects = () => {
   const oo = [
     { name: "React JS", tech: "react", ima: images.reactImg },
@@ -20,43 +56,6 @@ const Projects = () => {
     { name: "npm", tech: "npm", ima: images.npmImg },
     { name: "MongoDB", tech: "mongo", ima: images.mongoImg },
   ];
-
-  const options = {
-    margin: 30,
-    responsiveClass: true,
-    nav: true,
-    dots: true,
-    // autoplay: true,
-    loop: true,
-    navText: false,
-    smartSpeed: 1000,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      310: {
-        items: 1,
-      },
-      500: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      740: {
-        items: 2,
-      },
-      1000: {
-        items: 2.7,
-      },
-      1300: {
-        items: 3,
-      },
-      1440: {
-        items: 3,
-      },
-    },
-  };
 
   return (
     // #d960a2
