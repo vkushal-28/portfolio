@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import decor3 from "../../images/decoration/Group-31.png";
 import "./Intro.css";
 import Typewriter from "typewriter-effect";
-import heroImg from "../../images/decoration/hero-logo.png";
+import { images } from "../../images/allImages";
 
 const Intro = () => {
   const contact = [
@@ -159,7 +159,7 @@ const Intro = () => {
                   data-aos="fade-down-left"
                 >
                   <div className="ff">
-                    <img className="intro-img " src={heroImg} alt="" />
+                    <img className="intro-img " src={images.heroImg} alt="" />
                   </div>
                 </div>
               </div>

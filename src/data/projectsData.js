@@ -1,9 +1,9 @@
-import * as projImg from "../images/allImages";
+import { images } from "../images/allImages";
 export const projectData = [
   {
     id: 1,
     language_used: ["react", "html", "css", "bootstrap", "npm"],
-    about_avatar: projImg.portfolio,
+    about_avatar: images.portfolio,
     updated_on: "2023-03-13T19:48:35.192055Z",
     Project_title: "My Portfolio",
     Project_info:
@@ -22,7 +22,7 @@ export const projectData = [
       "css",
       "bootstrap",
     ],
-    about_avatar: projImg.evIndia,
+    about_avatar: images.evIndia,
     updated_on: "2023-03-13T19:48:35.192055Z",
     Project_title: "EV India",
     Project_info:
@@ -33,7 +33,7 @@ export const projectData = [
   {
     id: 2,
     language_used: ["react", "redux", "html", "css", "bootstrap", "node"],
-    about_avatar: projImg.elumat,
+    about_avatar: images.elumat,
     updated_on: "2023-03-13T19:48:35.192055Z",
     Project_title: "Elumat",
     Project_info:
@@ -52,7 +52,7 @@ export const projectData = [
       "bootstrap",
       "node",
     ],
-    about_avatar: projImg.mragain,
+    about_avatar: images.mragain,
     updated_on: "2023-03-13T19:48:35.192055Z",
     Project_title: "Mr Again",
     Project_info:
@@ -73,7 +73,7 @@ export const projectData = [
       "node",
       "mongo",
     ],
-    about_avatar: projImg.time2Enter,
+    about_avatar: images.time2Enter,
     updated_on: "2023-03-13T19:48:35.192055Z",
     Project_title: "Time2Enter",
     Project_info:
@@ -84,7 +84,7 @@ export const projectData = [
   {
     id: 5,
     language_used: ["react", "redux", "bootstrap", "html", "css", "npm"],
-    about_avatar: projImg.staffRoster,
+    about_avatar: images.staffRoster,
     updated_on: "2023-03-13T19:48:35.192055Z",
     Project_title: "Staff Roster",
     Project_info:
@@ -104,7 +104,7 @@ export const projectData = [
       "node",
       "mongo",
     ],
-    about_avatar: projImg.saturncube,
+    about_avatar: images.saturncube,
     updated_on: "2023-03-13T19:48:35.192055Z",
     Project_title: "Saturncube Technologies",
     Project_info:
@@ -115,7 +115,7 @@ export const projectData = [
   {
     id: 7,
     language_used: ["react", "redux", "bootstrap", "html", "css"],
-    about_avatar: projImg.memories,
+    about_avatar: images.memories,
     updated_on: "2023-03-13T19:48:35.192055Z",
     Project_title: "Memories",
     Project_info:

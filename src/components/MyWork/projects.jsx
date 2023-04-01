@@ -3,10 +3,24 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import * as skillsImages from "../../images/allImages";
+import { images } from "../../images/allImages";
 import { projectData } from "../../data/projectsData";
 
 const Projects = () => {
+  const oo = [
+    { name: "React JS", tech: "react", ima: images.reactImg },
+    { name: "Next JS", tech: "next", ima: images.nextImg },
+    { name: "Node JS", tech: "node", ima: images.nodeImg },
+    { name: "Javascript", tech: "js", ima: images.js },
+    { name: "CSS", tech: "css", ima: images.cssImg },
+    { name: "Express JS", tech: "express", ima: images.expressImg },
+    { name: "HTML", tech: "html", ima: images.htmlImg },
+    { name: "Bootstrap", tech: "bootstrap", ima: images.bootstrapImg },
+    { name: "Redux", tech: "redux", ima: images.reduxImg },
+    { name: "npm", tech: "npm", ima: images.npmImg },
+    { name: "MongoDB", tech: "mongo", ima: images.mongoImg },
+  ];
+
   const options = {
     margin: 30,
     responsiveClass: true,
@@ -14,7 +28,7 @@ const Projects = () => {
     dots: true,
     // autoplay: true,
     loop: true,
-    // navText: false,
+    navText: false,
     smartSpeed: 1000,
     responsive: {
       0: {
@@ -43,20 +57,6 @@ const Projects = () => {
       },
     },
   };
-
-  const oo = [
-    { name: "React JS", tech: "react", ima: skillsImages.reactImg },
-    { name: "Next JS", tech: "next", ima: skillsImages.nextImg },
-    { name: "Node JS", tech: "node", ima: skillsImages.nodeImg },
-    { name: "Javascript", tech: "js", ima: skillsImages.js },
-    { name: "CSS", tech: "css", ima: skillsImages.cssImg },
-    { name: "Express JS", tech: "express", ima: skillsImages.expressImg },
-    { name: "HTML", tech: "html", ima: skillsImages.htmlImg },
-    { name: "Bootstrap", tech: "bootstrap", ima: skillsImages.bootstrapImg },
-    { name: "Redux", tech: "redux", ima: skillsImages.reduxImg },
-    { name: "npm", tech: "npm", ima: skillsImages.npmImg },
-    { name: "MongoDB", tech: "mongo", ima: skillsImages.mongoImg },
-  ];
 
   return (
     // #d960a2
