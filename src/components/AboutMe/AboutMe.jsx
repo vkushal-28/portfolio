@@ -62,7 +62,7 @@ const AboutMe = () => {
                   <div className="itscv">
                     <a
                       href={resume}
-                      download="RESUME.pdf"
+                      download="Kushal_Vala_Resume.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
