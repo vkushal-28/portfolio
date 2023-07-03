@@ -57,7 +57,7 @@ html {
 }
 body {
   scroll-behavior: smooth;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   font-family: poppins, sans-serif !important;
   background: var(--color-background) !important;

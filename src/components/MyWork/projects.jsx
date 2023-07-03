@@ -9,12 +9,12 @@ import { projectData } from "../../data/projectsData";
 const options = {
   margin: 30,
   responsiveClass: true,
-  nav: true,
+  nav: false,
   dots: true,
   // autoplay: true,
   loop: true,
   // navText: false,
-  smartSpeed: 1000,
+  smartSpeed: 500,
   responsive: {
     0: {
       items: 1,
@@ -93,7 +93,7 @@ const Projects = () => {
                   <h2>{details.Project_title}</h2>
                   <p className="work-info mt-2">{details.Project_info}</p>
                   <div className="project-links">
-                    {details.demo_link && (
+                    {/* {details.demo_link && (
                       <a
                         href={details.demo_link}
                         target="_blank"
@@ -104,7 +104,20 @@ const Projects = () => {
                           Live Preview
                         </h6>
                       </a>
-                    )}
+                    )} */}
+                    <a
+                      href={details.demo_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <h6
+                        className="learnmore"
+                        style={{ cursor: !details.demo_link && "not-allowed" }}
+                      >
+                        <i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;
+                        Live Preview
+                      </h6>
+                    </a>
                     {details.project_link && (
                       <a
                         href={details.project_link}
