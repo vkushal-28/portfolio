@@ -182,7 +182,11 @@
 
 /* light theme */
 .light .my-service {
-  box-shadow: 0 0.5rem 1rem rgba(176, 131, 192, 0.795) !important;
+  /* box-shadow: 0 0.5rem 1rem rgba(176, 131, 192, 0.795) !important; */
+  box-shadow: 0 0.5rem 1rem 0.2rem rgba(0, 0, 0, 0.229) !important;
+}
+.light .my-service:hover {
+  /* box-shadow: 0 0.5rem 1rem rgba(176, 131, 192, 0.795) !important; */
   /* box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%) !important; */
 }
 .light .my-service:hover {
@@ -200,5 +204,7 @@
   color: rgb(34, 34, 34) !important;
 }
 .light .ser-back {
-  background: #e0e0e0;
+  /* background: #e0e0e0; */
+  background: #e758ee;
+  box-shadow: 0 0.5rem 1rem rgba(176, 131, 192, 0.795) !important;
 }
