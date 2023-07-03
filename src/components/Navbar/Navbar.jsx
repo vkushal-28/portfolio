@@ -58,8 +58,8 @@ const Navbar = () => {
                 </a>
               </div>
               <div className="left-btns">
-                {/* <div class=" " id="theme-button2">
-                  <input id="toggle" class="toggle" type="checkbox"></input>
+                {/* <div className=" " id="theme-button2">
+                  <input id="toggle" className="toggle" type="checkbox"></input>
                 </div> */}
                 <div>
                   <div className="CvMe">
@@ -74,8 +74,8 @@ const Navbar = () => {
                 </div>
 
                 <div className=" " id="theme-button">
-                  <Link to="#" class="menuBtn">
-                    <span class="lines"></span>
+                  <Link to="#" className="menuBtn">
+                    <span className="lines"></span>
                   </Link>
                 </div>
               </div>

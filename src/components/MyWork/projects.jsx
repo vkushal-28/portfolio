@@ -68,8 +68,12 @@ const Projects = () => {
       <div className="project-row">
         {projectData?.length && (
           <OwlCarousel className="owl-theme" {...options}>
-            {projectData?.map((details) => (
-              <div className="project shadow mb-3 mt-2" data-aos="fade-up">
+            {projectData?.map((details, i) => (
+              <div
+                className="project shadow mb-3 mt-2"
+                data-aos="fade-up"
+                key={i}
+              >
                 <div className="project-img">
                   <img src={details.about_avatar} alt="" className="work-img" />
                 </div>
@@ -100,7 +104,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                       >
                         <h6 className="learnmore">
-                          <i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;
+                          <i className="fa fa-laptop" aria-hidden="true"></i>&nbsp;
                           Live Preview
                         </h6>
                       </a>
@@ -114,8 +118,8 @@ const Projects = () => {
                         className="learnmore"
                         style={{ cursor: !details.demo_link && "not-allowed" }}
                       >
-                        <i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;
-                        Live Preview
+                        <i className="fa fa-laptop" aria-hidden="true"></i>
+                        &nbsp; Live Preview
                       </h6>
                     </a>
                     {details.project_link && (
@@ -125,8 +129,8 @@ const Projects = () => {
                         rel="noopener noreferrer"
                       >
                         <h6 className="learnmore">
-                          <i class="fa fa-github" aria-hidden="true"></i> &nbsp;
-                          Source Code
+                          <i className="fa fa-github" aria-hidden="true"></i>{" "}
+                          &nbsp; Source Code
                         </h6>
                       </a>
                     )}
