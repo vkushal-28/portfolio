@@ -44,122 +44,134 @@ const Intro = () => {
       {details &&
         details.map((detail) => (
           <section className=" intro-page" id="home" key={detail.id}>
-            <div className="decorations">
-              <div className="decor-dot2">
-                <img src={decor3} alt="" />
-              </div>
+            <div className="container-xl">
+              <div className="decorations">
+                <div className="decor-dot2">
+                  <img src={decor3} alt="" />
+                </div>
 
-              <div className="parcol"></div>
-            </div>
-            <div className="small-intro">
-              <div className="intro-row">
-                <div className="col-lg-6  col-md-6 col-sm-12 intro-left">
-                  <div className="intro-name">
-                    {/* <h3
+                <div className="parcol"></div>
+              </div>
+              <div className="small-intro">
+                <div className="intro-row">
+                  <div className="col-lg-6  col-md-6 col-sm-12 intro-left d-flex align-items-center">
+                    <div>
+                      <div className="intro-name">
+                        {/* <h3
                       className="hello"
                       data-aos="fade-down"
                       data-aos-duration="1500"
                     >
                       {detail.job_title}
                     </h3> */}
-                    <h3
-                      className="name"
-                      data-aos="fade-down"
-                      data-aos-duration="1600"
-                    >
-                      Hey! I Am
-                    </h3>
-                    <h3
-                      className="job  text-animate"
-                      data-aos="fade-down"
-                      data-aos-duration="1700"
-                    >
-                      {detail.name}
-                    </h3>
-                    <p
-                      className="myinfo"
-                      data-aos="fade-down"
-                      data-aos-duration="1800"
-                    >
-                      <Typewriter
-                        onInit={(typewriter) => {
-                          typewriter
-                            .pauseFor(500)
-                            .typeString(
-                              "<strong><span style=color:#28B463; font-size=14px>Web Developer</span></strong>"
-                            )
-                            .pauseFor(500)
-                            .deleteAll()
-                            .typeString(
-                              "<strong><span style=color:#F39C12 font-size:14px>Frontend Developer</span></strong>"
-                            )
-                            .pauseFor(500)
-                            .deleteAll()
-                            .typeString(
-                              "<strong><span style=color:#17c0e9>React JS Developer</span></strong>"
-                            )
-                            .pauseFor(500)
-                            .deleteAll()
-                            .typeString(
-                              "<strong><span style=color:#F39C12>Next JS Developer</span></strong>"
-                            )
-                            .pauseFor(500)
-                            .deleteAll()
-                            .start();
-                        }}
-                        options={{
-                          autoStart: true,
-                          loop: true,
-                        }}
-                      />
-                    </p>
+                        <h2
+                          className="name text-white"
+                          data-aos="fade-down"
+                          data-aos-duration="1600"
+                        >
+                          Hey! I Am
+                        </h2>
+                        <h2
+                          className="job  text-animate mb-1"
+                          data-aos="fade-down"
+                          data-aos-duration="1700"
+                        >
+                          {detail.name}
+                        </h2>
+                        <p
+                          className="myinfo"
+                          data-aos="fade-down"
+                          data-aos-duration="1800"
+                        >
+                          <Typewriter
+                            onInit={(typewriter) => {
+                              typewriter
+                                .pauseFor(500)
+                                .typeString(
+                                  "<strong><span style=color:#28B463; font-size=14px>Web Developer</span></strong>"
+                                )
+                                .pauseFor(500)
+                                .deleteAll()
+                                .typeString(
+                                  "<strong><span style=color:#F39C12 font-size:14px>Frontend Developer</span></strong>"
+                                )
+                                .pauseFor(500)
+                                .deleteAll()
+                                .typeString(
+                                  "<strong><span style=color:#17c0e9>React JS Developer</span></strong>"
+                                )
+                                .pauseFor(500)
+                                .deleteAll()
+                                .typeString(
+                                  "<strong><span style=color:#F39C12>Next JS Developer</span></strong>"
+                                )
+                                .pauseFor(500)
+                                .deleteAll()
+                                .start();
+                            }}
+                            options={{
+                              autoStart: true,
+                              loop: true,
+                            }}
+                          />
+                        </p>
+                      </div>
+                      <p className="mb-3">
+                        Driving success through code and creativity, I craft web
+                        solutions that go beyond expectations. From sleek
+                        designs to seamless functionality, I'm committed to
+                        delivering results that make an impact. Let's turn your
+                        digital goals into a reality with effective and
+                        efficient web development.
+                      </p>
+                      <div
+                        className="intro-btns"
+                        data-aos="fade-up"
+                        data-aos-duration="1900"
+                      >
+                        <a
+                          href={`mailto:${detail.hireMe_link}`}
+                          className="contactMe"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <button className="contact-me">
+                            Hire me <i className="bx bx-send "></i>
+                          </button>
+                        </a>
+                      </div>
+                      <div
+                        className="intro-contact"
+                        data-aos="fade-up"
+                        data-aos-duration="1800"
+                      >
+                        <span>Follow Me:</span>
+                        <ul>
+                          <li>
+                            {contact &&
+                              contact.map((data1) => (
+                                <a
+                                  href={data1.link}
+                                  className="icon-link"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  key={data1.id}
+                                >
+                                  <i className={data1.icon}></i>
+                                </a>
+                              ))}
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div
-                    className="intro-btns"
-                    data-aos="fade-up"
-                    data-aos-duration="1900"
+                    className="col-lg-6 col-md-6 col-sm-12 "
+                    data-aos="fade-down-left"
                   >
-                    <a
-                      href={`mailto:${detail.hireMe_link}`}
-                      className="contactMe"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <button className="contact-me">
-                        Hire me <i className="bx bx-send "></i>
-                      </button>
-                    </a>
-                  </div>
-                  <div
-                    className="intro-contact"
-                    data-aos="fade-up"
-                    data-aos-duration="1800"
-                  >
-                    <span>Follow Me:</span>
-                    <ul>
-                      <li>
-                        {contact &&
-                          contact.map((data1) => (
-                            <a
-                              href={data1.link}
-                              className="icon-link"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              key={data1.id}
-                            >
-                              <i className={data1.icon}></i>
-                            </a>
-                          ))}
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-6 col-md-6 col-sm-12 left-img "
-                  data-aos="fade-down-left"
-                >
-                  <div className="ff">
-                    <img className="intro-img " src={images.heroImg} alt="" />
+                    <div className="ff">
+                      <img className="intro-img " src={images.heroImg} alt="" />
+                    </div>
                   </div>
                 </div>
               </div>

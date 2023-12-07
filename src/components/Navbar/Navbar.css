@@ -52,7 +52,7 @@
   -webkit-text-fill-color: transparent;
 }
 .navbur {
-  background: var(--color-background) !important;
+  background: transparent !important;
   box-shadow: rgb(0, 10, 24) 0px 0px 10px -10px;
   padding: 20px 0;
   position: relative;

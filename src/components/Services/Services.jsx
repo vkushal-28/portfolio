@@ -23,7 +23,9 @@ const Services = () => {
                   <i className={`${service.shadow_icon} text-white`}></i>
                 </div>
                 <h4 className="web">{service.service_name}</h4>
-                <p className="service-info">{service.service_description}</p>
+                <p className="service-info mt-2">
+                  "{service.service_description}"
+                </p>
                 {/* <h6 className="learn-more">{service.learn_more}</h6> */}
                 <div className="shadow-icon">
                   <i className={service.shadow_icon}></i>

@@ -1,6 +1,6 @@
+import hero from "../images/decoration/hero-logo3.png";
 export const images = {
-  heroImg:
-    "https://drive.google.com/uc?export=view&id=1ThEwmRV0VNxn4_OHRd6buKF8O_oOJbmW",
+  heroImg: hero,
   reactImg:
     "https://drive.google.com/uc?export=view&id=1bhQUZ3p9P5NPLf7Dgu1fBpon3k-rTXeV",
   nextImg:

@@ -19,7 +19,7 @@
   border-radius: 10px !important;
   padding: 20px 10px 10px;
   display: flex;
-  height: 240px;
+  height: 260px;
   overflow: hidden;
   align-items: center;
   flex-direction: column;
@@ -42,7 +42,8 @@
 .my-service .web {
   margin: 10px 0;
   font-size: 17px;
-  color: #fff;
+  /* color: #fff; */
+  /* color: var(--color-button-hover) !important; */
 }
 .ser-back {
   display: flex;
@@ -75,7 +76,8 @@
 }
 .service-info {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 200;
+  font-style: italic;
   color: #676a6a;
 }
 .service-title {
@@ -98,7 +100,9 @@
 }
 
 .my-service .web {
-  color: #fff !important;
+  /* color: #fff !important; */
+  color: var(--color-button-hover) !important;
+
   font-weight: 700;
 }
 

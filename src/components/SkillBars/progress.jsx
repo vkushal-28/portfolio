@@ -65,7 +65,7 @@ const Progress = () => {
             <img src={details4.icon} alt="" />
           </div>
           <h3>{details4.lang_name}</h3>
-          <p className={`${details4.exp_level}`}>{details4.exp_level}</p>
+          {/* <p className={`${details4.exp_level}`}>{details4.exp_level}</p> */}
         </div>
       </div>
     );

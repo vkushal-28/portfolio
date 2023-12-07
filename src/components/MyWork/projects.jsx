@@ -70,7 +70,9 @@ const Projects = () => {
           <OwlCarousel className="owl-theme" {...options}>
             {projectData?.map((details, i) => (
               <div
-                className="project shadow mb-3 mt-2"
+                className="project 
+                shadow-old
+                 mb-3 mt-2"
                 data-aos="fade-up"
                 key={i}
               >

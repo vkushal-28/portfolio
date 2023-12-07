@@ -1,8 +1,14 @@
+.contact-container {
+  max-width: 1560px !important;
+  display: flex;
+  align-items: center;
+}
 .contact-me2 {
   color: var(--color-info-light);
-  max-width: 1400px;
+  width: 100% !important;
+  /* max-width: 1400px; */
   padding: 60px 35px 10px 35px;
-  margin: 80px 50px 30px 50px;
+  /* margin: 80px 50px 30px 50px; */
   position: relative;
   background: #0c0122;
   border-radius: 20px;
