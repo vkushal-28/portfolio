@@ -38,6 +38,7 @@ function App() {
         <div id="preloader">
           <h2 className="name-load  animate-charcter">l O A D I N G</h2>
         </div>
+        {/* <div className="container"> */}
         <div className="homepage">
           <Navbar />
           <Home />
@@ -48,6 +49,7 @@ function App() {
         <Projects />
         <ContactMe />
         <Footer />
+        {/* </div> */}
       </BrowserRouter>
     </>
   );

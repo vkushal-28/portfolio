@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import decor3 from "../../images/decoration/Group-31.png";
+import Hero from "../../images/decoration/hero-logo3.png";
 import "./Intro.css";
 import Typewriter from "typewriter-effect";
 import { images } from "../../images/allImages";
@@ -43,8 +44,13 @@ const Intro = () => {
     <>
       {details &&
         details.map((detail) => (
-          <section className=" intro-page" id="home" key={detail.id}>
-            <div className="container-xl">
+          <div className="  container-fluid mx-0 px-0  ">
+            <section
+              className=" intro-page pt-0 pt-md-3 pt-xxl-5"
+              id="home"
+              key={detail.id}
+            >
+              <image src={Hero} alt="" />
               <div className="decorations">
                 <div className="decor-dot2">
                   <img src={decor3} alt="" />
@@ -52,9 +58,9 @@ const Intro = () => {
 
                 <div className="parcol"></div>
               </div>
-              <div className="small-intro">
-                <div className="intro-row">
-                  <div className="col-lg-6  col-md-6 col-sm-12 intro-left d-flex align-items-center">
+              <div className="small-intro mx-0 px-5  pt-5 d-flex align-items-center">
+                <div className="row intro-row d-flex align-items-center">
+                  <div className="col-lg-6 col-md-6 col-sm-12 px-4 intro-left d-flex align-items-center">
                     <div>
                       <div className="intro-name">
                         {/* <h3
@@ -116,7 +122,7 @@ const Intro = () => {
                           />
                         </p>
                       </div>
-                      <p className="mb-3">
+                      <p className="mb-3 px-3 px-md-0">
                         Driving success through code and creativity, I craft web
                         solutions that go beyond expectations. From sleek
                         designs to seamless functionality, I'm committed to
@@ -166,7 +172,7 @@ const Intro = () => {
                     </div>
                   </div>
                   <div
-                    className="col-lg-6 col-md-6 col-sm-12 "
+                    className="col-lg-6 col-md-6 col-sm-12 d-none d-md-block "
                     data-aos="fade-down-left"
                   >
                     <div className="ff">
@@ -175,8 +181,8 @@ const Intro = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         ))}
     </>
   );

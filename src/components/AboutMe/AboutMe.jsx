@@ -21,55 +21,57 @@ const AboutMe = () => {
       {about &&
         about.map((details) => (
           <main id="about" key={details.id}>
-            <div className="aboutMe-container">
-              <div className="about-decor">
-                <div className="about-dots">
-                  <img src={decor1} alt="" />
-                </div>
-                <div className="about-rect">
-                  <img src={reactagle} alt="" />
-                </div>
-                <div className="about-shady">
-                  <img src={shady} alt="" />
-                </div>
-              </div>
-              <div className="abouMe-row">
-                <div
-                  className=" col-md-4 col-sm-12 about-img"
-                  data-aos="fade-up-right"
-                >
-                  {/* <img src={`${img_300}${details.about_avatar}`} alt="" /> */}
-                  <img src={`${details.about_avatar}`} alt="" />
-                </div>
-                <div
-                  className=" col-md-8  col-sm-12 about_myinfo"
-                  data-aos="fade-up-left"
-                >
-                  <div className="title">
-                    <h2>{details.title}</h2>
-                    <h3>{details.title_2}</h3>
+            <div className="container-fluid">
+              <div className="aboutMe-container">
+                <div className="about-decor">
+                  <div className="about-dots">
+                    <img src={decor1} alt="" />
                   </div>
-                  <div className="about-description">
-                    <div id="foo" unselectable="on" className="unselectable">
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: `${details.description_one}`,
-                        }}
-                      />
+                  <div className="about-rect">
+                    <img src={reactagle} alt="" />
+                  </div>
+                  <div className="about-shady">
+                    <img src={shady} alt="" />
+                  </div>
+                </div>
+                <div className="abouMe-row">
+                  <div
+                    className=" col-md-4 col-sm-12 about-img"
+                    data-aos="fade-up-right"
+                  >
+                    {/* <img src={`${img_300}${details.about_avatar}`} alt="" /> */}
+                    <img src={`${details.about_avatar}`} alt="" />
+                  </div>
+                  <div
+                    className=" col-md-8  col-sm-12 about_myinfo"
+                    data-aos="fade-up-left"
+                  >
+                    <div className="title">
+                      <h2>{details.title}</h2>
+                      <h3>{details.title_2}</h3>
                     </div>
-                  </div>
+                    <div className="about-description">
+                      <div id="foo" unselectable="on" className="unselectable">
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: `${details.description_one}`,
+                          }}
+                        />
+                      </div>
+                    </div>
 
-                  <div className="itscv">
-                    <a
-                      href={resume}
-                      download="Vala Kushal Resume.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <button className="download-cv">
-                        Download Cv <i className="bx bx-download"></i>
-                      </button>
-                    </a>
+                    <div className="itscv">
+                      <a
+                        href={resume}
+                        download="Vala Kushal Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button className="download-cv">
+                          Download Cv <i className="bx bx-download"></i>
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

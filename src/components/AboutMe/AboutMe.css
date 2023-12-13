@@ -70,7 +70,7 @@
   transform: rotate(45deg);
 }
 .about-dots img {
-  opacity: 0.2;
+  opacity: 0.5;
   z-index: 2;
 }
 
@@ -218,6 +218,7 @@ i {
   }
   .about_myinfo {
     padding-left: 30px;
+    z-index: 4;
   }
   .about-description p {
     font-size: 13px;
