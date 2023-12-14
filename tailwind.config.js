@@ -27,6 +27,7 @@ module.exports = {
         secondary: "#393A47",
         accent: "#00a376",
         bl: "#131430",
+        blLight: "#161737",
 
         //    primary: "#131424",
         // secondary: "#393A47",
