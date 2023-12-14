@@ -26,6 +26,7 @@ module.exports = {
         primary: "#04171e",
         secondary: "#393A47",
         accent: "#00a376",
+        bl: "#131430",
 
         //    primary: "#131424",
         // secondary: "#393A47",
@@ -33,7 +34,7 @@ module.exports = {
       },
       backgroundImage: {
         explosion: 'url("/src/assets/images/background.png")',
-        webtech: 'url("/bg-circles.png")',
+        webtech: 'url("/src/assets/images/hero-logo.png")',
         // circleStar: 'url("/circle-star.svg")',
         // site: 'url("/site-bg.svg")',
       },

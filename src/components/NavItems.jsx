@@ -6,9 +6,9 @@ const NavItems = () => {
         <a
           href="/"
           key={ind}
-          className=" hover:bg-slate-50/10  hover:text-pink-500 hover:backdrop-blur-sm  transition-all duration-400 p-2 rounded-full"
+          className="sora capitalize text-md hover:text-pink-500 hover:backdrop-blur-sm  transition-all duration-400 p-2 rounded-full"
         >
-          About
+          {item}
         </a>
       ))}
     </div>
