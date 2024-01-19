@@ -10,9 +10,9 @@ function App() {
     <Fragment>
       <Outlet />
       <Header />
+      <Hero />
+      <About />
       <Services />
-      {/* <Hero />
-      <About /> */}
     </Fragment>
   );
 }

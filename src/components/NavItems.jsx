@@ -1,7 +1,7 @@
 const NavItems = () => {
   const items = ["home", "about", "services", "skills", "my work", "contact"];
   return (
-    <div className="flex items-center gap-x-2 text-lg">
+    <div className=" hidden lg:flex items-center gap-x-2 text-lg ">
       {items.map((item, ind) => (
         <a
           href="/"
