@@ -1,0 +1,102 @@
+import * as images from "../assets/images/index";
+
+export const skillsData = [
+  {
+    id: 1,
+    icon: images.react,
+    lang_name: "React JS",
+    shadow_color: "#61DBFB",
+    exp_level: "Experienced",
+  },
+  {
+    id: 2,
+    icon: images.next,
+    lang_name: "Next JS",
+    shadow_color: "gray",
+    exp_level: "Experienced",
+  },
+  {
+    id: 3,
+    icon: images.js,
+    lang_name: "Javascript",
+    shadow_color: "#F0DB4F",
+    exp_level: "Experienced",
+  },
+  {
+    id: 4,
+    icon: images.redux,
+    lang_name: "Redux",
+    shadow_color: "#764abc",
+    exp_level: "Experienced",
+  },
+  {
+    id: 5,
+    icon: images.html,
+    lang_name: "HTML",
+    shadow_color: "#e34c26", //f06529
+    exp_level: "Experienced",
+  },
+  {
+    id: 6,
+    icon: images.css,
+    lang_name: "CSS",
+    shadow_color: "#2965f1",
+    exp_level: "Experienced",
+  },
+  {
+    id: 7,
+    icon: images.bootstrap,
+    lang_name: "Bootstrap",
+    shadow_color: "#A020F0",
+    exp_level: "Experienced",
+  },
+  {
+    id: 8,
+    icon: images.material,
+    lang_name: "Material UI",
+    shadow_color: "#3d5afe",
+    exp_level: "Intermediate",
+  },
+  {
+    id: 9,
+    icon: images.npm,
+    lang_name: "NPM",
+    shadow_color: "#CC3534",
+    exp_level: "Experienced",
+  },
+  {
+    id: 10,
+    icon: images.node,
+    lang_name: "Node JS",
+    shadow_color: "#3c873a",
+    exp_level: "Intermediate",
+  },
+  {
+    id: 11,
+    icon: images.mongo,
+    lang_name: "MongoDB",
+    shadow_color: "#4DB33D",
+    exp_level: "Intermediate",
+  },
+  {
+    id: 12,
+    icon: images.express,
+    lang_name: "Express JS",
+    shadow_color: "gray",
+    exp_level: "Intermediate",
+  },
+  {
+    id: 13,
+    icon: images.gitlab,
+    lang_name: "Gitlab",
+    shadow_color: "#fca326",
+    exp_level: "Experienced",
+  },
+  {
+    id: 14,
+    icon: images.github,
+    lang_name: "Github",
+    shadow_color: "gray",
+    exp_level: "Experienced",
+  },
+];

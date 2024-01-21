@@ -1,22 +1,6 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-// icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
 
 // framer-motion
 import { motion } from "framer-motion";
@@ -96,9 +80,9 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full bg-blLight  ">
-      <div className="h-full bg-bl py-32 text-center xl:text-left  rounded-br-[10%] ">
-        <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 ">
+    <div className="h-full xl:h-[100vh] bg-blLight  ">
+      <div className="h-full xl:h-full bg-bl py-32 text-center xl:text-left  rounded-br-[10%] ">
+        <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6 ">
           <div className="flex-1 flex flex-col justify-center w-full">
             <motion.h2
               variants={fadeIn("right", 0.2)}
@@ -161,7 +145,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidded"
-            className="flex flex-col w-full xl:max-w-[48%] h-[480px] "
+            className="flex flex-col w-full xl:max-w-[50%] h-full "
           >
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 z-10">
               {aboutData.map((item, itemInd) => {
@@ -180,7 +164,7 @@ const About = () => {
                 );
               })}
             </div>
-            <div className="p-2 xl:p-3 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+            <div className="p-2 xl:p-3 flex flex-col gap-y-0 xl:gap-y-4 items-start h-full overflow-y-scroll">
               {aboutData[index].id === 0 && <Experience />}
             </div>
           </motion.div>

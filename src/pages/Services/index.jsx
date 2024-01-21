@@ -5,9 +5,7 @@ import PropTypes from "prop-types";
 import { FaCode } from "react-icons/fa";
 import { servicesData } from "../../data/serviceData";
 
-// framer-motion
-import { motion } from "framer-motion";
-import { fadeIn } from "../../helpers/variants";
+import CommonHeader from "../../components/CommonHeader";
 
 const Services = () => {
   const ServiceCard = ({ name, description }) => {
@@ -31,37 +29,24 @@ const Services = () => {
   };
   return (
     <div className="h-full bg-blLight py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[7%] md:rounded-br-[10%] ">
-      <div className="container mx-auto  flex flex-col justify-around ">
-        <motion.h2
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          animate="show"
-          exit="hidded"
-          className="h2"
-        >
-          My <span className="gradient-text">Services.</span>
-        </motion.h2>
-        <motion.p
-          variants={fadeIn("right", 0.4)}
-          initial="hidden"
-          animate="show"
-          exit="hidded"
-          className="max-w-sm md:max-w-3xl mx-auto  mb-6 xl:mb-20 px-2 "
-        >
-          10 years ago, I began freelancing as a developer. Since then, I've
-          done done remote work for agencies, consulted for startups, and
-          collaborated on digital products for business and customer use.
-        </motion.p>
-      </div>
-      <div className="container mx-auto h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6 ">
-        {/* =========== Service Details Card =========== */}
-        {servicesData.map((service) => (
-          <ServiceCard
-            name={service.service_name}
-            icon={service.icon}
-            description={service.service_description}
-          />
-        ))}
+      <div className="container mx-auto">
+        <CommonHeader
+          title1={"My"}
+          title2={"Services."}
+          description={
+            "10 years ago, I began freelancing as a developer. Since then, I've done done remote work for agencies, consulted for startups, and collaborated on digital products for business and customer use."
+          }
+        />
+        <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6 ">
+          {/* =========== Service Details Card =========== */}
+          {servicesData.map((service) => (
+            <ServiceCard
+              name={service.service_name}
+              icon={service.icon}
+              description={service.service_description}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
