@@ -1,15 +1,18 @@
+import design from "../assets/images/logo/ui.png";
+import web from "../assets/images/logo/web.png";
+import api from "../assets/images/logo/api.png";
 export const servicesData = [
   {
     id: 1,
-    icon_image: null,
+    icon: design,
     service_name: "UI/UX Design",
-    shadow_icon: "fa-solid fa-screwdriver-wrench",
+    shadow_icon: "fa-solid fa-mddesign",
     service_description:
       "I craft experiences that captivate and engage, ensuring your brand leaves a lasting impression in the digital landscape.",
   },
   {
     id: 2,
-    icon_image: null,
+    icon: web,
     service_name: "Web Development",
     shadow_icon: "fa-solid fa-code",
     service_description:
@@ -17,9 +20,10 @@ export const servicesData = [
   },
   {
     id: 3,
-    icon_image: null,
+    icon: api,
     service_name: "Restful API Development",
     shadow_icon: "fa-solid fa-gear",
+    // shadow_icon: "fa-solid fa-gear",
     service_description:
       "From design to implementation,   I ensure efficient data exchange, fostering innovation and connectivity to drive your digital solutions forward.",
   },

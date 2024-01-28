@@ -6,17 +6,22 @@ import Hero from "./pages/Hero/index";
 import Services from "./pages/Services/index";
 import Skills from "./pages/Skills";
 import Projects from "./pages/projects";
+import NavProvider from "./context/NavContext";
 
 function App() {
   return (
     <Fragment>
-      <Outlet />
-      <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Skills />
-      <Projects />
+      <div className="page">
+        <Outlet />
+        <NavProvider>
+          <Header />
+          <Hero />
+          <About />
+          <Services />
+          <Skills />
+          <Projects />
+        </NavProvider>
+      </div>
     </Fragment>
   );
 }

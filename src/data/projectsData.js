@@ -1,13 +1,12 @@
-import * as images from "../assets/images/index";
+import * as img from "../assets/images/index";
 export const allProjectsData = {
   projects: [
     {
       projectGroup: [
         {
           id: 1,
-          language_used: ["react", "html", "css", "bootstrap", "npm"],
-          //   path: images.devImg,
-          path: images.portfolio,
+          language_used: [img.react, img.html, img.css, img.bootstrap, img.npm],
+          path: img.portfolio,
           updated_on: "2023-03-13T19:48:35.192055Z",
           title: "My Portfolio",
           description:
@@ -18,16 +17,15 @@ export const allProjectsData = {
         {
           id: 2,
           language_used: [
-            "react",
-            "redux",
-            "node",
-            "mongo",
-            "html",
-            "css",
-            "bootstrap",
+            img.react,
+            img.redux,
+            img.node,
+            img.mongo,
+            img.html,
+            img.css,
+            img.bootstrap,
           ],
-          //   path: images.devImg,
-          path: images.evIndia,
+          path: img.evIndia,
           updated_on: "2023-03-13T19:48:35.192055Z",
           title: "EV India",
           description:
@@ -36,10 +34,28 @@ export const allProjectsData = {
           demo_link: "https://evindia.online/",
         },
         {
-          id: 2,
+          id: 3,
+          language_used: [
+            img.react,
+            img.redux,
+            img.node,
+            img.mongo,
+            img.html,
+            img.css,
+            img.bootstrap,
+          ],
+          path: img.nike,
+          updated_on: "2023-03-13T19:48:35.192055Z",
+          title: "Nike Clone",
+          description:
+            "The purpose of this website is to get all details of existing and upcoming electric vehicles with specifications, price, variants, EMI details, inquiry, reviews and ratings, news, videos, blogs, ratings and charging infrastructure and many more.",
+          project_link: "https://github.com/vkushal-28/nike/",
+          demo_link: "https://nike-rosy.vercel.app/",
+        },
+        {
+          id: 4,
           language_used: ["react", "redux", "html", "css", "bootstrap", "node"],
-          //   path: images.devImg,
-          path: images.elumat,
+          path: img.elumat,
           updated_on: "2023-03-13T19:48:35.192055Z",
           title: "Elumat",
           description:
@@ -48,18 +64,17 @@ export const allProjectsData = {
           demo_link: "http://elumat.com/",
         },
         {
-          id: 3,
+          id: 5,
           language_used: [
-            "next",
-            "react",
-            "redux",
-            "html",
-            "css",
-            "bootstrap",
-            "node",
+            img.next,
+            img.react,
+            img.redux,
+            img.html,
+            img.css,
+            img.bootstrap,
+            img.node,
           ],
-          //   path: images.devImg,
-          path: images.mragain,
+          path: img.mragain,
           updated_on: "2023-03-13T19:48:35.192055Z",
           title: "Mr Again",
           description:
@@ -69,19 +84,18 @@ export const allProjectsData = {
         },
 
         {
-          id: 4,
+          id: 6,
           language_used: [
-            "react",
-            "redux",
-            "bootstrap",
-            "html",
-            "css",
-            "npm",
-            "node",
-            "mongo",
+            img.react,
+            img.redux,
+            img.bootstrap,
+            img.html,
+            img.css,
+            img.npm,
+            img.node,
+            img.mongo,
           ],
-          //   path: images.devImg,
-          path: images.time2Enter1,
+          path: img.time2Enter1,
           updated_on: "2023-03-13T19:48:35.192055Z",
           title: "Time2Enter",
           description:
@@ -89,11 +103,21 @@ export const allProjectsData = {
           project_link: null,
           demo_link: "https://easy2showdev.com/",
         },
+      ],
+    },
+    {
+      projectGroup: [
         {
-          id: 5,
-          language_used: ["react", "redux", "bootstrap", "html", "css", "npm"],
-          //   path: images.devImg,
-          path: images.staffRoster,
+          id: 7,
+          language_used: [
+            img.react,
+            img.redux,
+            img.bootstrap,
+            img.html,
+            img.css,
+            img.npm,
+          ],
+          path: img.staffRoster,
           updated_on: "2023-03-13T19:48:35.192055Z",
           title: "Staff Roster",
           description:
@@ -101,24 +125,19 @@ export const allProjectsData = {
           project_link: null,
           demo_link: null,
         },
-      ],
-    },
-    {
-      projectGroup: [
         {
-          id: 6,
+          id: 8,
           language_used: [
-            "react",
-            "redux",
-            "bootstrap",
-            "html",
-            "css",
-            "js",
-            "node",
-            "mongo",
+            img.react,
+            img.redux,
+            img.bootstrap,
+            img.html,
+            img.css,
+            img.js,
+            img.node,
+            img.mongo,
           ],
-          //   path: images.devImg,
-          path: images.saturncube,
+          path: img.saturncube,
           updated_on: "2023-03-13T19:48:35.192055Z",
           title: "Saturncube Technologies",
           description:
@@ -127,10 +146,15 @@ export const allProjectsData = {
           demo_link: "https://saturncube.com/",
         },
         {
-          id: 7,
-          language_used: ["react", "redux", "bootstrap", "html", "css"],
-          //   path: images.devImg,
-          path: images.memories,
+          id: 9,
+          language_used: [
+            img.react,
+            img.redux,
+            img.bootstrap,
+            img.html,
+            img.css,
+          ],
+          path: img.memories,
           updated_on: "2023-03-13T19:48:35.192055Z",
           title: "Memories",
           description:

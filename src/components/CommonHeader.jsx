@@ -20,12 +20,9 @@ const CommonHeader = ({ title1, title2, description }) => {
         initial="hidden"
         animate="show"
         exit="hidded"
-        className="max-w-sm md:max-w-3xl mx-auto  mb-6 xl:mb-20 px-2 "
+        className="max-w-sm md:max-w-3xl mx-auto  mb-4 xl:mb-20 px-2 "
       >
         {description}
-        10 years ago, I began freelancing as a developer. Since then, I've done
-        done remote work for agencies, consulted for startups, and collaborated
-        on digital products for business and customer use.
       </motion.p>
     </div>
   );

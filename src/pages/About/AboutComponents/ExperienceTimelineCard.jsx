@@ -22,7 +22,7 @@ const ExperienceTimelineCard = ({
           </span>
         )}
       </h3>
-      <div className="flex items-start mb-1 text font-semibold italic text-gray-900 dark:text-white">
+      <div className="flex items-start mb-1 text font-semibold italic text-blue-400">
         - {companyName}
       </div>
       <time className="block mb-2 text-sm text-left font-normal leading-none text-gray-400 dark:text-gray-500">
