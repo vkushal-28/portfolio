@@ -21,7 +21,7 @@ const WorkSlider = () => {
       {allProjectsData.projects.map((project, ind) => {
         return (
           <SwiperSlide key={ind}>
-            <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-6 lg:gap-8 cursor-pointer p-6 md:p-4 xl:p-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-6 lg:gap-8 cursor-pointer p-6 md:p-4 xl:p-3">
               {project.projectGroup.map((data, index) => {
                 // console.log("data", data);
                 return (

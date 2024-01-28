@@ -134,28 +134,28 @@ const About = () => {
                   {/* experience */}
                   <CountUpCard
                     start={0}
-                    end={10}
+                    end={5}
                     details={"Years of experience"}
                   />
 
                   {/* clients */}
                   <CountUpCard
                     start={0}
-                    end={250}
+                    end={12}
                     details={"Satisfied Clients"}
                   />
 
                   {/* projects */}
                   <CountUpCard
                     start={0}
-                    end={21}
+                    end={18}
                     details={"Finished Projects"}
                   />
 
                   {/* awards */}
                   <CountUpCard
                     start={0}
-                    end={21}
+                    end={1}
                     details={"Winning awards"}
                     isHideBorder={true}
                   />
@@ -170,9 +170,9 @@ const About = () => {
               initial="hidden"
               animate="show"
               exit="hidded"
-              className="flex flex-col w-full xl:max-w-[50%] h-full "
+              className="flex flex-col w-full xl:max-w-[50%] h-full over "
             >
-              <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 z-10">
+              <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 z-10 ">
                 {aboutData.map((item, itemInd) => {
                   return (
                     <div
