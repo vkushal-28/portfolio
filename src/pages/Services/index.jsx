@@ -7,6 +7,7 @@ import { servicesData } from "../../data/serviceData";
 
 import CommonHeader from "../../components/CommonHeader";
 import { useNav } from "../../hooks/useNav";
+import Reveal from "../../components/Reveal";
 
 const Services = () => {
   const hotelRef = useNav("Services");
@@ -46,20 +47,22 @@ const Services = () => {
               title1={"My"}
               title2={"Services."}
               description={
-                "10 years ago, I began freelancing as a developer. Since then, I've done done remote work for agencies, consulted for startups, and collaborated on digital products for business and customer use."
+                "Welcome to my comprehensive suite of services, where creativity meets functionality. I'm specialize in crafting seamless user experiences through cutting-edge UI/UX design, web Development in latest technologies and Restful APIs. "
               }
             />
-            <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6 ">
-              {/* =========== Service Details Card =========== */}
-              {servicesData.map((service) => (
-                <ServiceCard
-                  key={service.id}
-                  name={service.service_name}
-                  icon={service.icon}
-                  description={service.service_description}
-                />
-              ))}
-            </div>
+            <Reveal>
+              <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6 ">
+                {/* =========== Service Details Card =========== */}
+                {servicesData.map((service) => (
+                  <ServiceCard
+                    key={service.id}
+                    name={service.service_name}
+                    icon={service.icon}
+                    description={service.service_description}
+                  />
+                ))}
+              </div>
+            </Reveal>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import { fadeIn } from "../../helpers/variants";
 import CommonHeader from "../../components/CommonHeader";
 import WorkSlider from "./component/WorkSlider";
 import { useNav } from "../../hooks/useNav";
+import Reveal from "../../components/Reveal";
 
 const Projects = () => {
   const projectRef = useNav("Projects");
@@ -28,15 +29,9 @@ const Projects = () => {
               }
             />
             <div className=" h-full w-full flex flex-col lg:flex-row items-center justify-around gap-6 ">
-              <motion.div
-                variants={fadeIn("down", 0.6)}
-                initial="hidden"
-                animate="show"
-                exit="hidden"
-                className="w-full h-full"
-              >
+              <Reveal direction="up" delay={0.6} className="w-full h-full">
                 <WorkSlider />
-              </motion.div>
+              </Reveal>
             </div>
           </div>
         </div>
