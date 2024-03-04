@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 // components
-import resume from "../../assets/resume/Kushal_Vala_Resume.docx";
+import resume from "../../assets/resume/Kushal_Vala_Resume.pdf";
 // framer motion
 import { motion } from "framer-motion";
 

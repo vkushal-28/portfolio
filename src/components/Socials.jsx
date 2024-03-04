@@ -3,7 +3,7 @@ const Socials = () => {
   const socialsData = [
     {
       icon: <RiLinkedinLine />,
-      link: "https://www.linkedin.com/in/kushal-vala-713862207/",
+      link: "https://www.linkedin.com/in/kushal-vala/",
     },
     {
       icon: <RiGithubLine />,
@@ -20,6 +20,7 @@ const Socials = () => {
         <a
           href={social.link}
           key={ind}
+          target="_blank"
           className="hover:text-pink-500 text-xl hover:bg-white/10 hover:backdrop-blur-sm  transition-all duration-400 p-2 rounded-full"
         >
           {social.icon}
