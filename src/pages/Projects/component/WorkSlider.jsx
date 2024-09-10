@@ -41,7 +41,7 @@ const WorkSlider = () => {
             <SwiperSlide key={index}>
               <Reveal
                 direction="up"
-                delay={index * 0.3}
+                delay={index < 3 ? index * 0.3 : 0.2}
                 className="w-full h-full">
                 <div className="p-[0.8px] max-w-sm  bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 rounded-lg group ">
                   {/* Gradient shadow */}
