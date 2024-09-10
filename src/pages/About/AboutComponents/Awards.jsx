@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import Saturncube from "../../../assets/images/certificates/SaturncubeCertificate.jpeg";
-
 import { RiAwardFill } from "react-icons/ri";
 
 const Awards = () => {
@@ -18,7 +17,6 @@ const Awards = () => {
                 View Certificate
               </a>
             </span>
-            {/* )} */}
           </h3>
           <div className="flex items-start mb-1 text font-semibold  text-gray-900 dark:text-blue-400 ml-2">
             <span className="italic">- Saturncube Technologies</span>

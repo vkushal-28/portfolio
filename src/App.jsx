@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 import Hero from "./pages/Hero/index";
 import Services from "./pages/Services/index";
 import Skills from "./pages/Skills";
-import Projects from "./pages/projects";
+import Projects from "./pages/Projects";
 import NavProvider from "./context/NavContext";
 
 function App() {

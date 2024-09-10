@@ -4,6 +4,7 @@ import { useNav } from "../../hooks/useNav";
 import Reveal from "../../components/Reveal";
 
 const Skills = () => {
+  // hooks
   const skillsRef = useNav("Skills");
 
   return (

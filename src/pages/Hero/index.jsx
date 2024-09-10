@@ -1,25 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 // components
 import resume from "../../assets/resume/Kushal_Vala_Resume.pdf";
-// framer motion
-import { motion } from "framer-motion";
-
 import * as Imgs from "../../assets/images/index";
-// variants
 import { fadeIn } from "../../helpers/variants";
 import { useNav } from "../../hooks/useNav";
 import Typewriter from "typewriter-effect";
 import Reveal from "../../components/Reveal";
 
 const Hero = () => {
+  // hooks
   const homeRef = useNav("Home");
 
   return (
-    <section
-      // id="home"
-      className="bg-primary header"
-      ref={homeRef}
-      id="homeSection">
+    <section className="bg-primary header" ref={homeRef} id="homeSection">
       {/* text */}
       <div className="  bg-explosion bg-cover w-full h-[100vh]  bg-no-repeat  ">
         <div className="text-center flex flex-col justify-center items-center lg:pt-32 xl:pt-36 md:text-left h-full container mx-auto ">

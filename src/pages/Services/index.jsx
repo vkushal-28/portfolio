@@ -1,15 +1,13 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/no-unescaped-entities */
 import PropTypes from "prop-types";
-
-// import { FaCode } from "react-icons/fa";
 import { servicesData } from "../../data/serviceData";
-
 import CommonHeader from "../../components/CommonHeader";
 import { useNav } from "../../hooks/useNav";
 import Reveal from "../../components/Reveal";
 
 const Services = () => {
+  // hooks
   const hotelRef = useNav("Services");
 
   const ServiceCard = ({ name, key, icon, description }) => {
@@ -33,6 +31,7 @@ const Services = () => {
       </div>
     );
   };
+
   return (
     <section
       ref={hotelRef}
@@ -48,19 +47,23 @@ const Services = () => {
                 "Welcome to my comprehensive suite of services, where creativity meets functionality. I'm specialize in crafting seamless user experiences through cutting-edge UI/UX design, web Development in latest technologies and Restful APIs. "
               }
             />
-            <Reveal>
-              <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6 ">
-                {/* =========== Service Details Card =========== */}
-                {servicesData.map((service) => (
+
+            <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6 ">
+              {/* =========== Service Details Card =========== */}
+              {servicesData.map((service, ind) => (
+                <Reveal
+                  direction="up"
+                  delay={ind * 0.3}
+                  className="w-full h-full">
                   <ServiceCard
                     key={service.id}
                     name={service.service_name}
                     icon={service.icon}
                     description={service.service_description}
                   />
-                ))}
-              </div>
-            </Reveal>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </div>

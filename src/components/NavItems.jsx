@@ -4,8 +4,6 @@ import { NavContext } from "../context/NavContext";
 const NavItems = () => {
   const { activeLinkId } = useContext(NavContext);
 
-  // const [section, setSection] = useState("#home");
-
   const navLinks = ["Home", "About", "Services", "Skills", "Projects"];
 
   const renderNavLink = (content) => {
@@ -22,12 +20,11 @@ const NavItems = () => {
         <li className="px-3">
           <button
             onClick={handleClickNav}
-            className={`sora capitalize text-md ${
+            className={`sora capitalize text-base ${
               activeLinkId === content
                 ? " text-pink-500 after:w-[100%] after:bg-pink-500 after:transition-all after:duration-300 "
                 : ""
-            } hover:text-pink-500  transition-all duration-400  cursor-pointer capitalize xl:text-md relative after:w-8 after:h-[2px]  after:absolute after:-bottom-0 after:left-0 `}
-          >
+            } hover:text-pink-500  transition-all duration-400  cursor-pointer capitalize xl:text-md relative after:w-8 after:h-[2px]  after:absolute after:-bottom-0 after:left-0 `}>
             {content}
           </button>
         </li>

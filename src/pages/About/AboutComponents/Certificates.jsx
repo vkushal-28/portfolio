@@ -14,20 +14,16 @@ const Certificates = () => {
           </span>
           <h3 className="flex items-center justify-between mb-1 text-lg font-semibold text-gray-900 dark:text-white w-full ml-2">
             Javascript Mastery
-            {/* {isLatest && ( */}
             <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3 cursor-pointer">
               <a href={javascript} target="_blank" rel="noreferrer">
                 View Certificate
               </a>
             </span>
-            {/* )} */}
           </h3>
           <div className="flex items-start mb-1 text font-semibold  text-white  ml-2">
             Source : <span className="italic text-blue-400"> Udemy</span>
           </div>
-          {/* <time className="block mb-2 text-sm text-left font-normal leading-none text-gray-400 dark:text-gray-500">
-            {startDate} - {endDate}
-          </time> */}
+
           <div className="mb-4 text-sm font-normal text-left text-gray-500 dark:text-gray-400 ml-2">
             <ul className="list-disc">
               <li>
@@ -49,7 +45,6 @@ const Certificates = () => {
           </div>
         </li>
 
-        {/* ---- */}
         <li className="mb-10 ms-6">
           <span className="absolute flex items-start justify-center w-8 h-8  rounded-full -start-3 ">
             <RiCss3Fill className="text-3xl text-blue-500" />
@@ -57,15 +52,11 @@ const Certificates = () => {
           <h3 className="flex items-center justify-between mb-1 text-lg font-semibold text-gray-900 dark:text-white w-full ml-2">
             Advanced CSS and SASS
             {/* {isLatest && ( */}
-            <span
-              className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3 cursor-pointer"
-              //   onClick={() => setViewCertificate(!viewCertificate)}
-            >
+            <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3 cursor-pointer">
               <a href={css} target="_blank" rel="noreferrer">
                 View Certificate
               </a>
             </span>
-            {/* )} */}
           </h3>
           <div className="flex items-start mb-1 text font-semibold  text-gray-900 dark:text-white ml-2">
             Source : <span className="italic text-blue-400"> Udemy</span>

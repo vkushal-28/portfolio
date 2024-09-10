@@ -1,14 +1,9 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/no-unescaped-entities */
 import PropTypes from "prop-types";
-// framer-motion
-import { motion } from "framer-motion";
-import { fadeIn } from "../../helpers/variants";
-
 import CommonHeader from "../../components/CommonHeader";
 import WorkSlider from "./component/WorkSlider";
 import { useNav } from "../../hooks/useNav";
-import Reveal from "../../components/Reveal";
 
 const Projects = () => {
   const projectRef = useNav("Projects");
@@ -28,9 +23,7 @@ const Projects = () => {
               }
             />
             <div className=" h-full w-full flex flex-col lg:flex-row items-center justify-around gap-6 ">
-              <Reveal direction="up" delay={0.6} className="w-full h-full">
-                <WorkSlider />
-              </Reveal>
+              <WorkSlider />
             </div>
           </div>
         </div>

@@ -1,9 +1,6 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-
-// framer-motion
-import { fadeIn } from "../../helpers/variants";
 import CountUpCard from "./AboutComponents/CountUpCard";
 import Experience from "./AboutComponents/Experience";
 import Credentials from "./AboutComponents/Credentials";
@@ -12,7 +9,6 @@ import Certificates from "./AboutComponents/Certificates";
 import Awards from "./AboutComponents/Awards";
 import Reveal from "../../components/Reveal";
 
-//  data
 const aboutData = [
   {
     id: 0,
@@ -80,15 +76,43 @@ const aboutData = [
   },
 ];
 
+const countUpCardData = [
+  {
+    id: 1,
+    startCount: 0,
+    endCount: 5,
+    title: "Years of experience",
+  },
+  {
+    id: 2,
+    startCount: 0,
+    endCount: 12,
+    title: "Satisfied Clients",
+  },
+  {
+    id: 3,
+    startCount: 0,
+    endCount: 18,
+    title: "Finished Projects",
+  },
+  {
+    id: 4,
+    startCount: 0,
+    endCount: 1,
+    title: "Winning Awards",
+  },
+];
+
 const About = () => {
+  // hooks
   const aboutRef = useNav("About");
 
+  // state variables
   const [index, setIndex] = useState(0);
 
   return (
     <section
       className="min-h-full xl:h-[100vh] bg-blLight "
-      // className="min-h-full xl:h-[100vh]  bg-blLight "
       ref={aboutRef}
       id="aboutSection">
       <div className=" xl:h-full bg-pink-500 opacity-90 text-center xl:text-left  lg:rounded-br-[10%] ">
@@ -122,34 +146,14 @@ const About = () => {
                 delay={0.6}
                 className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
                 <div className="flex flex-1 xl:gap-x-7">
-                  {/* experience */}
-                  <CountUpCard
-                    start={0}
-                    end={5}
-                    details={"Years of experience"}
-                  />
-
-                  {/* clients */}
-                  <CountUpCard
-                    start={0}
-                    end={12}
-                    details={"Satisfied Clients"}
-                  />
-
-                  {/* projects */}
-                  <CountUpCard
-                    start={0}
-                    end={18}
-                    details={"Finished Projects"}
-                  />
-
-                  {/* awards */}
-                  <CountUpCard
-                    start={0}
-                    end={1}
-                    details={"Winning awards"}
-                    isHideBorder={true}
-                  />
+                  {countUpCardData.map((data, i) => (
+                    <CountUpCard
+                      key={data.id}
+                      start={data.startCount}
+                      end={data.endCount}
+                      details={data.title}
+                    />
+                  ))}
                 </div>
               </Reveal>
             </div>
@@ -191,25 +195,3 @@ const About = () => {
 };
 
 export default About;
-
-// {aboutData[index].info.map((item, itemInd) => {
-//   return (
-//     <div
-//       key={itemInd}
-//       className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
-//     >
-//       {/* title */}
-//       <div className="font-light mb-2 md:mb-0 ">{item.title}</div>
-//       <div className="hidden md:flex">-</div>
-//       <div className="">{item.stage}</div>
-//       <div className="flex gap-x-4 ">
-//         {/* icons */}
-//         {item.icons?.map((icon, ind) => (
-//           <div key={ind} className="text-2xl text-white ">
-//             {icon}
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// })}
