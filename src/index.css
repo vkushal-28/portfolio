@@ -11,17 +11,18 @@ header {
 .translate-z-0 {
   transform: translateZ(0px);
 }
+
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: #f13024;
+  background-color: #ec4899;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  color: #f13024;
+  color: #ec4899;
 }
 
 @layer base {
@@ -59,6 +60,9 @@ header {
   }
   .gradient-text {
     @apply text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }
 .blink_me {

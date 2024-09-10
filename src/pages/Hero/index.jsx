@@ -19,8 +19,7 @@ const Hero = () => {
       // id="home"
       className="bg-primary header"
       ref={homeRef}
-      id="homeSection"
-    >
+      id="homeSection">
       {/* text */}
       <div className="  bg-explosion bg-cover w-full h-[100vh]  bg-no-repeat  ">
         <div className="text-center flex flex-col justify-center items-center lg:pt-32 xl:pt-36 md:text-left h-full container mx-auto ">
@@ -36,8 +35,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="text-3xl mb-3 "
-              >
+                className="text-lg lg:text-3xl mb-3 ">
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
@@ -75,8 +73,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className=" max-w-sm xl:max-w-xl mx-auto md:mx-0 mb-5 md:mb-8 text-center md:text-justify lg:text-start"
-              >
+                className=" max-w-sm xl:max-w-xl mx-auto md:mx-0 mb-5 md:mb-8 text-center md:text-justify lg:text-start">
                 <p>
                   I'm a web developer with a focus on the Full Stack, but still
                   exploring other technologies and frameworks that catch my
@@ -88,14 +85,12 @@ const Hero = () => {
                 <div className="h-[40px] w-[150px] rounded-md   mx-auto md:mx-0 bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 px-[2px] pt-[2px] pb-[2.5px]">
                   <button
                     type="button"
-                    className=" bg-bl rounded w-full h-full "
-                  >
+                    className=" bg-bl rounded w-full h-full ">
                     <a
                       href={resume}
                       target="_blank"
                       className="py-2"
-                      rel="noreferrer"
-                    >
+                      rel="noreferrer">
                       Download CV
                     </a>
                   </button>

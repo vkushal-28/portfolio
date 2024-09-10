@@ -88,11 +88,11 @@ const About = () => {
   return (
     <section
       className="min-h-full xl:h-[100vh] bg-blLight "
+      // className="min-h-full xl:h-[100vh]  bg-blLight "
       ref={aboutRef}
-      id="aboutSection"
-    >
-      <div className=" xl:h-full bg-pink-500 opacity-90 text-center xl:text-left  rounded-br-[10%] ">
-        <div className="h-full xl:h-full bg-bl py-32 text-center xl:text-left  rounded-br-[11%] ">
+      id="aboutSection">
+      <div className=" xl:h-full bg-pink-500 opacity-90 text-center xl:text-left  lg:rounded-br-[10%] ">
+        <div className="h-full xl:h-full bg-bl py-32 text-center xl:text-left  lg:rounded-br-[11%] ">
           <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6 ">
             <div className="flex-1 flex flex-col justify-center w-full">
               <Reveal direction="right" className="h2">
@@ -102,8 +102,7 @@ const About = () => {
               <Reveal
                 direction="right"
                 delay={0.4}
-                className="sm:w-full md:w-[700px] xl:w-[580px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
-              >
+                className="sm:w-full md:w-[700px] xl:w-[580px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
                 <p>
                   Hi there! I'm Kushal Vala. I'm a passionate and experienced
                   full-stack developer crafting dynamic and responsive web
@@ -121,8 +120,7 @@ const About = () => {
               <Reveal
                 direction="right"
                 delay={0.6}
-                className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
-              >
+                className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
                 <div className="flex flex-1 xl:gap-x-7">
                   {/* experience */}
                   <CountUpCard
@@ -161,9 +159,8 @@ const About = () => {
             <Reveal
               direction="left"
               delay={0.4}
-              className="flex flex-col w-full xl:max-w-[50%] h-full over "
-            >
-              <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 z-10 ">
+              className="flex flex-col w-full xl:max-w-[50%] h-full over pt-5 lg:pt-0">
+              <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 z-10  w-full overflow-x-scroll no-scrollbar pb-3">
                 {aboutData.map((item, itemInd) => {
                   return (
                     <div
@@ -173,8 +170,7 @@ const About = () => {
                           ? " text-pink-500 after:w-[100%] after:bg-pink-500 after:transition-all after:duration-300 "
                           : "after:bg-white"
                       } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px]  after:absolute after:-bottom-1 after:left-0`}
-                      onClick={() => setIndex(itemInd)}
-                    >
+                      onClick={() => setIndex(itemInd)}>
                       {item.title}
                     </div>
                   );

@@ -33,6 +33,7 @@ import staffRoster from "./projects/staff-roster.png";
 import time2Enter1 from "./projects/easy2show.png";
 import time2Enter3 from "./projects/time2Enter3.png";
 import nike from "./projects/nike.png";
+import blogiflux from "./projects/blogiflux.png";
 
 export {
   devImg,
@@ -70,4 +71,5 @@ export {
   time2Enter1,
   time2Enter3,
   nike,
+  blogiflux,
 };

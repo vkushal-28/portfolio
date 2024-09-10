@@ -11,8 +11,7 @@ const Skills = () => {
       className="h-full bg-blLight"
       style={{ height: "fit-content" }}
       ref={skillsRef}
-      id="skillsSection"
-    >
+      id="skillsSection">
       <div className="min-h-full  bg-indigo-400 rounded-tl-[5%]  md:rounded-tl-[9%] rounded-br-[10%] md:rounded-br-[10%]">
         <div className="h-full bg-pink-500 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9.9%] md:rounded-br-[9%] ">
           <div className="h-full bg-bl py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9%] md:rounded-br-[10%] ">
@@ -33,8 +32,7 @@ const Skills = () => {
                         key={skill.id}
                         style={{
                           boxShadow: `-2px -2px 4px ${skill.shadow_color}, 3px 3px 7px rgba(0, 0, 0, 0.5)`,
-                        }}
-                      >
+                        }}>
                         <img src={skill.icon} alt="" className="w-full p-4" />
                       </div>
                     ))}
