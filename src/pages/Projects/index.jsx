@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import CommonHeader from "../../components/CommonHeader";
 import WorkSlider from "./component/WorkSlider";
 import { useNav } from "../../hooks/useNav";
+import Reveal from "../../components/Reveal";
 
 const Projects = () => {
   const projectRef = useNav("Projects");
@@ -23,7 +24,9 @@ const Projects = () => {
               }
             />
             <div className=" h-full w-full flex flex-col lg:flex-row items-center justify-around gap-6 ">
-              <WorkSlider />
+              <Reveal direction="up" delay={0.2} className="w-full h-full">
+                <WorkSlider />
+              </Reveal>
             </div>
           </div>
         </div>
