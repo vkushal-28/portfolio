@@ -20,7 +20,7 @@ const Reveal = ({ children, direction, delay, className }) => {
       ref={ref}
       animate={mainControls}
       exit="hidded"
-      transition={{ duration: 0.5, delay: 0.25 }}
+      transition={{ duration: 0.2, delay: 0.25 }}
       className={className}>
       {children}
     </motion.div>

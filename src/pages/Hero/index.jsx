@@ -62,7 +62,7 @@ const Hero = () => {
                 />
               </Reveal>
               <Reveal
-                variants={fadeIn("down", 0.3)}
+                variants={fadeIn("down", 0.2)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"

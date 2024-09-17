@@ -7,6 +7,7 @@ import Services from "./pages/Services/index";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import NavProvider from "./context/NavContext";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Services />
           <Skills />
           <Projects />
+          <ContactUs />
         </NavProvider>
       </div>
     </Fragment>

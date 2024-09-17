@@ -4,7 +4,14 @@ import { NavContext } from "../context/NavContext";
 const NavItems = () => {
   const { activeLinkId } = useContext(NavContext);
 
-  const navLinks = ["Home", "About", "Services", "Skills", "Projects"];
+  const navLinks = [
+    "Home",
+    "About",
+    "Services",
+    "Skills",
+    "Projects",
+    "Contact",
+  ];
 
   const renderNavLink = (content) => {
     const scrollToId = `${content.toLowerCase()}Section`;
@@ -35,18 +42,6 @@ const NavItems = () => {
   return (
     <div className=" hidden lg:flex items-center gap-x-2 text-lg ">
       {navLinks.map((nav) => renderNavLink(nav))}
-      {/* {items.map((item, ind) => (
-        <a
-          href={item.href}
-          key={ind}
-          className={`sora capitalize text-md ${
-            section === item.href ? "text-pink-500" : "white"
-          } hover:text-pink-500 hover:backdrop-blur-sm  transition-all duration-400 p-2 rounded-full`}
-          onClick={() => setSection(item.href)}
-        >
-          {item.name}
-        </a>
-      ))} */}
     </div>
   );
 };
