@@ -32,9 +32,9 @@ const Services = () => {
     <section
       ref={hotelRef}
       id="servicesSection"
-      className="min-h-full xl:h-[100vh] bg-indigo-400 rounded-tl-[5%]  md:rounded-tl-[9%] rounded-br-[10%] md:rounded-br-[10%]">
-      <div className="h-full bg-pink-500 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9.9%] md:rounded-br-[9%] ">
-        <div className="h-full bg-blLight py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9%] md:rounded-br-[10%] ">
+      className="h-full min-h-[100vh] bg-indigo-400 rounded-tl-[5%]  md:rounded-tl-[9%] rounded-br-[10%] md:rounded-br-[10%]">
+      <div className="h-full min-h-[100vh] bg-pink-500 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9.9%] md:rounded-br-[9%] ">
+        <div className="h-full min-h-[100vh] bg-blLight py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9%] md:rounded-br-[10%] ">
           <div className="container mx-auto">
             <CommonHeader
               title1={"My"}
@@ -45,7 +45,7 @@ const Services = () => {
             />
 
             <Reveal direction="up" delay={0.3} className="w-full h-full ">
-              <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6 ">
+              <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6">
                 {/* =========== Service Details Card =========== */}
                 {servicesData.map((service, ind) => (
                   <ServiceCard
