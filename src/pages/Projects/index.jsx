@@ -36,7 +36,7 @@ const Projects = () => {
 };
 
 Projects.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  description: PropTypes.string,
 };
 export default Projects;

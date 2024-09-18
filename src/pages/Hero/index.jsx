@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 // components
-import resume from "../../assets/resume/Kushal_Vala_Resume.pdf";
 import * as Imgs from "../../assets/images/index";
 import { fadeIn } from "../../helpers/variants";
 import { useNav } from "../../hooks/useNav";
@@ -11,14 +10,16 @@ const Hero = () => {
   // hooks
   const homeRef = useNav("Home");
 
+  const resume = `${
+    import.meta.env.VITE_IMAGE_URL
+  }resume/Kushal_Vala_Resume.pdf`;
+
   return (
     <section className="bg-primary header" ref={homeRef} id="homeSection">
-      {/* text */}
       <div className="  bg-explosion bg-cover w-full h-[100vh]  bg-no-repeat  ">
         <div className="text-center flex flex-col justify-center items-center lg:pt-32 xl:pt-36 md:text-left h-full container mx-auto ">
           <div className="grid grid-cols-0 sm:grid-cols-12 gap-0 sm:gap-2 md:gap-0 ">
             <div className="col-span-0 sm:col-span-6 md:col-span-7 md:gap-2 h-full ">
-              {/* title */}
               <Reveal direction="down" className="h1 mb-1 ">
                 Hi There! I'm <br />
                 <span className=" gradient-text">Kushal Vala</span>

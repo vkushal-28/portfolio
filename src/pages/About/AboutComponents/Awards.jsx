@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import Saturncube from "../../../assets/images/certificates/SaturncubeCertificate.jpeg";
 import { RiAwardFill } from "react-icons/ri";
 
 const Awards = () => {
@@ -13,7 +12,12 @@ const Awards = () => {
           <h3 className="flex items-center justify-between mb-1 text-lg font-semibold text-gray-900 dark:text-white w-full ml-2">
             Best Employee of the Year
             <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3 cursor-pointer">
-              <a href={Saturncube} target="_blank" rel="noreferrer">
+              <a
+                href={`${
+                  import.meta.env.VITE_IMAGE_URL
+                }certificates/SaturncubeCertificate.jpeg`}
+                target="_blank"
+                rel="noreferrer">
                 View Certificate
               </a>
             </span>

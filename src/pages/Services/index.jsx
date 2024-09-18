@@ -10,11 +10,9 @@ const Services = () => {
   // hooks
   const hotelRef = useNav("Services");
 
-  const ServiceCard = ({ name, ind, icon, description }) => {
+  const ServiceCard = ({ name, icon, description }) => {
     return (
-      <div
-        className="w-full max-w-sm md:max-w-[md] lg:max-w-[350px] h-[285px]  md:h-[285px] lg:h-[325px]  xl:h-[286px] max-h-[550px] p-[3px] rounded-tl-[10%] rounded-r-[2%] rounded-l-[2%]  rounded-br-[10%]  rounded bg-gradient-to-br from-indigo-400 from-[10%] via-bl via-[50%]  to-pink-500 to-[95%]"
-        key={ind}>
+      <div className="w-full max-w-sm md:max-w-[md] lg:max-w-[350px] h-[285px]  md:h-[285px] lg:h-[325px]  xl:h-[286px] max-h-[550px] p-[3px] rounded-tl-[10%] rounded-r-[2%] rounded-l-[2%]  rounded-br-[10%]  rounded bg-gradient-to-br from-indigo-400 from-[10%] via-bl via-[50%]  to-pink-500 to-[95%]">
         <div className="w-full max-w-sm p-7 h-[278px] md:h-[280px] lg:h-[318px] xl:h-[280px]  bg-white   shadow dark:bg-bl rounded-tl-[16%] rounded-br-[16%] rounded-bl-[3%]">
           <div className="flex flex-col items-center ">
             <div className="  w-20 bg-slate-700  h-20 rounded-full shadow-md mb-4 inset-48 shadow-pink-500 flex items-center justify-center p-3">
@@ -51,7 +49,7 @@ const Services = () => {
                 {/* =========== Service Details Card =========== */}
                 {servicesData.map((service, ind) => (
                   <ServiceCard
-                    ind={service.id}
+                    key={ind}
                     name={service.service_name}
                     icon={service.icon}
                     description={service.service_description}
@@ -67,9 +65,8 @@ const Services = () => {
 };
 
 Services.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  key: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  description: PropTypes.string,
+  icon: PropTypes.string,
 };
 export default Services;

@@ -114,7 +114,7 @@ const ContactUs = () => {
                   <div className="lg:w-1/2 flex flex-col justify-between text-left py-6 max-md:pt-0">
                     <>
                       {socialsData.map((social, i) => (
-                        <SocialsComponent data={social} />
+                        <SocialsComponent data={social} key={i} />
                       ))}
 
                       {/* <a

@@ -40,7 +40,7 @@ ExperienceTimelineCard.propTypes = {
   isLatest: PropTypes.bool.isRequired,
   startDate: PropTypes.string.isRequired,
   endDate: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.object.isRequired,
 };
 
 export default ExperienceTimelineCard;

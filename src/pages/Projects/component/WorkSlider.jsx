@@ -45,7 +45,9 @@ const WorkSlider = () => {
                 <div className="max-w-sm h-full rounded-lg overflow-hidden shadow-md text-left bg-bl ">
                   <img
                     className="w-full h-auto "
-                    src={data.path}
+                    src={`${import.meta.env.VITE_IMAGE_URL}projects/${
+                      data.path
+                    }`}
                     alt="Sunset in the mountains"
                   />
                   <div className="px-6 py-4">
@@ -59,7 +61,15 @@ const WorkSlider = () => {
                     <div className="flex gap-1 mt-3">
                       {data.language_used.length > 0 &&
                         data.language_used.map((lang, i) => (
-                          <img src={lang} alt="" width={20} height={20} />
+                          <img
+                            src={`${
+                              import.meta.env.VITE_IMAGE_URL
+                            }skills/${lang}`}
+                            alt=""
+                            key={i}
+                            width={20}
+                            height={20}
+                          />
                         ))}
                     </div>
 

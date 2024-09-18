@@ -1,7 +1,4 @@
 import PropTypes from "prop-types";
-import javascript from "../../../assets/images/certificates/javascript.pdf";
-import css from "../../../assets/images/certificates/AdvancedCSS.pdf";
-
 import { RiCss3Fill, RiJavascriptFill } from "react-icons/ri";
 
 const Certificates = () => {
@@ -15,7 +12,12 @@ const Certificates = () => {
           <h3 className="flex items-center justify-between mb-1 text-lg font-semibold text-gray-900 dark:text-white w-full ml-2">
             Javascript Mastery
             <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3 cursor-pointer">
-              <a href={javascript} target="_blank" rel="noreferrer">
+              <a
+                href={`${
+                  import.meta.env.VITE_IMAGE_URL
+                }certificates/javascript.pdf`}
+                target="_blank"
+                rel="noreferrer">
                 View Certificate
               </a>
             </span>
@@ -53,7 +55,12 @@ const Certificates = () => {
             Advanced CSS and SASS
             {/* {isLatest && ( */}
             <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3 cursor-pointer">
-              <a href={css} target="_blank" rel="noreferrer">
+              <a
+                href={`${
+                  import.meta.env.VITE_IMAGE_URL
+                }certificates/AdvancedCSS.pdf`}
+                target="_blank"
+                rel="noreferrer">
                 View Certificate
               </a>
             </span>

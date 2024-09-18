@@ -148,7 +148,7 @@ const About = () => {
                 <div className="flex flex-1 xl:gap-x-7">
                   {countUpCardData.map((data, i) => (
                     <CountUpCard
-                      index={data.id}
+                      key={data.id}
                       start={data.startCount}
                       end={data.endCount}
                       details={data.title}
