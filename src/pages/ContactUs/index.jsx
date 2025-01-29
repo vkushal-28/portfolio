@@ -135,7 +135,7 @@ const ContactUs = () => {
                   </div>
 
                   {/* Right Section */}
-                  <div className="lg:w-1/2 py-6 max-md:pt-0">
+                  <div className="lg:w-1/2 py-0 max-md:pt-0 max-md:pb-5">
                     <form className="space-y-6" onSubmit={onSubmit}>
                       <input
                         type="hidden"

@@ -5,6 +5,7 @@ import { fadeIn } from "../../helpers/variants";
 import { useNav } from "../../hooks/useNav";
 import Typewriter from "typewriter-effect";
 import Reveal from "../../components/Reveal";
+import { RiArrowDownDoubleFill } from "react-icons/ri";
 
 const Hero = () => {
   // hooks
@@ -17,10 +18,10 @@ const Hero = () => {
   return (
     <section className="bg-primary header" ref={homeRef} id="homeSection">
       <div className="  bg-explosion bg-cover w-full h-[100vh]  bg-no-repeat  ">
-        <div className="text-center flex flex-col justify-center items-center  md:text-left h-full container mx-auto "> 
-        {/* lg:pt-32 xl:pt-36 */}
-          <div className="grid grid-cols-0 sm:grid-cols-12 gap-0 sm:gap-2 md:gap-0 ">
-            <div className="flex flex-col justify-center col-span-0 sm:col-span-6 md:col-span-7 md:gap-2 h-full ">
+        <div className="text-center flex flex-col justify-center items-center  md:text-left h-full container mx-auto ">
+          {/* lg:pt-32 xl:pt-36 */}
+          <div className="grid grid-cols-0 sm:grid-cols-12 gap-0 sm:gap-2 md:gap-0">
+            <div className="flex flex-col  justify-center col-span-0 sm:col-span-6 md:col-span-7 md:gap-2 h-full ">
               <Reveal direction="down" className="h1 mb-1 ">
                 Hi There! I'm <br />
                 <span className=" gradient-text">Kushal Vala</span>
@@ -77,14 +78,15 @@ const Hero = () => {
                 </p>
               </Reveal>
               <Reveal direction="up" className=" mb-3 ">
-                <div className="h-[40px] w-[150px] rounded-md   mx-auto md:mx-0 bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 px-[2px] pt-[2px] pb-[2.5px]">
+                <div className="h-[40px] w-[180px] rounded-md   mx-auto md:mx-0 bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 px-[2px] pt-[2px] pb-[2.5px]">
                   <button
                     type="button"
-                    className=" bg-bl rounded w-full h-full ">
+                    className=" bg-bl rounded w-full h-full flex items-center justify-center gap-x-2 ">
+                    <RiArrowDownDoubleFill className="animate-bounce size-6" />
                     <a
                       href={resume}
                       target="_blank"
-                      className="py-2"
+                      className="py-2 pr-2"
                       rel="noreferrer">
                       Download CV
                     </a>
@@ -92,9 +94,9 @@ const Hero = () => {
                 </div>
               </Reveal>
             </div>
-            <div className="md:flex  w-full sm:col-span-6 md:col-span-5 hidden ">
-              <Reveal direction="left" className="w-full ">
-                <img src={Imgs.profilebg} alt="hero-img w-full" />
+            <div className="md:flex  w-full sm:col-span-6 md:col-span-5 justify-center  max-sm:order-first">
+              <Reveal direction="left" className="md: w-full  max-sm:px-16">
+                <img src={Imgs.profilebg} alt="hero-img  " />
                 {/* <img src={Imgs.webTech} alt="hero-img" /> */}
               </Reveal>
             </div>
