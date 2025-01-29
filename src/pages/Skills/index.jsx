@@ -26,11 +26,11 @@ const Skills = () => {
                   }
                 />
                 <Reveal>
-                  <div className="flex  flex-auto flex-wrap justify-center gap-8 md:gap-10 lg:gap-12">
+                  <div className="flex  flex-auto flex-wrap justify-center gap-5 md:gap-10 lg:gap-12">
                     {skillsData.map((skill) => {
                       return (
                         <div
-                          className="w-[70px] md:w-[80px] xl:w-[100px] h-[70px] md:h-[80px] xl:h-[100px] flex justify-center rounded-full bg-indigo-900/50"
+                          className="w-[60px] md:w-[80px] xl:w-[100px] h-[60px] md:h-[80px] xl:h-[100px] flex justify-center rounded-full bg-indigo-900/50"
                           key={skill.id}
                           style={{
                             boxShadow: `-2px -2px 4px ${skill.shadow_color}, 3px 3px 7px rgba(0, 0, 0, 0.5)`,
@@ -40,7 +40,7 @@ const Skills = () => {
                               skill.icon
                             }`}
                             alt={`skill-${skill.id}`}
-                            className="w-full p-4"
+                            className="w-full p-4 max-md:p-3"
                           />
                         </div>
                       );

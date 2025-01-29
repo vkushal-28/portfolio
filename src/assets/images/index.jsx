@@ -1,5 +1,6 @@
 import devImg from "./developers.png";
 import webTech from "./hero-logo.png";
+import profilebg from "./decoration/blob.png";
 const bootstrap = "bootstrap.svg";
 const express = "express.png";
 const css = "css.svg";
@@ -72,4 +73,5 @@ export {
   time2Enter3,
   nike,
   blogiflux,
+  profilebg,
 };

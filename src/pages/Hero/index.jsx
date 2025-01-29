@@ -17,9 +17,10 @@ const Hero = () => {
   return (
     <section className="bg-primary header" ref={homeRef} id="homeSection">
       <div className="  bg-explosion bg-cover w-full h-[100vh]  bg-no-repeat  ">
-        <div className="text-center flex flex-col justify-center items-center lg:pt-32 xl:pt-36 md:text-left h-full container mx-auto ">
+        <div className="text-center flex flex-col justify-center items-center  md:text-left h-full container mx-auto "> 
+        {/* lg:pt-32 xl:pt-36 */}
           <div className="grid grid-cols-0 sm:grid-cols-12 gap-0 sm:gap-2 md:gap-0 ">
-            <div className="col-span-0 sm:col-span-6 md:col-span-7 md:gap-2 h-full ">
+            <div className="flex flex-col justify-center col-span-0 sm:col-span-6 md:col-span-7 md:gap-2 h-full ">
               <Reveal direction="down" className="h1 mb-1 ">
                 Hi There! I'm <br />
                 <span className=" gradient-text">Kushal Vala</span>
@@ -91,9 +92,10 @@ const Hero = () => {
                 </div>
               </Reveal>
             </div>
-            <div className="md:flex items-center w-full sm:col-span-6 md:col-span-5 hidden ">
+            <div className="md:flex  w-full sm:col-span-6 md:col-span-5 hidden ">
               <Reveal direction="left" className="w-full ">
-                <img src={Imgs.webTech} alt="hero-img" />
+                <img src={Imgs.profilebg} alt="hero-img w-full" />
+                {/* <img src={Imgs.webTech} alt="hero-img" /> */}
               </Reveal>
             </div>
           </div>
