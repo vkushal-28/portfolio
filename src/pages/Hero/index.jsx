@@ -16,8 +16,8 @@ const Hero = () => {
   }resume/Kushal_Vala_Resume.pdf`;
 
   return (
-    <section className="bg-primary header" ref={homeRef} id="homeSection">
-      <div className="  bg-explosion bg-cover w-full h-[100vh]  bg-no-repeat  ">
+    <section className="bg-primary header " ref={homeRef} id="homeSection">
+      <div className="  bg-explosion  w-[100vw] h-[100vh] bg-cover bg-no-repeat  ">
         <div className="text-center flex flex-col justify-center items-center  md:text-left h-full container mx-auto ">
           {/* lg:pt-32 xl:pt-36 */}
           <div className="grid grid-cols-0 sm:grid-cols-12 gap-0 sm:gap-2 md:gap-0">

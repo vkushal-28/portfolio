@@ -13,9 +13,6 @@ const Certificates = () => {
             Javascript Mastery
             <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3 cursor-pointer">
               <a
-                // href={`${
-                //   import.meta.env.VITE_IMAGE_URL
-                // }certificates/javascript.pdf`}
                 href="https://www.udemy.com/certificate/UC-ace70b7c-41ce-4b5b-8ba8-9617bb2716c8/"
                 target="_blank"
                 rel="noreferrer">
@@ -57,9 +54,6 @@ const Certificates = () => {
             {/* {isLatest && ( */}
             <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3 cursor-pointer">
               <a
-                // href={`${
-                //   import.meta.env.VITE_IMAGE_URL
-                // }certificates/AdvancedCSS.pdf`}
                 href="https://www.udemy.com/certificate/UC-1e2dc70b-f2ef-4f9f-bb42-fd713dddb52a/"
                 target="_blank"
                 rel="noreferrer">

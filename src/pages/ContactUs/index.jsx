@@ -47,11 +47,11 @@ const ContactUs = () => {
           </div>
         </div>
         <div>
-          <p className=" font-medium text-white ">{data.title}</p>
+          <p className=" font-medium text-white max-sm:hidden ">{data.title}</p>
           <a
             href={data.link && data.link}
             target="_blank"
-            className="text-gray-400 hover:text-gray-300">
+            className="text-gray-400 hover:text-gray-300 max-sm:text-white">
             {data.linkText}
           </a>
         </div>

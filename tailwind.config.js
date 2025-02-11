@@ -19,7 +19,7 @@ module.exports = {
       sm: "640px",
       md: "768px",
       lg: "960px",
-      xl: "1200px",
+      xl: "1280px",
     },
     extend: {
       colors: {
@@ -34,7 +34,7 @@ module.exports = {
         // accent: "#F13024",
       },
       backgroundImage: {
-        explosion: 'url("/src/assets/images/background.png")',
+        explosion: 'url("/src/assets/images/background.jpeg")',
         webtech: 'url("/src/assets/images/hero-logo.png")',
         // circleStar: 'url("/circle-star.svg")',
         // site: 'url("/site-bg.svg")',

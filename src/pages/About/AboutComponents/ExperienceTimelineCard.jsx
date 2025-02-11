@@ -26,10 +26,13 @@ const ExperienceTimelineCard = ({
         - {companyName}
       </div>
       <time className="block mb-2 text-sm text-left font-normal leading-none text-gray-400 dark:text-gray-500">
-        {startDate} - {endDate}
+        {startDate} - {endDate || "Present"}
       </time>
       <p className="mb-4 text-sm font-normal text-left text-gray-500 dark:text-gray-400">
-        {description}
+        <ul className="list-disc ">
+          {description.length > 0 &&
+            description.map((desc, i) => <li key={i}>{desc}</li>)}
+        </ul>
       </p>
     </li>
   );
@@ -40,7 +43,7 @@ ExperienceTimelineCard.propTypes = {
   isLatest: PropTypes.bool.isRequired,
   startDate: PropTypes.string.isRequired,
   endDate: PropTypes.string.isRequired,
-  description: PropTypes.object.isRequired,
+  description: PropTypes.array.isRequired,
 };
 
 export default ExperienceTimelineCard;
