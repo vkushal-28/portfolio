@@ -11,6 +11,25 @@ export const allProjectsData = {
         img.node,
         img.mongo,
         img.express,
+        img.socket,
+      ],
+      path: img.chatty,
+      updated_on: "2023-04-17T19:48:35.192055Z",
+      title: "Chatty ",
+      description:
+        "Developed Chatty, a real-time chat web application using the MERN stack and Tailwind, showcasing full-stack development skills. Implemented user authentication, real-time messaging, and responsive UI for a seamless chat experience.",
+      project_link: "",
+      demo_link: "https://chatty-v2t6.onrender.com/login",
+    },
+    {
+      id: 2,
+      language_used: [
+        img.react,
+        img.vite,
+        img.tailwind,
+        img.node,
+        img.mongo,
+        img.express,
         img.firebase,
       ],
       path: img.blogiflux,
@@ -22,7 +41,7 @@ export const allProjectsData = {
       demo_link: "https://blogiflux.netlify.app",
     },
     {
-      id: 2,
+      id: 3,
       language_used: [img.react, img.vite, img.tailwind, img.html, img.css],
       path: img.portfolio,
       updated_on: "2023-03-13T19:48:35.192055Z",
@@ -34,7 +53,7 @@ export const allProjectsData = {
     },
 
     {
-      id: 3,
+      id: 4,
       language_used: [img.react, img.tailwind, img.html],
       path: img.nike,
       updated_on: "2023-03-13T19:48:35.192055Z",
@@ -45,7 +64,7 @@ export const allProjectsData = {
       demo_link: "https://nike-rosy.vercel.app/",
     },
     {
-      id: 4,
+      id: 5,
       language_used: [
         img.react,
         img.redux,
@@ -64,7 +83,7 @@ export const allProjectsData = {
       demo_link: "https://evindia.online/",
     },
     {
-      id: 5,
+      id: 6,
       language_used: [
         img.react,
         img.redux,
@@ -83,7 +102,7 @@ export const allProjectsData = {
       demo_link: "http://elumat.com/",
     },
     {
-      id: 6,
+      id: 7,
       language_used: [
         img.next,
         img.react,
@@ -103,7 +122,7 @@ export const allProjectsData = {
     },
 
     {
-      id: 7,
+      id: 8,
       language_used: [img.react, img.redux, img.bootstrap, img.html, img.css],
       path: img.time2Enter1,
       updated_on: "2023-03-13T19:48:35.192055Z",

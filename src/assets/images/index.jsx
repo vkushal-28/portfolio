@@ -35,6 +35,8 @@ const time2Enter1 = "easy2show.png";
 const time2Enter3 = "time2Enter3.png";
 const nike = "nike.png";
 const blogiflux = "blogiflux.png";
+const chatty = "Chatty-Chat Screen.png";
+const socket = "socket.io.png";
 
 export {
   devImg,
@@ -74,4 +76,6 @@ export {
   nike,
   blogiflux,
   profilebg,
+  chatty,
+  socket,
 };
