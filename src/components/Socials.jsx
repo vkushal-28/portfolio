@@ -21,8 +21,7 @@ const Socials = () => {
           href={social.link}
           key={ind}
           target="_blank"
-          className="hover:text-pink-500 text-xl hover:bg-white/10 hover:backdrop-blur-sm  transition-all duration-400 p-2 rounded-full"
-        >
+          className="hover:text-pink-500 text-xl hover:bg-white/10 hover:backdrop-blur-sm  duration-400 p-2 rounded-full transition-all delay-150">
           {social.icon}
         </a>
       ))}

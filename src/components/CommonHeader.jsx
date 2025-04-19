@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 const CommonHeader = ({ title1, title2, description }) => {
   return (
-    <div className="flex flex-col justify-around ">
+    <div className="flex flex-col justify-around transition-all delay-150">
       <Reveal delay={0.1} direction="right" className="h2">
         {title1} <span className="gradient-text">{title2}</span>
       </Reveal>
