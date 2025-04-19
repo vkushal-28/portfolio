@@ -3,7 +3,7 @@ import ExperienceTimelineCard from "./ExperienceTimelineCard";
 const Credentials = () => {
   return (
     <div className="py-2 px-3 xl:px-0 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start">
-      <ol className="relative border-s border-gray-200 dark:border-pink-200">
+      <ol className="relative border-s border-gray-200 dark:border-pink-200 transition-all delay-150">
         <ExperienceTimelineCard
           role={"Master of Science in Information Technology"}
           companyName={"Shri M. M. Patel Inst. of Sciences and Research"}

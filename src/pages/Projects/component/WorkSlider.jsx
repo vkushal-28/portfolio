@@ -38,7 +38,7 @@ const WorkSlider = () => {
         {allProjectsData.projects.map((data, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="p-[0.8px] max-w-sm  bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 rounded-lg group ">
+              <div className="p-[0.8px] max-w-sm  bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 rounded-lg group transition-all delay-150">
                 {/* Gradient shadow */}
                 <div className="absolute max-w-sm  inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-50 blur-md rounded-lg -z-10   group-hover:opacity-90"></div>
 

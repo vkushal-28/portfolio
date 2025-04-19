@@ -117,8 +117,8 @@ const About = () => {
       id="aboutSection">
       <div className=" xl:h-full bg-pink-500 opacity-90 text-center xl:text-left  lg:rounded-br-[10%] ">
         <div className="h-full xl:h-full bg-bl py-32 text-center xl:text-left  lg:rounded-br-[11%] ">
-          <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6 ">
-            <div className="flex-1 flex flex-col justify-center w-full">
+          <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6 transition-all delay-150">
+            <div className="flex-1 flex flex-col justify-center w-full transition-all delay-150">
               <Reveal direction="right" className="h2">
                 <span className="gradient-text">Crafting</span> Seamless User
                 Experiences with Precision
@@ -144,7 +144,7 @@ const About = () => {
               <Reveal
                 direction="right"
                 delay={0.6}
-                className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+                className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8 transition-all delay-150">
                 <div className="flex flex-1 xl:gap-x-7">
                   {countUpCardData.map((data, i) => (
                     <CountUpCard
@@ -164,7 +164,7 @@ const About = () => {
               direction="left"
               delay={0.4}
               className="flex flex-col w-full xl:max-w-[50%] h-full over pt-5 lg:pt-0">
-              <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 z-10  w-full overflow-x-scroll no-scrollbar pb-3">
+              <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 z-10  w-full overflow-x-scroll no-scrollbar pb-3 transition-all delay-150">
                 {aboutData.map((item, itemInd) => {
                   return (
                     <div

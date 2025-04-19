@@ -3,7 +3,7 @@ import { RiCss3Fill, RiJavascriptFill } from "react-icons/ri";
 
 const Certificates = () => {
   return (
-    <div className="py-2 px-3 xl:px-0 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start">
+    <div className="py-2 px-3 xl:px-0 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start transition-all delay-150">
       <ol className="relative">
         <li className="mb-10 ms-6">
           <span className="absolute flex items-start justify-center w-8 h-8  rounded-full -start-3 ">

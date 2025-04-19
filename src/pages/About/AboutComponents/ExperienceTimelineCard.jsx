@@ -11,7 +11,7 @@ const ExperienceTimelineCard = ({
 }) => {
   return (
     <li className="mb-10 ms-6">
-      <span className="absolute flex items-start justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 shadow-md p-[6px] shadow-pink-500 dark:bg-blue-900">
+      <span className="absolute flex items-start justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 shadow-md p-[6px] shadow-pink-500 dark:bg-blue-900 transition-all delay-150">
         <FaLaptop />
       </span>
       <h3 className="flex items-start mb-1 text-md lg:text-lg font-semibold text-gray-900 dark:text-white">

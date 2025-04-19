@@ -4,7 +4,7 @@ import { experienceData } from "../../../data/experienceData";
 const Experience = () => {
   return (
     <div className="py-2 px-3 xl:px-0 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start">
-      <ol className="relative border-s border-gray-200 dark:border-pink-200">
+      <ol className="relative border-s border-gray-200 dark:border-pink-200 transition-all delay-150">
         {experienceData.length > 0 &&
           experienceData.map((experience, i) => {
             return (
