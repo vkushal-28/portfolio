@@ -13,7 +13,7 @@ const Hero = () => {
 
   const resume = `${
     import.meta.env.VITE_IMAGE_URL
-  }resume/Kushal_Vala_Resume.pdf`;
+  }resume/Resume-KUSHAL-VALA.pdf`;
 
   return (
     <section className="bg-primary header " ref={homeRef} id="homeSection">
