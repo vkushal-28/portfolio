@@ -43,35 +43,35 @@ const Services = () => {
       ref={serviceRef}
       id="servicesSection">
       <Toaster />
-      <div className="  bg-indigo-400 rounded-tl-[5%]  md:rounded-tl-[9%] rounded-br-[10%] md:rounded-br-[10%]">
-        <div className="min-h-[100vh]  bg-pink-500 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9.9%] md:rounded-br-[9%] ">
-          <div className="min-h-[100vh]   bg-blLight py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9%] md:rounded-br-[10%] flex items-center">
-            <div className="container mx-auto transition-all delay-150 ">
-              <CommonHeader
-                title1={"My"}
-                title2={"Services."}
-                description={
-                  "Welcome to my comprehensive suite of services, where creativity meets functionality. I'm specialize in crafting seamless user experiences through cutting-edge UI/UX design, web Development in latest technologies and Restful APIs. "
-                }
-              />
+      {/* <div className="  bg-indigo-400 rounded-tl-[5%]  md:rounded-tl-[9%] rounded-br-[10%] md:rounded-br-[10%]"> */}
+      {/* <div className="min-h-[100vh]  bg-pink-500 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9.9%] md:rounded-br-[9%] "> */}
+      <div className="min-h-[100vh]   bg-blLight py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9%] md:rounded-br-[10%] flex items-center">
+        <div className="container mx-auto transition-all delay-150 ">
+          <CommonHeader
+            title1={"My"}
+            title2={"Services."}
+            description={
+              "Welcome to my comprehensive suite of services, where creativity meets functionality. I'm specialize in crafting seamless user experiences through cutting-edge UI/UX design, web Development in latest technologies and Restful APIs. "
+            }
+          />
 
-              <Reveal direction="up" delay={0.3} className="w-full h-full ">
-                <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6">
-                  {/* =========== Service Details Card =========== */}
-                  {servicesData.map((service, ind) => (
-                    <ServiceCard
-                      key={ind}
-                      name={service.service_name}
-                      icon={service.icon}
-                      description={service.service_description}
-                    />
-                  ))}
-                </div>
-              </Reveal>
+          <Reveal direction="up" delay={0.3} className="w-full h-full ">
+            <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6">
+              {/* =========== Service Details Card =========== */}
+              {servicesData.map((service, ind) => (
+                <ServiceCard
+                  key={ind}
+                  name={service.service_name}
+                  icon={service.icon}
+                  description={service.service_description}
+                />
+              ))}
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
+      {/* </div> */}
+      {/* </div> */}
     </section>
   );
 };

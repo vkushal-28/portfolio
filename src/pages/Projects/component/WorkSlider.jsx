@@ -34,7 +34,7 @@ const WorkSlider = () => {
       }}
       modules={[FreeMode, Pagination]}
       className="pb-14 pt-6 px-5">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-0 lg:gap-8 cursor-pointer p-6 md:p-4 xl:p-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 grid-rows-2 gap-0 lg:gap-8 cursor-pointer p-6 md:p-4 xl:p-3">
         {allProjectsData.projects.map((data, index) => {
           return (
             <SwiperSlide key={index}>
@@ -42,7 +42,7 @@ const WorkSlider = () => {
                 {/* Gradient shadow */}
                 <div className="absolute max-w-sm  inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-50 blur-md rounded-lg -z-10   group-hover:opacity-90"></div>
 
-                <div className="max-w-sm h-full rounded-lg overflow-hidden shadow-md text-left bg-bl ">
+                <div className="max-w-sm h-full rounded-lg overflow-hidden  shadow-md text-left bg-bl ">
                   <img
                     className="w-full h-auto "
                     src={`${import.meta.env.VITE_IMAGE_URL}projects/${
@@ -50,14 +50,14 @@ const WorkSlider = () => {
                     }`}
                     alt="Sunset in the mountains"
                   />
-                  <div className="px-6 py-4">
-                    <div className="font-bold text-left text-xl mb-2">
+                  <div className="px-3 py-3">
+                    <div className="font-bold  text-left text-xl mb-2">
                       {data.title}
                     </div>
-                    <p className=" text-base text-left line-clamp-5">
+                    <p className=" text-left line-clamp-3">
                       {data.description}
                     </p>
-
+                    {/* 
                     <div className="flex gap-1 mt-3">
                       {data.language_used.length > 0 &&
                         data.language_used.map((lang, i) => (
@@ -71,7 +71,7 @@ const WorkSlider = () => {
                             height={20}
                           />
                         ))}
-                    </div>
+                    </div> */}
 
                     {data.demo_link && (
                       <a

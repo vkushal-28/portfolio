@@ -3,7 +3,7 @@ import { experienceData } from "../../../data/experienceData";
 
 const Experience = () => {
   return (
-    <div className="py-2 px-3 xl:px-0 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start">
+    <div className="py-2 px-1 md:px-2 xl:px-0 flex flex-col gap-y-2 xl:gap-y-4 items-start ">
       <ol className="relative border-s border-blue-400 dark:border-blue-400 transition-all delay-150">
         {experienceData.length > 0 &&
           experienceData.map((experience, i) => {
@@ -16,6 +16,7 @@ const Experience = () => {
                 startDate={experience.start_date}
                 endDate={experience.end_date}
                 description={experience.role_description}
+                short_description={experience.short_description}
               />
             );
           })}

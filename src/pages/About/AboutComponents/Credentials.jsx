@@ -2,14 +2,15 @@ import ExperienceTimelineCard from "./ExperienceTimelineCard";
 
 const Credentials = () => {
   return (
-    <div className="py-2 px-3 xl:px-0 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start">
-      <ol className="relative border-s border-gray-200 dark:border-pink-200 transition-all delay-150">
+    <div className="py-2 px-3 xl:px-0 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start w-full">
+      <ol className="relative border-s border-blue-400 dark:border-blue-400 transition-all delay-150">
         <ExperienceTimelineCard
           role={"Master of Science in Information Technology"}
           companyName={"Shri M. M. Patel Inst. of Sciences and Research"}
           isLatest={true}
           startDate={"2016"}
           endDate={"2018"}
+          address="India"
           description={
             <ul className="list-disc ">
               <li>
@@ -37,6 +38,7 @@ const Credentials = () => {
           isLatest={false}
           startDate={"2013"}
           endDate={"2026"}
+          address="India"
           description={
             <ul className="list-disc">
               <li>

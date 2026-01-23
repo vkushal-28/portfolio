@@ -6,7 +6,7 @@ export const experienceData = [
     start_date: "Nov 2024",
     end_date: null,
     short_description:
-      "Led end-to-end front-end development with React and Next.js, translating Figma designs into scalable, accessible financial applications while optimizing performance, managing complex state, implementing testing best practices, leveraging AWS infrastructure, and mentoring junior developers.",
+      "Led end-to-end front-end development with React and Next.js, translating Figma designs into scalable, accessible financial applications while optimizing performance, managing complex state, and mentoring junior developers.",
     // "Developed and optimized high-performance financial dashboards using React, Next.js, and TypeScript, focusing on scalable architecture, seamless API integration, debugging, testing, and front-end performance optimization.",
     role_description: [
       "Lead front-end development for React and Next.js customer-facing applications, delivering scalable and accessible digital experiences.",
@@ -25,7 +25,7 @@ export const experienceData = [
     start_date: "Jan 2023",
     end_date: "Nov 2024",
     short_description:
-      "Built high-performance enterprise level and Ecommmerce based applications using React, Next.js, and TypeScript, improving UI performance and data efficiency through optimized components, advanced JavaScript concepts, designed backend APIs and Database schemas, robust testing practices, and collaborative code reviews.",
+      "Built high-performance enterprise level and Ecommmerce based applications using React, Next.js, and TypeScript, improving UI performance with reusable components, used advanced JavaScript concepts, designed backend APIs, database schemas, and collaborative code reviews.",
     // "Built high-performance, responsive UIs using React, Next.js, and TypeScript, translating complex technical requirements into intuitive, user-friendly workflows for enterprise level and e-commerce based single page applications (SPAs)",
 
     role_description: [
