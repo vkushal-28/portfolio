@@ -40,7 +40,7 @@ export const experienceData = [
   {
     company_name: "Saturncube Technologies",
     role_name: "Front End Developer",
-    address: "Ahmedabad, India",
+    address: "Ahmedabad ,IN",
     start_date: "July 2019",
     end_date: "Jan 2023",
     short_description:

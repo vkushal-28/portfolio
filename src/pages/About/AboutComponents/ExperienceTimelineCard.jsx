@@ -42,7 +42,7 @@ const ExperienceTimelineCard = ({
       <span className="block mb-2 text-sm font-semibold  w-fit py-1 px-2 bg-blue-900 rounded-md">
         {startDate} - {endDate || "Present"}
       </span>
-      <p className="flex items-start mb-1 font-semibold text-xl text-blue-400 ">
+      <p className="flex items-start mb-1 font-semibold  md:text-lg  lg:text-xl text-blue-400 ">
         {role}
         {/* {isLatest && (
           <span className="bg-blue-100 text-blue-800 font-medium me-2 px-2.5 rounded dark:bg-blue-900 dark:text-blue-200 ms-3">
@@ -50,12 +50,12 @@ const ExperienceTimelineCard = ({
           </span>
         )} */}
       </p>
-      <p className="flex items-start mb-1 font-semibold text-lg text-white">
+      <p className="flex items-start mb-2 md:mb-1 font-semibold  md:text-lg  lg:text-xl text-white">
         @ {companyName}{" "}
         <span className="text-gray-50 ">{` ${address && `, ${address}`}`}</span>
       </p>
 
-      <p className="text-left">{short_description}</p>
+      <p className="text-left italic text-quote">{short_description}</p>
       {/* <p className="mb-4  text-left ">
         <ul className="list-disc ">
           {description.length > 0 &&
