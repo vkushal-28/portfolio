@@ -71,10 +71,13 @@ const Hero = () => {
                 exit="hidden"
                 className=" max-w-sm xl:max-w-xl mx-auto md:mx-0 mb-5 md:mb-8 text-center md:text-justify lg:text-start">
                 <p>
-                  I'm a web developer with a focus on the Full Stack, but still
+                  {/* I'm a web developer with a focus on the Full Stack, but still
                   exploring other technologies and frameworks that catch my
                   interest! if you're looking for a developer to add to your
-                  team, I'd love to hear from you!
+                  team, I'd love to hear from you! */}
+                  Bridging creativity and engineering to build seamless,
+                  high‑impact web experiences. Every line of code I write aims
+                  for clarity, performance, and purpose.
                 </p>
               </Reveal>
               <Reveal direction="up" className=" mb-3 ">

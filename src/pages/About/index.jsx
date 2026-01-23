@@ -78,14 +78,22 @@ const About = () => {
               delay={0.4}
               className="sm:w-full md:w-[700px] xl:w-[580px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
               <p>
-                Hi there! I'm Kushal Vala. I'm a passionate and experienced
+                {/* Hi there! I'm Kushal Vala. I'm a passionate and experienced
                 full-stack developer crafting dynamic and responsive web
                 applications. My journey in the world of coding began before 6
                 years ago with a fascination for turning ideas into functional,
                 user-friendly digital experiences. Armed with expertise in both
                 front-end and back-end technologies, I thrive on the challenges
                 of creating seamless and intuitive solutions. Let's collaborate
-                and bring your digital vision to life!
+                and bring your digital vision to life! */}
+                My journey as a developer began with a passion for turning ideas
+                into interactive experiences. Over the past 6 years, I’ve grown
+                into a Full‑Stack Developer specializing in the MERN stack,
+                driven by the art of writing clean code and crafting thoughtful
+                designs. Every project has taught me the value of best
+                practices, collaboration, and constant learning — and that
+                curiosity continues to push me to build smarter, better, and
+                more meaningful digital solutions.
               </p>
             </Reveal>
 
@@ -113,7 +121,7 @@ const About = () => {
             direction="left"
             delay={0.4}
             className="flex flex-col w-full xl:max-w-[50%] h-full over pt-5 pb-5 lg:pt-4">
-            <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 z-10  w-full overflow-x-scroll no-scrollbar pb-3 transition-all delay-150">
+            <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 md:mb-1 z-10  w-full overflow-x-scroll no-scrollbar pb-3 transition-all delay-150">
               {aboutData.map((item, itemInd) => {
                 return (
                   <div

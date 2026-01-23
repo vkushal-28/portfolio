@@ -37,8 +37,8 @@ const ExperienceTimelineCard = ({
   };
 
   return (
-    <li className="mb-10 ms-6 md:ms-10 ">
-      <span className="absolute flex items-start justify-center w-5 h-5 mt-0 rounded-md  -start-2.5 shadow-md p-[8px] bg-blue-400 delay-150"></span>
+    <li className="mb-10 ms-6 md:ms-10 pt-3">
+      <span className="absolute flex items-start justify-center w-5 h-5 mt-1 rounded-md  -start-2.5 shadow-md p-[8px] bg-blue-400 delay-150 "></span>
       <span className="block mb-2 text-sm font-semibold  w-fit py-1 px-2 bg-blue-900 rounded-md">
         {startDate} - {endDate || "Present"}
       </span>
