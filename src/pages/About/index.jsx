@@ -6,11 +6,11 @@ import { useNav } from "../../hooks/useNav";
 import Certificates from "./AboutComponents/Certificates";
 import Awards from "./AboutComponents/Awards";
 import Reveal from "../../components/Reveal";
-
+import dots from "../../assets/images/decoration/shady-dot.png";
 const aboutData = [
   {
     id: 0,
-    title: "experience",
+    title: "Experience",
   },
   {
     id: 1,
@@ -18,11 +18,11 @@ const aboutData = [
   },
   {
     id: 2,
-    title: "credentials",
+    title: "Credentials",
   },
   {
     id: 3,
-    title: "awards",
+    title: "Awards",
   },
 ];
 
@@ -62,12 +62,13 @@ const About = () => {
 
   return (
     <section
-      className="min-h-full xl:h-[100vh] bg-blLight "
+      className="min-h-full xl:h-[100vh] bg-blLight relative"
       ref={aboutRef}
       id="aboutSection">
       {/* <div className=" xl:h-full bg-pink-500 opacity-90 text-center xl:text-left  lg:rounded-br-[10%] "> */}
+      <img src={dots} className="absolute lg:w-[25%]" />
       <div className="h-full xl:h-full bg-bl py-32 text-center xl:text-left  lg:rounded-br-[11%] ">
-        <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6 transition-all delay-150">
+        <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6 transition-all delay-150 ">
           <div className="flex-1 flex flex-col justify-center w-full transition-all delay-150">
             <Reveal direction="right" className="h2">
               <span className="gradient-text">Crafting</span> Seamless User
@@ -121,7 +122,44 @@ const About = () => {
             direction="left"
             delay={0.4}
             className="flex flex-col w-full xl:max-w-[50%] h-full over pt-5 pb-5 lg:pt-4">
-            <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 md:mb-1 z-10  w-full overflow-x-scroll no-scrollbar pb-3 transition-all delay-150">
+            <div className="relative flex w-full rounded-full bg-indigo-900/50 p-1 mb-2">
+              {/* Sliding background */}
+              <div
+                className="absolute top-1 left-1 h-[calc(100%-8px)] rounded-full bg-pink-500 shadow-sm transition-transform duration-150 ease-out"
+                style={{
+                  width: `calc((100% - 8px) / ${aboutData.length})`,
+                  transform: `translateX(${index * 100}%)`,
+                }}
+              />
+
+              {aboutData.map((item, itemInd) => (
+                <button
+                  key={itemInd}
+                  onClick={() => setIndex(itemInd)}
+                  className={`relative z-10 flex-1 px-4 py-2  font-medium rounded-full text-center transition-colors capitalize
+        ${index === itemInd ? "text-white" : "text-white hover:text-white"}`}>
+                  {item.title}
+                </button>
+              ))}
+            </div>
+
+            {/* <div className="inline-flex rounded-full bg-gray-100 p-1">
+              {aboutData.map((item, itemInd) => {
+                return (
+                  <div
+                    key={itemInd}
+                    className={` ${
+                      index === item.id
+                        ? "bg-white text-black shadow-sm"
+                        : "text-gray-500 hover:text-black"
+                    } px-6 py-2 text-sm font-medium rounded-full transition-all`}
+                    onClick={() => setIndex(itemInd)}>
+                    {item.title}
+                  </div>
+                );
+              })}
+            </div> */}
+            {/* <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 md:mb-1 z-10  w-full overflow-x-scroll no-scrollbar pb-3 transition-all delay-150">
               {aboutData.map((item, itemInd) => {
                 return (
                   <div
@@ -136,7 +174,7 @@ const About = () => {
                   </div>
                 );
               })}
-            </div>
+            </div> */}
             <div className="p-2 xl:p-3 flex flex-col gap-y-0 xl:gap-y-4 items-start h-full overflow-y-scroll">
               {aboutData[index].id === 0 && <Experience />}
               {aboutData[index].id === 1 && <Certificates />}
