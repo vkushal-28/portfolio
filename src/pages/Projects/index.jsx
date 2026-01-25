@@ -5,16 +5,17 @@ import CommonHeader from "../../components/CommonHeader";
 import WorkSlider from "./component/WorkSlider";
 import { useNav } from "../../hooks/useNav";
 import Reveal from "../../components/Reveal";
-
+import bg from "./component/bg2.svg";
 const Projects = () => {
   const projectRef = useNav("Projects");
   return (
     <section
       ref={projectRef}
       id="projectsSection"
-      className="min-h-full rounded-tl-[5%]  md:rounded-tl-[9%] rounded-br-[10%] md:rounded-br-[10%]">
+      className="min-h-full rounded-tl-[5%]  md:rounded-tl-[9%] rounded-br-[10%] md:rounded-br-[10%]  bg-blLight">
       {/* <div className="h-full bg-pink-500 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9.9%] md:rounded-br-[9%] "> */}
-      <div className="h-full bg-blLight py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9%] md:rounded-br-[10%] ">
+      <div className="h-full  py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9%] md:rounded-br-[10%]  ">
+        {/* <img src={bg} className="w-full h-full  object-cover overflow-hidden" /> */}
         <div className="container mx-auto transition-all delay-150">
           <CommonHeader
             title1={"My"}

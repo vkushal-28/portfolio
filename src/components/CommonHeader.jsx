@@ -10,8 +10,8 @@ const CommonHeader = ({ title1, title2, description }) => {
       <Reveal
         delay={0.1}
         direction="left"
-        className="max-w-sm md:max-w-3xl mx-auto  mb-4 xl:mb-20 px-2 ">
-        <p className="text-base">{description}</p>
+        className="max-w-sm md:max-w-3xl mx-auto  mb-14 xl:mb-20 px-2 ">
+        <p className="">{description}</p>
       </Reveal>
     </div>
   );

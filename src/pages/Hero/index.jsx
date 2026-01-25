@@ -6,6 +6,7 @@ import { useNav } from "../../hooks/useNav";
 import Typewriter from "typewriter-effect";
 import Reveal from "../../components/Reveal";
 import { RiArrowDownDoubleFill } from "react-icons/ri";
+import TiltCard from "react-parallax-tilt";
 
 const Hero = () => {
   // hooks
@@ -101,7 +102,9 @@ const Hero = () => {
               <Reveal
                 direction="left"
                 className="md: w-full  max-sm:px-16 transition-colors delay-150">
-                <img src={Imgs.profilebg} alt="hero-img  " />
+                <çTiltCard>
+                  <img src={Imgs.profilebg} alt="hero-img  " />
+                </çTiltCard>
                 {/* <img src={Imgs.webTech} alt="hero-img" /> */}
               </Reveal>
             </div>

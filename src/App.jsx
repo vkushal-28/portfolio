@@ -8,10 +8,27 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import NavProvider from "./context/NavContext";
 import ContactUs from "./pages/ContactUs";
+import AnimatedCursor from "react-animated-cursor";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Fragment>
+      <AnimatedCursor
+        innerSize={7}
+        outerSize={25}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        trailingSpeed={7}
+        innerStyle={{
+          backgroundColor: "white",
+        }}
+        outerStyle={{
+          border: "2px solid white",
+        }}
+      />
       <div className="page">
         <Outlet />
         <NavProvider>
@@ -22,6 +39,7 @@ function App() {
           <Skills />
           <Projects />
           <ContactUs />
+          <Footer />
         </NavProvider>
       </div>
     </Fragment>

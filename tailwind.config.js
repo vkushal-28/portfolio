@@ -26,11 +26,11 @@ module.exports = {
         primary: "#04171e",
         secondary: "#393A47",
         accent: "#00a376",
-        bl: "÷#131430",
+        // bl: "÷#131430",
         bl: "#181337",
 
         // blLight: "#161737",
-        blLight: "#1c1d45",
+        blLight: "#1a1a43",
 
         //    primary: "#131424",
         // secondary: "#393A47",

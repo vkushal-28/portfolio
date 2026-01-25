@@ -34,11 +34,11 @@ const WorkSlider = () => {
       }}
       modules={[FreeMode, Pagination]}
       className="pb-14 pt-6 px-5">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 grid-rows-2 gap-0 lg:gap-8 cursor-pointer p-6 md:p-4 xl:p-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 grid-rows-2 gap-0 lg:gap-8 cursor-pointer p-6 md:p-4 xl:px-3">
         {allProjectsData.projects.map((data, index) => {
           return (
-            <SwiperSlide key={index}>
-              <div className="p-[0.8px] max-w-sm  bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 rounded-lg group transition-all delay-150">
+            <SwiperSlide key={index} className="py-4">
+              <div className="p-[0.8px] max-w-sm  bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 rounded-lg group transition-all delay-150 transform hover:-translate-y-3  duration-200">
                 {/* Gradient shadow */}
                 <div className="absolute max-w-sm  inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-50 blur-md rounded-lg -z-10   group-hover:opacity-90"></div>
 

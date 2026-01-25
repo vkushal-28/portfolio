@@ -7,6 +7,7 @@ import Certificates from "./AboutComponents/Certificates";
 import Awards from "./AboutComponents/Awards";
 import Reveal from "../../components/Reveal";
 import dots from "../../assets/images/decoration/shady-dot.png";
+import dots2 from "../../assets/images/decoration/footer-dotted-right-img.png";
 const aboutData = [
   {
     id: 0,
@@ -67,7 +68,7 @@ const About = () => {
       id="aboutSection">
       {/* <div className=" xl:h-full bg-pink-500 opacity-90 text-center xl:text-left  lg:rounded-br-[10%] "> */}
       <img src={dots} className="absolute lg:w-[25%]" />
-      <div className="h-full xl:h-full bg-bl py-32 text-center xl:text-left  lg:rounded-br-[11%] ">
+      <div className=" h-full xl:h-full bg-bl py-32 text-center xl:text-left  lg:rounded-br-[11%] ">
         <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6 transition-all delay-150 ">
           <div className="flex-1 flex flex-col justify-center w-full transition-all delay-150">
             <Reveal direction="right" className="h2">
@@ -123,11 +124,10 @@ const About = () => {
             delay={0.4}
             className="flex flex-col w-full xl:max-w-[50%] h-full over pt-5 pb-5 lg:pt-4">
             <div className="relative flex w-full rounded-full bg-indigo-900/50 p-1 mb-2">
-              {/* Sliding background */}
               <div
-                className="absolute top-1 left-1 h-[calc(100%-8px)] rounded-full bg-pink-500 shadow-sm transition-transform duration-150 ease-out"
+                className="absolute top-1  h-[calc(100%-8px)] rounded-full bg-pink-500 shadow-sm transition-transform duration-150 ease-out"
                 style={{
-                  width: `calc((100% - 8px) / ${aboutData.length})`,
+                  width: `calc((100%) / ${aboutData.length})`,
                   transform: `translateX(${index * 100}%)`,
                 }}
               />
@@ -136,7 +136,7 @@ const About = () => {
                 <button
                   key={itemInd}
                   onClick={() => setIndex(itemInd)}
-                  className={`relative z-10 flex-1 px-4 py-2  font-medium rounded-full text-center transition-colors capitalize
+                  className={`relative z-10 flex-1 pl-2 py-2  font-medium rounded-full text-center transition-colors capitalize max-sm:text-sm
         ${index === itemInd ? "text-white" : "text-white hover:text-white"}`}>
                   {item.title}
                 </button>
@@ -184,6 +184,8 @@ const About = () => {
           </Reveal>
         </div>
       </div>
+      {/* <img src={dots2} className="absolute lg:w-[25%] bottom-40 right-0 " /> */}
+
       {/* </div> */}
     </section>
   );
