@@ -102,9 +102,9 @@ const Hero = () => {
               <Reveal
                 direction="left"
                 className="md: w-full  max-sm:px-16 transition-colors delay-150">
-                <çTiltCard>
+                <TiltCard>
                   <img src={Imgs.profilebg} alt="hero-img  " />
-                </çTiltCard>
+                </TiltCard>
                 {/* <img src={Imgs.webTech} alt="hero-img" /> */}
               </Reveal>
             </div>
