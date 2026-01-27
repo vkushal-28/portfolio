@@ -99,7 +99,7 @@ const ContactUs = () => {
       <Toaster />
       {/* <div className="rounded-tl-[5%] md:rounded-tl-[9%] "> */}
       {/* <div className="min-h-screen bg-pink-500 text-center rounded-tl-[5%] md:rounded-tl-[10%] rounded-br-[9.9%] md:rounded-br-[9%]"> */}
-      <div className="min-h-screen bg-bl py-16 sm:py-20 md:py-28 text-center rounded-tl-[5%] md:rounded-tl-[10%]">
+      <div className="min-h-screen bg-bl py-16 sm:py-20 md:py-28 text-center rounded-tl-none md:rounded-tl-[10%]">
         <div className="container mx-auto px-4 transition-all delay-150">
           <CommonHeader
             title1={"Get in "}

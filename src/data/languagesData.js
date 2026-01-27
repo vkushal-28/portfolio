@@ -85,7 +85,7 @@ export const skillsData = [
   {
     id: 11,
     icon: images.material,
-    name: "Material UI",
+    name: "MUI",
     shadow_color: "#3178C6",
     exp_level: "Intermediate",
     type: "frontend",
@@ -255,7 +255,7 @@ export const skillsData2 = {
     {
       id: 11,
       icon: images.material,
-      name: "Material UI",
+      name: "MUI",
       shadow_color: "#3178C6",
       exp_level: "Intermediate",
     },
@@ -276,7 +276,7 @@ export const skillsData2 = {
     {
       id: 14,
       icon: images.styled,
-      name: "Styled Components",
+      name: "Styled",
       shadow_color: "#ffd966",
       exp_level: "Experienced",
     },
@@ -320,7 +320,7 @@ export const skillsData2 = {
     },
   ],
 
-  "other tools": [
+  tools: [
     {
       id: 15,
       icon: images.npm,

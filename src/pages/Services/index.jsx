@@ -7,7 +7,7 @@ import { useNav } from "../../hooks/useNav";
 import Reveal from "../../components/Reveal";
 import { Toaster } from "react-hot-toast";
 import TiltCard from "react-parallax-tilt";
-
+import blur from "./bgblur.svg";
 const Services = () => {
   // hooks
   const serviceRef = useNav("Services");
@@ -37,14 +37,14 @@ const Services = () => {
     //     <div className="h-full min-h-[100vh] bg-blLight py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9%] md:rounded-br-[10%] ">
     //       <div className="container mx-auto">
     <section
-      className=" min-h-[100vh]  bg-bl"
+      className=" min-h-[100vh] bg-bl"
       style={{ height: "fit-content" }}
       ref={serviceRef}
       id="servicesSection">
       <Toaster />
       {/* <div className="  bg-indigo-400 rounded-tl-[5%]  md:rounded-tl-[9%] rounded-br-[10%] md:rounded-br-[10%]"> */}
       {/* <div className="min-h-[100vh]  bg-pink-500 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9.9%] md:rounded-br-[9%] "> */}
-      <div className="min-h-[100vh]  bg-blLight py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9%] md:rounded-br-[10%] flex items-center">
+      <div className="min-h-[100vh]  bg-blLight py-20 md:py-32 text-center rounded-tl-none md:rounded-tl-[10%] rounded-br-none md:rounded-br-[10%] flex items-center">
         <div className="container mx-auto transition-all delay-150 ">
           <CommonHeader
             title1={"My"}
@@ -76,6 +76,12 @@ const Services = () => {
                       style={{
                         boxShadow: `-2px -2px 4px #818cf8c7, 3px 3px 7px rgba(0, 0, 0, 0.5)`,
                       }}>
+                      <div
+                        className="absolute -top-10 -right-10 w-24 h-24 
+               rounded-full bg-indigo-500 
+               blur-3xl pointer-events-none z-0"
+                      />
+
                       {/* Gradient overlay */}
                       <div
                         classNam

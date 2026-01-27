@@ -13,7 +13,7 @@ const Skills = () => {
       style={{ height: "fit-content" }}
       ref={skillsRef}
       id="skillsSection">
-      <div className="h-full bg-bl py-20 md:py-32 text-center rounded-tl-[5%]  md:rounded-tl-[10%] rounded-br-[9%] md:rounded-br-[10%] ">
+      <div className="h-full bg-bl py-20 md:py-32 text-center rounded-tl-none  md:rounded-tl-[10%] rounded-br-none md:rounded-br-[10%] ">
         <div className=" mx-auto container  text-center transition-all delay-150">
           <CommonHeader
             title1={"My"}
@@ -24,23 +24,23 @@ const Skills = () => {
           />
           <Reveal>
             {Object.entries(skillsData2).map(([category, skills]) => (
-              <div className="block md:flex gap-10 mb-14 lg:mb-10">
-                <div className="w-[150px] lg:w-[15%] mb-5 lg:mb-0">
-                  <p
-                    className=" rounded-lg bg-indigo-600/60 text-white font-semibold  text-center p-3.5 capitalize"
-                    style={{
-                      boxShadow: `-2px -2px 4px #fff, 3px 3px 7px rgba(0, 0, 0, 0.5)`,
-                    }}
+              <div className="block lg:flex gap-10 mb-10 ">
+                <div className="w-fit lg:w-[12%] mb-5 lg:mb-0">
+                  <div
+                    className=" rounded-lg border border-indigo-400 text-white font-semibold  text-center px-2 lg:p-3 capitalize w-full"
+                    // style={{
+                    //   boxShadow: `-2px -2px 4px #fff, 3px 3px 7px rgba(0, 0, 0, 0.5)`,
+                    // }}
                     // className="font-bold text-2xl"
                   >
                     {category}
-                  </p>
+                  </div>
                 </div>
-                <div className="flex flex-1 flex-wrap  gap-5 lg:gap-8">
+                <div className="grid md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 sm:grid-cols-6 grid-cols-5 gap-3 lg:gap-5 w-full">
                   {skills.map((skill) => {
                     return (
                       <div
-                        className=" flex items-center min-w-[120px] h-fit rounded-lg bg-indigo-900/50  p-3 gap-2"
+                        className=" flex flex-col md:flex-row items-center  h-fit rounded-lg bg-indigo-800/50  p-2 md:p-2.5 gap-1 md:gap-x-1.5"
                         key={skill.id}
                         style={{
                           boxShadow: `-2px -2px 4px ${skill.shadow_color}, 3px 3px 7px rgba(0, 0, 0, 0.5)`,
@@ -50,9 +50,11 @@ const Skills = () => {
                             skill.icon
                           }`}
                           alt={`skill-${skill.id}`}
-                          className=" w-7 h-7  md:w-8  md:h-8 "
+                          className=" h-7  md:h-8"
                         />
-                        <p className=" font-normal ">{skill.name}</p>
+                        <p className=" font-normal text-sm lg:text-base">
+                          {skill.name}
+                        </p>
                       </div>
                     );
                   })}

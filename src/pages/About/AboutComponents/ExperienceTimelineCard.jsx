@@ -1,6 +1,8 @@
 // import { FaLaptop } from "react-icons/fa";
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { GoArrowUpRight } from "react-icons/go";
+import { IoCloseOutline } from "react-icons/io5";
 
 const ExperienceTimelineCard = ({
   role,
@@ -8,33 +10,24 @@ const ExperienceTimelineCard = ({
   address = "",
   startDate,
   endDate,
+  description,
   short_description,
 }) => {
-  const [open, setOpen] = useState(false);
-  const ModalSection = (e) => {
-    return (
-      <>
-        {open && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
-            onClick={(e) => {
-              if (e.target === e.currentTarget) setOpen(false);
-            }}>
-            <div className="bg-white rounded-lg shadow-lg w-full max-w-md relative p-6">
-              <button
-                onClick={() => setOpen(false)}
-                className="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
-                ✕
-              </button>
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const modalRef = useRef();
 
-              <h2 className="text-lg font-semibold mb-2">Modal title</h2>
-              <p className="text-sm text-gray-600">Your content goes here.</p>
-            </div>
-          </div>
-        )}
-      </>
-    );
-  };
+  // Close modal on outside click
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        setIsModalOpen(false);
+      }
+    };
+    if (isModalOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isModalOpen]);
 
   return (
     <li className="mb-5 ms-6 md:ms-10 pt-3">
@@ -55,7 +48,53 @@ const ExperienceTimelineCard = ({
         <span className="text-gray-50 ">{` ${address && `, ${address}`}`}</span>
       </p>
 
-      <p className="text-left italic text-quote">{short_description}</p>
+      <p className="text-left italic text-quote ">
+        {short_description}{" "}
+        <span
+          className="text-indigo-400 text-sm inline"
+          onClick={() => setIsModalOpen(true)}>
+          View more..
+        </span>
+      </p>
+      {/* Arrow Icon */}
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 p-4 
+         ">
+          <div
+            ref={modalRef}
+            className="relative w-full lg:max-w-5xl md:max-w-3xl bg-gradient-to-br bg-bl rounded-2xl shadow-lg p-4 lg:p-8 text-white text-left  overflow-hidden">
+            {/* Close Button */}
+            <IoCloseOutline
+              className="absolute top-4 right-4 text-white text-xl cursor-pointer hover:text-gray-300"
+              onClick={() => setIsModalOpen(false)}
+            />
+            <p className="text-sm mb-2 lg:mb-4 font-semibold text-white bg-indigo-900 inline-block py-1 px-2 rounded">
+              {startDate} - {endDate || "Present"}
+            </p>
+            <h2 className="text-indigo-400 text-md lg:text-xl font-bold mb-1">
+              {role}
+            </h2>
+            <div className="font-semibold mb-4 lg:mb-7 text-md lg:text-xl">
+              @ {companyName} {address && `, ${address}`}
+            </div>
+
+            <div className="mb-2 italic text-sm lg:text-base">{`[My responsibilities]`}</div>
+            <div className=" h-full overflow-auto">
+              <ul className=" text-left px-5">
+                {description.length > 0 &&
+                  description.map((data, i) => (
+                    <li className="list-disc text-sm lg:text-base">
+                      <p>{data}</p>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
       {/* <p className="mb-4  text-left ">
         <ul className="list-disc ">
           {description.length > 0 &&

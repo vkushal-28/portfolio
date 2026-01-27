@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-blLight py-3 text-center">
+    <footer className="bg-blLight py-3 px-3 text-center">
       <p className="text-sm">
         © 2026 Kushal Vala - Engineered with React, Tailwind CSS, and scalable
         front-end architecture.
