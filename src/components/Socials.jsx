@@ -9,10 +9,6 @@ const Socials = () => {
       icon: <RiGithubLine />,
       link: "https://github.com/vkushal-28/",
     },
-    // {
-    //   icon: <RiFacebookLine />,
-    //   link: "https://www.linkedin.com/in/kushal-vala-713862207/",
-    // },
   ];
   return (
     <div className="flex items-center gap-x-2  text-lg ">

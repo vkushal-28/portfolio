@@ -1,4 +1,4 @@
-import { skillsData, skillsData2 } from "../../data/languagesData";
+import { skillsData2 } from "../../data/languagesData";
 import CommonHeader from "../../components/CommonHeader";
 import { useNav } from "../../hooks/useNav";
 import Reveal from "../../components/Reveal";
