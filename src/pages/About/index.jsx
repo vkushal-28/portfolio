@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import CountUpCard from "./AboutComponents/CountUpCard";
 import Experience from "./AboutComponents/Experience";
 import Credentials from "./AboutComponents/Credentials";
@@ -57,9 +57,13 @@ const countUpCardData = [
 const About = () => {
   // hooks
   const aboutRef = useNav("About");
+  const btnRefs = useRef([]);
 
   // state variables
   const [index, setIndex] = useState(0);
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+
+  const activeBtn = btnRefs.current[index];
 
   return (
     <section
@@ -123,21 +127,29 @@ const About = () => {
             direction="left"
             delay={0.4}
             className="flex flex-col w-full xl:max-w-[50%] h-full over pt-5 pb-5 lg:pt-4">
-            <div className="relative flex w-full rounded-full bg-indigo-900/50 p-1 mb-2">
+            <div className="relative flex w-full rounded-full bg-indigo-900/50 p-1 mb-2 overflow-auto">
               <div
-                className="absolute top-1  h-[calc(100%-8px)] rounded-full bg-pink-500 shadow-sm transition-transform duration-150 ease-out"
-                style={{
-                  width: `calc((100%) / ${aboutData.length})`,
-                  transform: `translateX(${index * 100}%)`,
-                }}
+                className="absolute top-1 h-[calc(100%-8px)] rounded-full bg-pink-500 shadow-sm transition-all duration-200 ease-out"
+                style={
+                  isMobile
+                    ? {
+                        width: `${activeBtn?.offsetWidth}px`,
+                        transform: `translateX(${activeBtn?.offsetLeft}px)`,
+                      }
+                    : {
+                        width: `calc(100% / ${aboutData.length})`,
+                        transform: `translateX(${index * 98}%)`,
+                      }
+                }
               />
 
               {aboutData.map((item, itemInd) => (
                 <button
                   key={itemInd}
+                  ref={(el) => (btnRefs.current[itemInd] = el)}
                   onClick={() => setIndex(itemInd)}
-                  className={`relative z-10 flex-1 pl-2 py-2  font-medium rounded-full text-center transition-colors capitalize max-sm:text-sm
-        ${index === itemInd ? "text-white" : "text-white hover:text-white"}`}>
+                  className={`z-10 px-3 pt-2 pb-3 font-medium rounded-full transition-colors capitalize max-sm:text-sm w-full
+      ${index === itemInd ? "text-white" : "text-white hover:text-white"}`}>
                   {item.title}
                 </button>
               ))}

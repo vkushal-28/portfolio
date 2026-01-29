@@ -83,9 +83,7 @@ const Services = () => {
                       />
 
                       {/* Gradient overlay */}
-                      <div
-                        classNam
-                        e="absolute inset-0 rounded-xl bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400 opacity-0 hover:opacity-20 transition-opacity duration-300 pointer-events-none z-0"></div>
+                      <div className="absolute inset-0 rounded-xl bg-gradient-to-tr from-pink-400 via-purple-400 to-indigo-400 opacity-0 hover:opacity-20 transition-opacity duration-300 pointer-events-none z-0"></div>
 
                       {/* Icon */}
 

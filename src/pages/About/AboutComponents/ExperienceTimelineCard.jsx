@@ -35,7 +35,7 @@ const ExperienceTimelineCard = ({
       <span className="block mb-2 text-sm font-semibold  w-fit py-1 px-2 bg-indigo-900 rounded-md">
         {startDate} - {endDate || "Present"}
       </span>
-      <p className="flex items-start mb-1 font-semibold  md:text-lg  lg:text-xl text-indigo-400 ">
+      <p className="text-left mb-1 font-semibold  md:text-lg  lg:text-xl text-indigo-400 ">
         {role}
         {/* {isLatest && (
           <span className="bg-indigo-100 text-indigo-800 font-medium me-2 px-2.5 rounded dark:bg-indigo-900 dark:text-indigo-200 ms-3">
@@ -43,19 +43,23 @@ const ExperienceTimelineCard = ({
           </span>
         )} */}
       </p>
-      <p className="flex items-start mb-2 md:mb-1 font-semibold  md:text-lg  lg:text-xl text-white">
-        @ {companyName}{" "}
-        <span className="text-gray-50 ">{` ${address && `, ${address}`}`}</span>
+      <p className="flex items-start max-md:flex-col mb-2 md:mb-1 font-semibold  md:text-lg  lg:text-xl text-left text-white">
+        @ {`${companyName},`}
+        <span className="text-gray-50 block">{` ${
+          address && ` ${address}`
+        }`}</span>
       </p>
 
-      <p className="text-left italic text-quote ">
-        {short_description}{" "}
-        <span
-          className="text-indigo-400 text-sm inline"
-          onClick={() => setIsModalOpen(true)}>
-          View more..
-        </span>
-      </p>
+      {short_description && (
+        <p className="text-left italic text-quote ">
+          {short_description}{" "}
+          <span
+            className="text-indigo-400 text-sm inline"
+            onClick={() => setIsModalOpen(true)}>
+            View more..
+          </span>
+        </p>
+      )}
       {/* Arrow Icon */}
 
       {/* Modal */}
