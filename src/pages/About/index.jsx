@@ -101,22 +101,19 @@ const About = () => {
                 curiosity continues to push me to build smarter, better, and
                 more meaningful digital solutions.
               </p>
-            </Reveal>
 
-            {/* counters */}
-            <Reveal
-              direction="right"
-              delay={0.6}
-              className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8 transition-all delay-150">
-              <div className="flex justify-center w-full xl:gap-x-7">
-                {countUpCardData.map((data, i) => (
-                  <CountUpCard
-                    key={data.id}
-                    start={data.startCount}
-                    end={data.endCount}
-                    details={data.title}
-                  />
-                ))}
+              {/* counters */}
+              <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8 transition-all delay-150">
+                <div className="flex justify-center w-full xl:gap-x-7 mt-8">
+                  {countUpCardData.map((data, i) => (
+                    <CountUpCard
+                      key={data.id}
+                      start={data.startCount}
+                      end={data.endCount}
+                      details={data.title}
+                    />
+                  ))}
+                </div>
               </div>
             </Reveal>
           </div>

@@ -15,7 +15,7 @@ const Reveal = ({ children, direction, delay, className }) => {
 
   return (
     <motion.div
-      variants={fadeIn(direction || "up", delay || 0.1)}
+      variants={fadeIn(direction || "up", delay || 0.2)}
       initial="hidden"
       ref={ref}
       animate={mainControls}

@@ -40,20 +40,9 @@ export const allProjectsData = {
       project_link: "https://github.com/vkushal-28/849e43cb-blogiflux-web/",
       demo_link: "https://blogiflux.netlify.app",
     },
-    {
-      id: 3,
-      language_used: [img.react, img.vite, img.tailwind, img.html, img.css],
-      path: img.portfolio,
-      updated_on: "2023-03-13T19:48:35.192055Z",
-      title: "My Portfolio",
-      description:
-        "This is my personal portfolio website to showcase all my skills details, project details with live preview link, social media profiles, and other contact details. You can cntact me by given email and also connect me on LinkedIn with given profile link.",
-      project_link: "https://github.com/vkushal-28/portfolio/",
-      // demo_link: "https://vkushal-28.github.io/portfolio/",
-    },
 
     {
-      id: 4,
+      id: 3,
       language_used: [img.react, img.tailwind, img.html],
       path: img.nike,
       updated_on: "2023-03-13T19:48:35.192055Z",
@@ -62,6 +51,17 @@ export const allProjectsData = {
         "This Nike Clone site is created display new products, upcoming products and other sections. I've designed this site to demonstrate my designing skills in react and tailwind css.",
       project_link: "https://github.com/vkushal-28/nike/",
       demo_link: "https://nike-rosy.vercel.app/",
+    },
+    {
+      id: 4,
+      language_used: [img.react, img.vite, img.tailwind, img.html, img.css],
+      path: img.portfolio,
+      updated_on: "2023-03-13T19:48:35.192055Z",
+      title: "My Portfolio",
+      description:
+        "This is my personal portfolio website to showcase all my skills details, project details with live preview link, social media profiles, and other contact details. You can cntact me by given email and also connect me on LinkedIn with given profile link.",
+      // project_link: "https://github.com/vkushal-28/portfolio/",
+      demo_link: "https://vkushal-28.github.io/portfolio/",
     },
     {
       id: 5,
@@ -83,25 +83,6 @@ export const allProjectsData = {
       demo_link: "https://evindia.online/",
     },
     {
-      id: 6,
-      language_used: [
-        img.react,
-        img.redux,
-        img.html,
-        img.css,
-        img.bootstrap,
-        img.node,
-        img.express,
-      ],
-      path: img.elumat,
-      updated_on: "2023-03-13T19:48:35.192055Z",
-      title: "Elumat",
-      description:
-        "Elumat is a designed to motivate students to practise mathematics by solving puzzles. It provides a creative way for teachers to combine maths and language into a self-checking and unique puzzle. They illustrate how maths can be catered to a wide variety of student ability. Print sets of PDFs for many purpose.",
-      project_link: null,
-      demo_link: "http://elumat.com/",
-    },
-    {
       id: 7,
       language_used: [
         img.next,
@@ -120,18 +101,37 @@ export const allProjectsData = {
       project_link: null,
       demo_link: "https://www.mragain.nl/",
     },
+    // {
+    //   id: 6,
+    //   language_used: [
+    //     img.react,
+    //     img.redux,
+    //     img.html,
+    //     img.css,
+    //     img.bootstrap,
+    //     img.node,
+    //     img.express,
+    //   ],
+    //   path: img.elumat,
+    //   updated_on: "2023-03-13T19:48:35.192055Z",
+    //   title: "Elumat",
+    //   description:
+    //     "Elumat is a designed to motivate students to practise mathematics by solving puzzles. It provides a creative way for teachers to combine maths and language into a self-checking and unique puzzle. They illustrate how maths can be catered to a wide variety of student ability. Print sets of PDFs for many purpose.",
+    //   project_link: null,
+    //   demo_link: "http://elumat.com/",
+    // },
 
-    {
-      id: 8,
-      language_used: [img.react, img.redux, img.bootstrap, img.html, img.css],
-      path: img.time2Enter1,
-      updated_on: "2023-03-13T19:48:35.192055Z",
-      title: "Time2Enter",
-      description:
-        "This site contains multiple accouns (User, secretary, and Admin) where User can view and participate in events, purchase plans, Info center categories and sub categories. Admin can handle users, data exhibitors and all important informations.",
-      project_link: null,
-      demo_link: "https://easy2showdev.com/",
-    },
+    // {
+    //   id: 8,
+    //   language_used: [img.react, img.redux, img.bootstrap, img.html, img.css],
+    //   path: img.time2Enter1,
+    //   updated_on: "2023-03-13T19:48:35.192055Z",
+    //   title: "Time2Enter",
+    //   description:
+    //     "This site contains multiple accouns (User, secretary, and Admin) where User can view and participate in events, purchase plans, Info center categories and sub categories. Admin can handle users, data exhibitors and all important informations.",
+    //   project_link: null,
+    //   demo_link: "https://easy2showdev.com/",
+    // },
     // {
     //   id: 8,
     //   language_used: [
@@ -150,17 +150,17 @@ export const allProjectsData = {
     //   project_link: null,
     //   demo_link: null,
     // },
-    {
-      id: 9,
-      language_used: [img.react, img.bootstrap, img.html, img.css, img.js],
-      path: img.saturncube,
-      updated_on: "2023-03-13T19:48:35.192055Z",
-      title: "Saturncube Technologies",
-      description:
-        "This is an updated brand new website made for Saturncube Technologies where I worked before. cliients can know everything about the company and it's services and also contact to the management team. first phase launched and working on second one",
-      project_link: null,
-      demo_link: "https://saturncube.com/",
-    },
+    // {
+    //   id: 9,
+    //   language_used: [img.react, img.bootstrap, img.html, img.css, img.js],
+    //   path: img.saturncube,
+    //   updated_on: "2023-03-13T19:48:35.192055Z",
+    //   title: "Saturncube Technologies",
+    //   description:
+    //     "This is an updated brand new website made for Saturncube Technologies where I worked before. cliients can know everything about the company and it's services and also contact to the management team. first phase launched and working on second one",
+    //   project_link: null,
+    //   demo_link: "https://saturncube.com/",
+    // },
     // {
     //   id: 10,
     //   language_used: [

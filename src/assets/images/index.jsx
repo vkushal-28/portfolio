@@ -25,17 +25,17 @@ const npm = "npm.svg";
 const react = "react.svg";
 const redux = "redux.svg";
 const elumat = "elumat.png";
-const evIndia = "ev-india.png";
+const evIndia = "ev-India.png";
 const memories = "memories.png";
-const mragain = "mragain.png";
-const portfolio = "portfolio.png";
+const mragain = "MrAgain.png";
+const portfolio = "Portfolio.png";
 const saturncube = "saturncube.png";
 const staffRoster = "staff-roster.png";
 const time2Enter1 = "easy2show.png";
 const time2Enter3 = "time2Enter3.png";
-const nike = "nike.png";
-const blogiflux = "blogiflux.png";
-const chatty = "Chatty-Chat Screen.png";
+const nike = "Nike.png";
+const blogiflux = "Blogiflux.png";
+const chatty = "Chatty.png";
 const socket = "socket.io.png";
 
 export {
