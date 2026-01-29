@@ -8,7 +8,7 @@ import { allProjectsData } from "../../../data/projectsData";
 
 const WorkSlider = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 cursor-pointer">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer">
       {allProjectsData.projects.map((data, index) => {
         return (
           <div className="p-[0.8px]   bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 rounded-lg group transition-all delay-150 transform hover:-translate-y-3  duration-200">
@@ -48,7 +48,7 @@ const WorkSlider = () => {
                       href={data.demo_link}
                       target="_blank"
                       rel="noreferrer"
-                      className=" relative inline-flex  items-center justify-center mt-4 p-[1.5px] mb-1 me-1 overflow-hidden text-sm  text-gray-900 rounded-lg group  bg-gradient-to-l hover:bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 group-hover:from-indigo-500 group-hover:via-purple-500 group-hover:to-pink-500  hover:text-white dark:text-white  ">
+                      className=" relative inline-flex  items-center justify-center mt-4 p-[1.5px] mb-1 me-1 overflow-hidden text-sm   rounded-lg border border-indigo-400 hover:bg-indigo-700 text-white">
                       <span className="relative px-3 py-0.5 transition-all ease-in duration-175 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex items-center gap-2">
                         <LuCircleArrowOutUpRight /> Preview
                       </span>
