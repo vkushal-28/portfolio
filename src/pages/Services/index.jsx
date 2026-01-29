@@ -71,7 +71,7 @@ const Services = () => {
               return (
                 <Reveal
                   direction="up"
-                  delay={0.1 * index}
+                  delay={0.15 * index}
                   className="w-full h-full ">
                   <TiltCard>
                     <div

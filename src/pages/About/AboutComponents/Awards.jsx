@@ -3,13 +3,13 @@ import { RiAwardFill } from "react-icons/ri";
 
 const Awards = () => {
   return (
-    <div className="py-2 px-3 xl:px-0 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start transition-all delay-150 w-full">
+    <div className="py-2 px-0 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start transition-all delay-150 w-full">
       <ol className="relative">
-        <li className="mb-10 ms-6">
+        <li className="mb-10 ms-6 text-left">
           <span className="absolute flex items-start justify-center w-8 h-8  rounded-full -start-3 ">
             <RiAwardFill className="text-3xl text-yellow-500" />
           </span>
-          <h3 className="flex items-center justify-between mb-1 text-xl font-semibold  text-yellow-500 w-full ml-2 ">
+          <h3 className="flex items-center justify-between mb-1 text-lg md:text-xl font-semibold  text-yellow-500 w-full ml-2 ">
             Best Employee of the Year
             <span className="bg-blue-100 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 ms-3 cursor-pointer">
               <a
@@ -22,7 +22,7 @@ const Awards = () => {
               </a>
             </span>
           </h3>
-          <div className="flex items-start mb-1 text-lg font-semibold  text-white ml-2">
+          <div className="flex items-start mb-1 text-md md:text-lg font-semibold  text-white ml-2">
             @ Saturncube Technologies
           </div>
 
