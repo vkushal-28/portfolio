@@ -15,12 +15,12 @@ const Reveal = ({ children, direction, delay, className }) => {
 
   return (
     <motion.div
-      variants={fadeIn(direction || "up", delay || 0.2)}
+      variants={fadeIn(direction || "up", delay || 0.1)}
       initial="hidden"
       ref={ref}
       animate={mainControls}
       exit="hidded"
-      transition={{ duration: 0.2, delay: 0.25 }}
+      transition={{ duration: 0.1, delay: 0.25 }}
       className={className}>
       {children}
     </motion.div>

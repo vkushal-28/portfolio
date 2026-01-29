@@ -36,7 +36,7 @@ const Skills = () => {
                     {category}
                   </div>
                 </div>
-                <div className="grid md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 sm:grid-cols-6 grid-cols-5 gap-3 lg:gap-5 w-full">
+                <div className="grid md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 sm:grid-cols-6 grid-cols-4 gap-3 lg:gap-5 w-full">
                   {skills.map((skill) => {
                     return (
                       <div
@@ -52,7 +52,7 @@ const Skills = () => {
                           alt={`skill-${skill.id}`}
                           className=" h-7  md:h-8"
                         />
-                        <p className=" font-normal text-sm lg:text-base">
+                        <p className=" font-normal text-xs sm:text-sm lg:text-base">
                           {skill.name}
                         </p>
                       </div>

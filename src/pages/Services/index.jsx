@@ -54,11 +54,11 @@ const Services = () => {
             }
           />
 
-          <Reveal direction="up" delay={0.3} className="w-full h-full ">
-            {/* <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6"> */}
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {/* =========== Service Details Card =========== */}
-              {/* {servicesData.map((service, ind) => (
+          {/* <Reveal direction="up" delay={0.3} className="w-full h-full "> */}
+          {/* <div className=" h-full flex flex-col lg:flex-row items-center justify-around xl:flex-row gap-6"> */}
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {/* =========== Service Details Card =========== */}
+            {/* {servicesData.map((service, ind) => (
                 <ServiceCard
                   key={ind}
                   name={service.service_name}
@@ -66,9 +66,13 @@ const Services = () => {
                   description={service.service_description}
                 />
               ))} */}
-              {servicesData2.map((service) => {
-                const Icon = service.shadow_icon;
-                return (
+            {servicesData2.map((service, index) => {
+              const Icon = service.shadow_icon;
+              return (
+                <Reveal
+                  direction="up"
+                  delay={0.1 * index}
+                  className="w-full h-full ">
                   <TiltCard>
                     <div
                       key={service.id}
@@ -98,10 +102,11 @@ const Services = () => {
                       <p className="relative z-10 ">{service.description}</p>
                     </div>
                   </TiltCard>
-                );
-              })}
-            </div>
-          </Reveal>
+                </Reveal>
+              );
+            })}
+          </div>
+          {/* </Reveal> */}
         </div>
       </div>
       {/* </div> */}
