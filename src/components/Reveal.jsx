@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
-import { fadeIn } from "../helpers/variants";
+import { fadeIn } from "../utils/variants";
 
 const Reveal = ({ children, direction, delay, className }) => {
   const ref = useRef();

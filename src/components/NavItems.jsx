@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { NavContext } from "../context/NavContext";
 
 const NavItems = () => {
-  const { activeLinkId } = useContext(NavContext);
+  const { activeLinkId, setActiveLinkId } = useContext(NavContext);
 
   const navLinks = [
     "Home",

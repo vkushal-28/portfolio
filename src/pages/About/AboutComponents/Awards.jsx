@@ -46,12 +46,5 @@ const Awards = () => {
     </div>
   );
 };
-Awards.propTypes = {
-  role: PropTypes.string.isRequired,
-  companyName: PropTypes.string.isRequired,
-  isLatest: PropTypes.bool.isRequired,
-  startDate: PropTypes.string.isRequired,
-  endDate: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-};
+
 export default Awards;

@@ -1,7 +1,6 @@
 // import { FaLaptop } from "react-icons/fa";
 import PropTypes from "prop-types";
 import { useEffect, useRef, useState } from "react";
-import { GoArrowUpRight } from "react-icons/go";
 import { IoCloseOutline } from "react-icons/io5";
 
 const ExperienceTimelineCard = ({
@@ -9,7 +8,7 @@ const ExperienceTimelineCard = ({
   companyName,
   address = "",
   startDate,
-  endDate,
+  endDate = "",
   description,
   short_description,
 }) => {
@@ -37,11 +36,6 @@ const ExperienceTimelineCard = ({
       </span>
       <p className="text-left mb-1 font-semibold  md:text-lg  lg:text-xl text-indigo-400 ">
         {role}
-        {/* {isLatest && (
-          <span className="bg-indigo-100 text-indigo-800 font-medium me-2 px-2.5 rounded dark:bg-indigo-900 dark:text-indigo-200 ms-3">
-            Latest
-          </span>
-        )} */}
       </p>
       <p className="flex items-start max-md:flex-col mb-2 md:mb-1 font-semibold  md:text-lg  lg:text-xl text-left text-white">
         @ {`${companyName},`}
@@ -111,9 +105,8 @@ const ExperienceTimelineCard = ({
 ExperienceTimelineCard.propTypes = {
   role: PropTypes.string.isRequired,
   companyName: PropTypes.string.isRequired,
-  isLatest: PropTypes.bool.isRequired,
   startDate: PropTypes.string.isRequired,
-  endDate: PropTypes.string.isRequired,
+  endDate: PropTypes.string,
   description: PropTypes.array.isRequired,
 };
 

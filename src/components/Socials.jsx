@@ -9,7 +9,7 @@ const Socials = () => {
       icon: <RiGithubLine />,
       link: "https://github.com/vkushal-28/",
     },
-  ];  
+  ];
   return (
     <div className="flex items-center gap-x-2  text-lg ">
       {socialsData.map((social, ind) => (

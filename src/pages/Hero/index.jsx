@@ -1,7 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
-// components
 import * as Imgs from "../../assets/images/index";
-import { fadeIn } from "../../helpers/variants";
+import { fadeIn } from "../../utils/variants";
 import { useNav } from "../../hooks/useNav";
 import Typewriter from "typewriter-effect";
 import Reveal from "../../components/Reveal";
@@ -9,7 +7,6 @@ import { RiArrowDownDoubleFill } from "react-icons/ri";
 import TiltCard from "react-parallax-tilt";
 
 const Hero = () => {
-  // hooks
   const homeRef = useNav("Home");
 
   const resume = `${
@@ -38,7 +35,7 @@ const Hero = () => {
                     typewriter
                       .pauseFor(500)
                       .typeString(
-                        "<strong><span style=color:#28B463; font-size=14px>Web Developer</span></strong>"
+                        "<strong><span style=color:#28B463; font-size=14px>Fullstack Developer</span></strong>"
                       )
                       .pauseFor(500)
                       .deleteAll()
@@ -70,12 +67,8 @@ const Hero = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className=" max-w-sm xl:max-w-xl mx-auto md:mx-0 mb-5 md:mb-8 text-center md:text-justify lg:text-start">
+                className=" max-w-sm xl:max-w-xl mx-auto md:mx-0 mb-5 md:mb-8 text-center lg:text-start">
                 <p>
-                  {/* I'm a web developer with a focus on the Full Stack, but still
-                  exploring other technologies and frameworks that catch my
-                  interest! if you're looking for a developer to add to your
-                  team, I'd love to hear from you! */}
                   Bridging creativity and engineering to build seamless,
                   high‑impact web experiences. Every line of code I write aims
                   for clarity, performance, and purpose.
@@ -105,7 +98,6 @@ const Hero = () => {
                 <TiltCard>
                   <img src={Imgs.profilebg} alt="hero-img  " />
                 </TiltCard>
-                {/* <img src={Imgs.webTech} alt="hero-img" /> */}
               </Reveal>
             </div>
           </div>

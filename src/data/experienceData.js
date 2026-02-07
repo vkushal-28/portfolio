@@ -7,7 +7,6 @@ export const experienceData = [
     end_date: null,
     short_description:
       "Led end-to-end front-end development with React and Next.js, translating Figma designs into scalable, accessible financial applications while optimizing performance, managing complex state, and mentoring junior developers.",
-    // "Developed and optimized high-performance financial dashboards using React, Next.js, and TypeScript, focusing on scalable architecture, seamless API integration, debugging, testing, and front-end performance optimization.",
     role_description: [
       "Lead front-end development for React and Next.js customer-facing applications, delivering scalable and accessible digital experiences.",
       "Converted Figma/UI designs into pixel-perfect, responsive components, improving user engagement and UX consistency.",
@@ -26,8 +25,6 @@ export const experienceData = [
     end_date: "Nov 2024",
     short_description:
       "Built high-performance enterprise level and Ecommmerce based applications using React, Next.js, and TypeScript, improving UI performance with reusable components, used advanced JavaScript concepts, designed backend APIs, database schemas, and collaborative code reviews.",
-    // "Built high-performance, responsive UIs using React, Next.js, and TypeScript, translating complex technical requirements into intuitive, user-friendly workflows for enterprise level and e-commerce based single page applications (SPAs)",
-
     role_description: [
       "Built high-performance, responsive UIs using React, Next.js, and TypeScript, translating complex technical requirements into intuitive, user-friendly workflows.",
       "Enhanced app performance by 27% through modular component design and code optimization",
@@ -54,18 +51,3 @@ export const experienceData = [
     ],
   },
 ];
-
-// const role_description_sapratigs = [
-//   "Developed dynamic and 100% responsive web apps using React JS and Next JS including the implementation of Hooks, Integrated state management with Redux for efficient data flow and application control.",
-//   " Designed responsive web application for a 100% visually engaging user experience using HTML5, CSS3, Bootstrap Material-UI, and Tailwind CSS and more UI / UX components.",
-//   "Utilized JSX, and JavaScript (ES6+) to create 91.29% scalable and maintainable code.",
-//   "Utilized Git platforms like GitHub Actions, GitLab, pipelines, AWS and Bitbucket for version control system, continuous integration and deployment.",
-// ];
-
-// const role_description_saturncube = [
-//   "Developed 15+ dynamic and 100% responsive user interface using React JS, including the implementation of React Hooks, Context APIs, state management with Redux for efficient data flow and application control.",
-//   "Implemented 2+ e-commerce and 5+ web application based on server-side rendering with Next JS to enhance 99% application performance and SEO optimization.",
-//   "Collaborated on server-side scripting using Node.js and authentication with OAuth and JWT (JSON Web Tokens) for data transmission security in both Front-end and Back-end.",
-//   " Worked with 2+ databases like MongoDB and GraphQL to provide 100% efficient data storage and retrieval.",
-//   " Demonstrated critical thinking, problem-solving and analytical programming skills to solve 98.26% technical complex problems and contribute to innovative solutions.",
-// ];
