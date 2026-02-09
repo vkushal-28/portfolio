@@ -37,6 +37,7 @@ const nike = "Nike.png";
 const blogiflux = "Blogiflux.png";
 const chatty = "Chatty.png";
 const socket = "socket.io.png";
+const creativeCraft = "creativeCraft.png";
 
 export {
   devImg,
@@ -78,4 +79,5 @@ export {
   profilebg,
   chatty,
   socket,
+  creativeCraft,
 };

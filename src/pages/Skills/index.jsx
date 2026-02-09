@@ -2,6 +2,7 @@ import { skillsData2 } from "../../data/languagesData";
 import { useNav } from "../../hooks/useNav";
 import Reveal from "../../components/Reveal";
 import Section from "../../components/Section";
+import { techStack } from "../../data/techStack";
 
 const Skills = () => {
   // hooks
@@ -30,19 +31,19 @@ const Skills = () => {
                 return (
                   <div
                     className=" flex flex-col md:flex-row items-center  h-fit rounded-lg bg-indigo-800/50  p-2 md:p-2.5 gap-1 md:gap-x-1.5"
-                    key={skill.id}
+                    key={skill}
                     style={{
-                      boxShadow: `-2px -2px 4px ${skill.shadow_color}, 3px 3px 7px rgba(0, 0, 0, 0.5)`,
+                      boxShadow: `-2px -2px 4px ${techStack[skill].shadow_color}, 3px 3px 7px rgba(0, 0, 0, 0.5)`,
                     }}>
                     <img
                       src={`${import.meta.env.VITE_IMAGE_URL}skills/${
-                        skill.icon
+                        techStack[skill].image
                       }`}
-                      alt={`skill-${skill.id}`}
+                      alt={`skill-${skill.name}`}
                       className=" h-7  md:h-8"
                     />
                     <p className=" font-normal text-xs sm:text-sm lg:text-base">
-                      {skill.name}
+                      {techStack[skill].name}
                     </p>
                   </div>
                 );

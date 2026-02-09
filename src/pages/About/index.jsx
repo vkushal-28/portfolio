@@ -138,7 +138,7 @@ const About = () => {
                   ref={(el) => (btnRefs.current[itemInd] = el)}
                   onClick={() => setIndex(itemInd)}
                   className={`z-10 px-3 pt-2 pb-2 md:pb-3 font-medium rounded-full transition-colors capitalize max-sm:text-sm w-full
-      ${index === itemInd ? "text-white" : "text-white hover:text-white"}`}>
+                  ${index === itemInd ? "text-white" : "text-white hover:text-white"}`}>
                   {item.title}
                 </button>
               ))}

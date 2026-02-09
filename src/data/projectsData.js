@@ -3,15 +3,29 @@ import * as img from "../assets/images/index";
 export const allProjectsData = {
   projects: [
     {
+      id: 8,
+      type: ["frontend", "backend", "fullstack"],
+      stack: ["vite", "react", "html", "css", "node", "express"],
+      path: img.creativeCraft,
+      updated_on: "2023-03-13T19:48:35.192055Z",
+      title: "CreativeCraft.AI",
+      description:
+        "A full-stack AI-powered SASS platform that enables users to generate articles and blog titles, create AI images, remove image backgrounds and objects, review resumes, and explore a community gallery showcasing user-generated images. Designed for productivity, creativity, and seamless user experience.",
+      project_link: null,
+      demo_link:
+        "https://creativecraft-gz1ni2pvu-kushal-valas-projects.vercel.app/",
+    },
+    {
       id: 1,
-      language_used: [
-        img.react,
-        img.vite,
-        img.tailwind,
-        img.node,
-        img.mongo,
-        img.express,
-        img.socket,
+      type: ["frontend", "backend", "fullstack"],
+      stack: [
+        "react",
+        "vite",
+        "tailwind",
+        "node",
+        "mongo",
+        "express",
+        // "socket",
       ],
       path: img.chatty,
       updated_on: "2023-04-17T19:48:35.192055Z",
@@ -21,16 +35,18 @@ export const allProjectsData = {
       project_link: "",
       demo_link: "https://chatty-v2t6.onrender.com/login",
     },
+
     {
       id: 2,
-      language_used: [
-        img.react,
-        img.vite,
-        img.tailwind,
-        img.node,
-        img.mongo,
-        img.express,
-        img.firebase,
+      type: ["frontend", "backend", "fullstack"],
+      stack: [
+        "react",
+        "vite",
+        "tailwind",
+        "node",
+        "mongo",
+        "express",
+        "firebase",
       ],
       path: img.blogiflux,
       updated_on: "2023-03-13T19:48:35.192055Z",
@@ -42,19 +58,9 @@ export const allProjectsData = {
     },
 
     {
-      id: 3,
-      language_used: [img.react, img.tailwind, img.html],
-      path: img.nike,
-      updated_on: "2023-03-13T19:48:35.192055Z",
-      title: "Nike Clone",
-      description:
-        "This Nike Clone site is created display new products, upcoming products and other sections. I've designed this site to demonstrate my designing skills in react and tailwind css.",
-      project_link: "https://github.com/vkushal-28/nike/",
-      demo_link: "https://nike-rosy.vercel.app/",
-    },
-    {
       id: 4,
-      language_used: [img.react, img.vite, img.tailwind, img.html, img.css],
+      type: ["frontend"],
+      stack: ["react", "vite", "tailwind", "html", "css"],
       path: img.portfolio,
       updated_on: "2023-03-13T19:48:35.192055Z",
       title: "My Portfolio",
@@ -64,16 +70,21 @@ export const allProjectsData = {
       demo_link: "https://vkushal-28.github.io/portfolio/",
     },
     {
+      id: 3,
+      type: ["frontend"],
+      stack: ["react", "tailwind", "html"],
+      path: img.nike,
+      updated_on: "2023-03-13T19:48:35.192055Z",
+      title: "Nike Clone",
+      description:
+        "This Nike Clone site is created display new products, upcoming products and other sections. I've designed this site to demonstrate my designing skills in react and tailwind css.",
+      project_link: "https://github.com/vkushal-28/nike/",
+      demo_link: "https://nike-rosy.vercel.app/",
+    },
+    {
       id: 5,
-      language_used: [
-        img.react,
-        img.redux,
-        img.html,
-        img.css,
-        img.bootstrap,
-        img.node,
-        img.mongo,
-      ],
+      type: ["frontend"],
+      stack: ["react", "redux", "html", "css", "bootstrap", "node", "mongo"],
       path: img.evIndia,
       updated_on: "2023-03-13T19:48:35.192055Z",
       title: "EV India",
@@ -84,15 +95,8 @@ export const allProjectsData = {
     },
     {
       id: 7,
-      language_used: [
-        img.next,
-        img.react,
-        img.html,
-        img.css,
-        img.bootstrap,
-        img.node,
-        img.express,
-      ],
+      type: ["frontend"],
+      stack: ["next", "react", "html", "css", "bootstrap", "node", "express"],
       path: img.mragain,
       updated_on: "2023-03-13T19:48:35.192055Z",
       title: "Mr Again",
@@ -104,14 +108,14 @@ export const allProjectsData = {
 
     // {
     //   id: 6,
-    //   language_used: [
-    //     img.react,
-    //     img.redux,
-    //     img.html,
-    //     img.css,
-    //     img.bootstrap,
-    //     img.node,
-    //     img.express,
+    //   stack: [
+    //     "react",
+    //     "redux",
+    //     "html",
+    //     "css",
+    //     "bootstrap",
+    //     "node",
+    //     "express",
     //   ],
     //   path: img.elumat,
     //   updated_on: "2023-03-13T19:48:35.192055Z",
@@ -124,7 +128,7 @@ export const allProjectsData = {
 
     // {
     //   id: 8,
-    //   language_used: [img.react, img.redux, img.bootstrap, img.html, img.css],
+    //   stack: ["react", "redux", "bootstrap", "html", "css"],
     //   path: img.time2Enter1,
     //   updated_on: "2023-03-13T19:48:35.192055Z",
     //   title: "Time2Enter",
@@ -135,13 +139,13 @@ export const allProjectsData = {
     // },
     // {
     //   id: 8,
-    //   language_used: [
-    //     img.react,
-    //     img.redux,
-    //     img.bootstrap,
-    //     img.html,
-    //     img.css,
-    //     img.npm,
+    //   stack: [
+    //    "react",
+    //    "redux",
+    //    "bootstrap",
+    //    "html",
+    //    "css",
+    //    "npm",
     //   ],
     //   path: img.staffRoster,
     //   updated_on: "2023-03-13T19:48:35.192055Z",
@@ -153,7 +157,7 @@ export const allProjectsData = {
     // },
     // {
     //   id: 9,
-    //   language_used: [img.react, img.bootstrap, img.html, img.css, img.js],
+    //   stack: ["react", "bootstrap", "html", "css", "js"],
     //   path: img.saturncube,
     //   updated_on: "2023-03-13T19:48:35.192055Z",
     //   title: "Saturncube Technologies",
@@ -164,12 +168,12 @@ export const allProjectsData = {
     // },
     // {
     //   id: 10,
-    //   language_used: [
-    //     img.react,
-    //     img.redux,
-    //     img.bootstrap,
-    //     img.html,
-    //     img.css,
+    //   stack: [
+    //     "react",
+    //     "redux",
+    //     "bootstrap",
+    //     "html",
+    //     "css",
     //   ],
     //   path: img.memories,
     //   updated_on: "2023-03-13T19:48:35.192055Z",
