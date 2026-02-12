@@ -1,4 +1,3 @@
-
 export const skillsData2 = {
   frontend: [
     "react",
@@ -13,9 +12,20 @@ export const skillsData2 = {
     "tailwind",
     "material",
     "bootstrap",
+    "ant",
+    // "d3",
     "sass",
     "styled",
   ],
-  backend: ["node", "express", "mongo", "mysql", "firebase"],
-  tools: ["npm", "gitlab", "github"],
+  backend: [
+    "node",
+    "express",
+    "mongo",
+    "postgre",
+    "mysql",
+    "graphql",
+    "firebase",
+    "socket",
+  ],
+  tools: ["jest", "mocha", "cypress", "npm", "yarn", "gitlab", "github"],
 };

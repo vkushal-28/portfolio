@@ -24,6 +24,15 @@ const node = "node.svg";
 const npm = "npm.svg";
 const react = "react.svg";
 const redux = "redux.svg";
+const postgre = "postgre.svg";
+const ant = "ant.svg";
+const yarn = "yarn.svg";
+const jest = "Jest.svg";
+const mocha = "mocha.svg";
+const cypress = "cypress.svg";
+const d3 = "d3.svg";
+const graphql = "graphql.svg";
+
 const elumat = "elumat.png";
 const evIndia = "ev-India.png";
 const memories = "memories.png";
@@ -60,11 +69,19 @@ export {
   material,
   mongo,
   mysql,
+  postgre,
+  ant,
   next,
   node,
   npm,
+  jest,
+  mocha,
+  cypress,
+  graphql,
+  d3,
   react,
   redux,
+  yarn,
   elumat,
   evIndia,
   memories,
