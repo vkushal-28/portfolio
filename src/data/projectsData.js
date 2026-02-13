@@ -67,7 +67,7 @@ export const allProjectsData = {
       description:
         "This is my personal portfolio website to showcase all my skills details, project details with live preview link, social media profiles, and other contact details. You can cntact me by given email and also connect me on LinkedIn with given profile link.",
       // project_link: "https://github.com/vkushal-28/portfolio/",
-      demo_link: "https://vkushal-28.github.io/portfolio/",
+      demo_link: "https://kushal-vala.vercel.app/",
     },
     {
       id: 3,
