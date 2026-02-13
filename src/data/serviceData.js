@@ -1,7 +1,3 @@
-import design from "../assets/images/logo/ui.png";
-import web from "../assets/images/logo/web.png";
-import api from "../assets/images/logo/api.png";
-
 import { HiMiniWrenchScrewdriver } from "react-icons/hi2";
 import { RiStackFill } from "react-icons/ri";
 import { MdDesignServices } from "react-icons/md";
@@ -12,7 +8,6 @@ import { IoRocketSharp } from "react-icons/io5";
 export const servicesData = [
   {
     id: 1,
-    icon: design,
     title: "Full-Stack Development",
     shadow_icon: RiStackFill,
     description:
@@ -20,7 +15,6 @@ export const servicesData = [
   },
   {
     id: 2,
-    icon: web,
     title: "UI/UX Implementation",
     shadow_icon: MdDesignServices,
     description:
@@ -28,7 +22,6 @@ export const servicesData = [
   },
   {
     id: 3,
-    icon: api,
     title: "API Development",
     shadow_icon: FaServer,
 
@@ -46,7 +39,6 @@ export const servicesData = [
   // },
   {
     id: 5,
-    icon: api,
     title: "Website & App Maintenance",
     shadow_icon: HiMiniWrenchScrewdriver,
 
@@ -55,7 +47,6 @@ export const servicesData = [
   },
   {
     id: 6,
-    icon: api,
     title: "Testing & Code Quality",
     shadow_icon: HiCheckBadge,
 
@@ -64,7 +55,6 @@ export const servicesData = [
   },
   {
     id: 7,
-    icon: api,
     title: "Deployment & Support",
     shadow_icon: IoRocketSharp,
     description:

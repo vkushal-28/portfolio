@@ -37,8 +37,7 @@ module.exports = {
         // accent: "#F13024",
       },
       backgroundImage: {
-        explosion: 'url("/src/assets/images/background.jpeg")',
-        webtech: 'url("/src/assets/images/hero-logo.png")',
+        explosion: 'url("/src/assets/images/background.webp")',
         // circleStar: 'url("/circle-star.svg")',
         // site: 'url("/site-bg.svg")',
       },

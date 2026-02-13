@@ -1,6 +1,5 @@
-import devImg from "./developers.png";
-import webTech from "./hero-logo.png";
-import profilebg from "./decoration/blob.png";
+import devImg from "./developers.webp";
+import profilebg from "./decoration/blob.webp";
 const bootstrap = "bootstrap.svg";
 const express = "express.png";
 const css = "css.svg";
@@ -50,7 +49,6 @@ const creativeCraft = "creativeCraft.png";
 
 export {
   devImg,
-  webTech,
   bootstrap,
   express,
   css,

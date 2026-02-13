@@ -6,8 +6,8 @@ import { useNav } from "../../hooks/useNav";
 import Certificates from "./AboutComponents/Certificates";
 import Awards from "./AboutComponents/Awards";
 import Reveal from "../../components/Reveal";
-import dots from "../../assets/images/decoration/shady-dot.png";
-// import dots2 from "../../assets/images/decoration/footer-dotted-right-img.png";
+import dots from "../../assets/images/decoration/shady-dot.webp";
+// import dots2 from "../../assets/images/decoration/footer-dotted-right-img.webp";
 
 const aboutData = [
   {
@@ -71,7 +71,7 @@ const About = () => {
       className="min-h-full xl:h-[100vh] bg-blLight relative"
       ref={aboutRef}
       id="aboutSection">
-      <img src={dots} className="absolute lg:w-[25%]" />
+      <img src={dots} className="absolute lg:w-[25%]" alt="dots" />
       <div className=" h-full xl:h-full bg-bl py-32 text-center xl:text-left  lg:rounded-br-[100px] ">
         <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6 transition-all delay-150 ">
           <div className="flex-1 flex flex-col justify-center w-full transition-all delay-150">
@@ -138,7 +138,11 @@ const About = () => {
                   ref={(el) => (btnRefs.current[itemInd] = el)}
                   onClick={() => setIndex(itemInd)}
                   className={`z-10 px-3 pt-2 pb-2 md:pb-3 font-medium rounded-full transition-colors capitalize max-sm:text-sm w-full
-                  ${index === itemInd ? "text-white" : "text-white hover:text-white"}`}>
+                  ${
+                    index === itemInd
+                      ? "text-white"
+                      : "text-white hover:text-white"
+                  }`}>
                   {item.title}
                 </button>
               ))}
@@ -153,7 +157,7 @@ const About = () => {
           </Reveal>
         </div>
       </div>
-      {/* <img src={dots2} className="absolute lg:w-[25%] bottom-40 right-0 " /> */}
+      {/* <img src={dots2} className="absolute lg:w-[25%] bottom-40 right-0 " alt='dots'/> */}
     </section>
   );
 };

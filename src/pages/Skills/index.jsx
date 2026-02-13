@@ -39,7 +39,7 @@ const Skills = () => {
                       src={`${import.meta.env.VITE_IMAGE_URL}skills/${
                         techStack[skill].image
                       }`}
-                      alt={`skill-${skill.name}`}
+                      alt={`skill-${techStack[skill].name}`}
                       className=" h-7  md:h-8"
                     />
                     <p className=" font-normal text-xs sm:text-sm lg:text-base">

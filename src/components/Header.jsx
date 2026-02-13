@@ -23,7 +23,7 @@ const Header = () => {
                 className="inline"
                 width={30}
                 height={30}
-                alt=""
+                alt="Logo"
               />
               Kushal.dev <span className="blink_me"> _</span>
             </div>

@@ -75,7 +75,7 @@ const WorkSlider = ({ activeTab }) => {
                         src={`${import.meta.env.VITE_IMAGE_URL}skills/${
                           techStack[tech].image
                         }`}
-                        alt=""
+                        alt={techStack[tech].name}
                         key={i}
                         width={20}
                         height={20}
@@ -147,7 +147,7 @@ const WorkSlider = ({ activeTab }) => {
                           src={`${import.meta.env.VITE_IMAGE_URL}projects/${
                             data.path
                           }`}
-                          alt="Sunset in the mountains"
+                          alt={data.title}
                         />
                         <div className="px-3 py-3">
                           {/* <div className="font-bold  text-left text-xl mb-2">
