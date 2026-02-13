@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Header from "./components/Header";
 import About from "./pages/About";
 import { Outlet, useLocation } from "react-router-dom";
