@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Header from "./components/Header";
 import About from "./pages/About";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Hero from "./pages/Hero/index";
 import Services from "./pages/Services/index";
 import Skills from "./pages/Skills";
@@ -10,8 +10,14 @@ import NavProvider from "./context/NavContext";
 import ContactUs from "./pages/ContactUs";
 import AnimatedCursor from "react-animated-cursor";
 import Footer from "./components/Footer";
+import { pageview } from "./components/analytics";
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    pageview(location.pathname + location.search);
+  }, [location]);
   return (
     <Fragment>
       <AnimatedCursor
