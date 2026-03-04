@@ -5,10 +5,13 @@ export const NavContext = createContext();
 // eslint-disable-next-line react/prop-types
 const NavProvider = ({ children }) => {
   const [activeLinkId, setActiveLinkId] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const providerValue = {
     activeLinkId,
     setActiveLinkId,
+    isMobileMenuOpen,
+    setIsMobileMenuOpen,
   };
 
   return (

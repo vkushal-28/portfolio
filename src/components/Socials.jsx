@@ -11,7 +11,7 @@ const Socials = () => {
     },
   ];
   return (
-    <div className="flex items-center gap-x-2  text-lg ">
+    <div className="flex items-center gap-x-2  text-lg max-sm:hidden">
       {socialsData.map((social, ind) => (
         <a
           href={social.link}

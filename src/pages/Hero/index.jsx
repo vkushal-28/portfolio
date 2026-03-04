@@ -67,7 +67,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className=" max-w-sm xl:max-w-xl mx-auto md:mx-0 mb-5 md:mb-8 text-center lg:text-start">
+                className=" max-w-sm xl:max-w-xl mx-auto md:mx-0 mb-5 md:mb-8 text-center md:text-start">
                 <p>
                   Bridging creativity and engineering to build seamless,
                   high‑impact web experiences. Every line of code I write aims
