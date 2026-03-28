@@ -10,6 +10,7 @@ import NavProvider from "./context/NavContext";
 import ContactUs from "./pages/ContactUs";
 import AnimatedCursor from "react-animated-cursor";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import { pageview } from "./components/analytics";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Projects />
           <ContactUs />
           <Footer />
+          <ScrollToTop />
         </NavProvider>
       </div>
     </Fragment>

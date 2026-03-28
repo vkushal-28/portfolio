@@ -36,7 +36,7 @@ const AI_TOOL_IMAGES = {
 };
 
 const Hero = () => {
-  const homeRef = useNav("home");
+  const homeRef = useNav("Home");
 
   return (
     <section className="bg-primary header" ref={homeRef} id="homeSection">
