@@ -14,7 +14,7 @@ export const servicesData = [
     id: 1,
     title: "Full-Stack Development",
     shadow_icon: RiStackFill,
-    iconColor: "#818cf8",
+    iconColor: "#a855f7",
     gradient: "from-indigo-500 via-purple-500 to-pink-500",
     description:
       "End-to-end web application development, from UI to backend APIs, databases, and deployment.",
@@ -23,7 +23,7 @@ export const servicesData = [
     id: 2,
     title: "UI/UX Implementation",
     shadow_icon: MdDesignServices,
-    iconColor: "#c084fc",
+    iconColor: "#f43f5e",
     gradient: "from-pink-500 via-rose-500 to-orange-500",
     description:
       "Turning Figma and design systems into pixel-perfect, user-friendly interfaces with smooth interactions.",
@@ -32,7 +32,7 @@ export const servicesData = [
     id: 3,
     title: "API Development",
     shadow_icon: FaServer,
-    iconColor: "#22d3ee",
+    iconColor: "#3b82f6",
     gradient: "from-cyan-500 via-blue-500 to-indigo-500",
     description:
       "Designing secure, scalable REST APIs with proper validation, authentication, and performance optimization.",
@@ -41,7 +41,7 @@ export const servicesData = [
     id: 4,
     title: "Website Maintenance",
     shadow_icon: HiMiniWrenchScrewdriver,
-    iconColor: "#34d399",
+    iconColor: "#14b8a6",
     gradient: "from-emerald-500 via-teal-500 to-cyan-500",
     description:
       "Ongoing support, bug fixes, feature enhancements, and dependency upgrades.",
@@ -59,7 +59,7 @@ export const servicesData = [
     id: 6,
     title: "Deployment & Support",
     shadow_icon: IoRocketSharp,
-    iconColor: "#f87171",
+    iconColor: "#f97316",
     gradient: "from-red-500 via-orange-500 to-amber-500",
     description:
       "Deploying applications using CI/CD pipelines, cloud platforms, and containerized environments.",
@@ -185,19 +185,6 @@ const badgeItemVariants = {
   },
 };
 
-const badgeVariants = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      type: "spring",
-      stiffness: 300,
-      damping: 20,
-    },
-  },
-};
-
 const Services = () => {
   const serviceRef = useNav("Services");
 
@@ -212,7 +199,7 @@ const Services = () => {
         "Transform your vision into reality with my comprehensive suite of services. I combine cutting-edge technology with creative design to deliver exceptional digital experiences."
       }>
       <motion.div
-        className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
+        className="grid gap-4 sm:gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -225,7 +212,7 @@ const Services = () => {
                 variants={cardVariants}
                 whileHover="hover"
                 className="group perspective-1000">
-                <div className="relative bg-gradient-to-br from-bl via-bl/95 to-bl/90 backdrop-blur-xl rounded-3xl p-8 overflow-hidden border border-indigo-500/30 shadow-[0_15px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_10px_rgba(99,102,241,0.3)] transition-all duration-500 transform-gpu preserve-3d flex flex-col h-full min-h-[250px]">
+                <div className="relative bg-gradient-to-br from-bl via-bl/95 to-bl/90 backdrop-blur-xl rounded-2xl md:rounded-3xl p-5 md:p-8 overflow-hidden border border-indigo-500/30 shadow-[0_15px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_10px_rgba(99,102,241,0.3)] transition-all duration-500 transform-gpu preserve-3d flex flex-col h-full min-h-[250px]">
                   {/* Animated background glow */}
                   <motion.div
                     className={`absolute -top-20 -right-20 w-44 h-44 rounded-full bg-gradient-to-br ${service.gradient} blur-3xl pointer-events-none`}
@@ -268,13 +255,13 @@ const Services = () => {
                     {/* Icon with magnetic effect */}
                     <MagneticButton className="mb-4">
                       <motion.div
-                        className="w-20 h-20 rounded-2xl flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)]"
+                        className="w-14 h-14 md:w-20 md:h-20 rounded-2xl flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.1)]"
                         style={{
                           background: `linear-gradient(135deg, ${service.iconColor}20 0%, ${service.iconColor}05 100%)`,
                           boxShadow: `-6px -6px 20px rgba(99, 102, 241, 0.15), 6px 6px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1)`,
                         }}>
                         <Icon
-                          className="w-10 h-10"
+                          className="w-8 h-8  md:w-10 md:h-10 "
                           style={{ color: service.iconColor }}
                         />
                       </motion.div>
@@ -282,7 +269,7 @@ const Services = () => {
 
                     {/* Title with gradient accent */}
                     <motion.h3
-                      className="text-2xl font-bold text-white mb-3 relative inline-block"
+                      className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 relative inline-block"
                       variants={badgeItemVariants}>
                       {service.title}
                       <motion.div
@@ -295,14 +282,14 @@ const Services = () => {
 
                     {/* Description */}
                     <motion.p
-                      className="text-gray-300 text-left text-sm leading-relaxed mb-2"
+                      className="text-gray-300 text-left text-sm leading-relaxed mb-2 md:mb-3 h-8 md:h-16"
                       variants={badgeItemVariants}>
                       {service.description}
                     </motion.p>
 
                     {/* Feature badges */}
                     <motion.div
-                      className="flex flex-wrap gap-2 mt-auto pt-4"
+                      className="flex flex-wrap gap-2 mt-auto pt-2 md:pt-3"
                       variants={badgeItemVariants}>
                       <span
                         className={`px-3 py-1 rounded-full text-xs bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent font-semibold border border-white/10`}>
