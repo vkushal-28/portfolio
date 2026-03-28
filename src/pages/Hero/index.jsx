@@ -111,28 +111,22 @@ const Hero = () => {
           <div className="grid grid-cols-1 sm:gap-2 lg:grid-cols-12 lg:gap-0">
             <div className="flex flex-col justify-center col-span-1 lg:col-span-7 h-full">
               {/* Availability Status */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="mb-3 max-md:hidden">
-                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-emerald-300 text-xs md:text-sm font-medium backdrop-blur-sm shadow-lg shadow-emerald-500/10">
+              <Reveal direction="down"
+                className="mb-3 ">
+                <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full max-sm:mt-3 bg-emerald-500/10 border border-emerald-400/30 text-emerald-300 text-xs md:text-sm font-medium backdrop-blur-sm shadow-lg shadow-emerald-500/10">
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                   </span>
                   Open to new challenges
                 </span>
-              </motion.div>
+              </Reveal>
 
               {/* Tagline */}
-              <motion.p
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
+              <Reveal direction="down"
                 className="text-indigo-300 text-sm md:text-base font-medium mb-2 tracking-wide uppercase">
                 Full Stack Developer & UI Enthusiast
-              </motion.p>
+              </Reveal>
 
               <Reveal direction="down" className="h1 mb-1">
                 Hi There! I'm <br />
@@ -169,8 +163,8 @@ const Hero = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="max-w-sm xl:max-w-xl mx-auto md:mx-0 mb-6 md:mb-8 text-center md:text-start">
-                <p className="text-gray-400">
+                className="max-w-sm xl:max-w-xl mx-auto md:mx-0 mb-0 md:mb-8 text-center md:text-start">
+                <p className="text-gray-400 max-sm:hidden">
                   Bridging creativity and engineering to build seamless,
                   high‑impact web experiences. Every line of code I write aims
                   for clarity, performance, and purpose.
@@ -178,7 +172,7 @@ const Hero = () => {
               </Reveal>
 
               {/* Button Group */}
-              <Reveal direction="up" className="mb-6">
+              <Reveal direction="up" className="mb-5">
                 <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                   {/* Download CV Button - Primary */}
                   <motion.a
@@ -209,11 +203,11 @@ const Hero = () => {
                     </span>
                   </motion.a>
 
-<div className="max-md:flex max-md:justify-between gap-3">
+            <div className="max-md:flex max-md:justify-between gap-3">
 
                   {/* View Projects Button */}
                   <motion.a
-                    className="group relative inline-flex items-center justify-center gap-2 px-5 py-2  bg-white/5 border border-indigo-400/30 rounded-lg font-semibold text-indigo-300 hover:bg-indigo-500/10 hover:border-indigo-400 hover:text-white overflow-hidden transition-all duration-300 max-md:w-full lg:mr-4"
+                    className="group relative inline-flex items-center justify-center gap-2 px-2 md:px-5 py-2  bg-white/5 border border-indigo-400/30 rounded-lg font-semibold text-indigo-300 hover:bg-indigo-500/10 hover:border-indigo-400 hover:text-white overflow-hidden transition-all duration-300 max-md:w-full lg:mr-4"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => {
@@ -238,7 +232,7 @@ const Hero = () => {
                   {/* Get in Touch Button */}
                   <motion.a
                     href="#contactSection"
-                    className="group relative inline-flex items-center justify-center gap-2 px-5 py-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-400/30 rounded-lg font-semibold text-cyan-300 hover:from-cyan-500/20 hover:to-blue-500/20 hover:border-cyan-400 overflow-hidden transition-all duration-300 max-md:w-full"
+                    className="group relative inline-flex items-center justify-center gap-2 px-2 md:px-5  py-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-400/30 rounded-lg font-semibold text-cyan-300 hover:from-cyan-500/20 hover:to-blue-500/20 hover:border-cyan-400 overflow-hidden transition-all duration-300 max-md:w-full"
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}>
                     {/* Animated glow */}
@@ -368,7 +362,7 @@ const Hero = () => {
 
         {/* Scroll indicator - Cylinder with centered dot */}
         <motion.div
-          className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          className="absolute bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 max-sm:hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 0.5 }}>
