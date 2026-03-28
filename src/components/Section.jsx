@@ -28,7 +28,7 @@ const Section = ({
               "bg-bl py-20 md:py-32 rounded-tl-none md:rounded-tl-[100px] rounded-br-none",
               id !== "contactSection" && "md:rounded-br-[100px]"
             )}>
-            <div className="container mx-auto transition-all delay-150">
+            <div className="max-w-7xl mx-auto px-[15px] transition-all delay-150">
               <CommonHeader
                 title1={title1}
                 title2={title2}
@@ -39,7 +39,7 @@ const Section = ({
           </div>
         </div>
       ) : (
-        <div className="container mx-auto transition-all delay-150">
+        <div className="max-w-7xl mx-auto px-[15px] transition-all delay-150">
           <CommonHeader
             title1={title1}
             title2={title2}

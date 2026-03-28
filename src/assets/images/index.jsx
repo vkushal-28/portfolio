@@ -46,6 +46,9 @@ const blogiflux = "Blogiflux.png";
 const chatty = "Chatty.png";
 const socket = "socket.io.png";
 const creativeCraft = "creativeCraft.png";
+const copilot = "copilot.png";
+const cursor = "cursor.webp";
+const claude = "claude.webp";
 
 export {
   devImg,
@@ -95,4 +98,7 @@ export {
   chatty,
   socket,
   creativeCraft,
+  copilot,
+  cursor,
+  claude,
 };

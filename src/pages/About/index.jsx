@@ -73,7 +73,7 @@ const About = () => {
       id="aboutSection">
       <img src={dots} className="absolute lg:w-[25%]" alt="dots" />
       <div className=" h-full xl:h-full bg-bl py-32 text-center xl:text-left  lg:rounded-br-[100px] ">
-        <div className="container mx-auto h-full flex flex-col items-start xl:flex-row gap-x-6 transition-all delay-150 ">
+        <div className="max-w-7xl mx-auto px-[15px] h-full flex flex-col items-start xl:flex-row gap-x-6 transition-all delay-150 ">
           <div className="flex-1 flex flex-col justify-center w-full transition-all delay-150">
             <Reveal direction="right" className="h2">
               <span className="gradient-text">Crafting</span> Seamless User
