@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 
@@ -15,7 +15,7 @@ const Reveal = ({ children, direction, delay, className }) => {
 
   return (
     <motion.div
-      variants={fadeIn(direction || "up", delay || 0.2)}
+      variants={fadeIn(direction || "up", delay || 0.1)}
       initial="hidden"
       ref={ref}
       animate={mainControls}

@@ -74,6 +74,21 @@ header {
     opacity: 0;
   }
 }
+
+@keyframes bounce-fast {
+  0%, 100% {
+    transform: translateY(-10%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce-fast {
+  animation: bounce-fast 0.8s infinite;
+}
 /* bg-slate-900/30 bg-opacity-60  backdrop-blur-lg */
 
 .bg-img-projects {

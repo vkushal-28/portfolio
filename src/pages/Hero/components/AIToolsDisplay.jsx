@@ -39,7 +39,7 @@ const AIToolsDisplay = ({ images }) => {
             className={`absolute ${tool.position} ${tool.size} bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg flex items-center justify-center overflow-hidden`}
             animate={{ scale: [1, 1.1, 1] }}
             transition={{
-              duration: 2,
+              duration: 0.8,
               repeat: Infinity,
               delay: tool.delay,
             }}>

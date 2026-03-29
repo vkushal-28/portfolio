@@ -8,9 +8,9 @@ const PARTICLE_COUNT = 20;
  */
 const useParticleValues = (index) => {
   return useMemo(() => ({
-    xAmplitude: Math.random() * 20 - 10, // -10 to +10 horizontal drift
-    duration: 4 + Math.random() * 2, // 4-6 seconds
-    delay: Math.random() * 3, // 0-3 seconds
+    xAmplitude: Math.random() * 15 - 7.5, // -7.5 to +7.5 horizontal drift
+    duration: 1.5 + Math.random() * 1, // 1.5-2.5 seconds
+    delay: Math.random() * 2, // 0-2 seconds
     left: `${Math.random() * 100}%`,
     top: `${Math.random() * 100}%`,
   }), [index]);

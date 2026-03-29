@@ -10,9 +10,9 @@ const ROLES = [
   { text: "Node.js Engineer", color: "#83CD29" },
 ];
 
-const TYPING_SPEED = 80;
-const DELETING_SPEED = 50;
-const PAUSE_AFTER_COMPLETE = 2000;
+const TYPING_SPEED = 40;
+const DELETING_SPEED = 25;
+const PAUSE_AFTER_COMPLETE = 1000;
 
 /**
  * Typewriter effect cycling through role titles

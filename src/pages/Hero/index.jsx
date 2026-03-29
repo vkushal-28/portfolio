@@ -71,7 +71,7 @@ const Hero = () => {
 
               {/* Typewriter animation with rotating roles */}
               <Reveal
-                variants={fadeIn("down", 0.2)}
+                variants={fadeIn("down", 0.1)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"
@@ -83,7 +83,7 @@ const Hero = () => {
               </Reveal>
 
               <Reveal
-                variants={fadeIn("down", 0.2)}
+                variants={fadeIn("down", 0.1)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"
@@ -109,7 +109,7 @@ const Hero = () => {
                       rel="noreferrer"
                       variant="primary"
                       icon={
-                        <RiArrowDownDoubleFill className="text-lg animate-bounce" />
+                        <RiArrowDownDoubleFill className="text-lg animate-bounce-fast" />
                       }
                       className="w-full md:w-auto">
                       Download CV
@@ -155,7 +155,7 @@ const Hero = () => {
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8, delay: 0.3 }}>
+                  transition={{ duration: 0.4, delay: 0.2 }}>
                   <TiltCard>
                     <div className="relative">
                       <AIToolsDisplay images={AI_TOOL_IMAGES} />
@@ -171,7 +171,7 @@ const Hero = () => {
                         className="absolute -top-4 -right-4 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-full blur-xl"
                         animate={{ y: [0, -10, 0], x: [0, 5, 0] }}
                         transition={{
-                          duration: 4,
+                          duration: 2,
                           repeat: Infinity,
                           ease: "easeInOut",
                         }}
@@ -180,7 +180,7 @@ const Hero = () => {
                         className="absolute -bottom-4 -left-4 w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-cyan-500/15 to-blue-500/15 rounded-full blur-xl"
                         animate={{ y: [0, 10, 0], x: [0, -5, 0] }}
                         transition={{
-                          duration: 5,
+                          duration: 2.5,
                           repeat: Infinity,
                           ease: "easeInOut",
                         }}

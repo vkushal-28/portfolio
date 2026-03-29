@@ -23,10 +23,10 @@ const Header = () => {
         className={`fixed z-50 w-full flex flex-row items-start md:items-center px-4 md:px-16 xl:px-0 xl:h-[85px] bg-bl bg-opacity-90 md:bg-opacity-70 lg:bg-opacity-50 rounded-md bg-clip-padding backdrop-blur-md shadow-md`}>
         <div className="container mx-auto transition-all delay-150">
           <motion.div
-            variants={fadeIn("down", 0.2)}
+            variants={fadeIn("down", 0.1)}
             initial="hidden"
             animate="visible"
-            transition={{ duration: 0.1, delay: 0.25 }}
+            transition={{ duration: 0.15, delay: 0.1 }}
             className="flex flex-row justify-between items-start md:items-center gap-y-6 py-4 md:py-5">
               {/* logo */}
               <div
