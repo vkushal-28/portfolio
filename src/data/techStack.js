@@ -7,7 +7,7 @@ export const techStack = {
   ts: { name: "TypeScript", image: img.ts, shadow_color: "#3178C6" },
 
   react: { name: "React", image: img.react, shadow_color: "#61DBFB" },
-  next: { name: "Next.js", image: img.next, shadow_color: "white" },
+  next: { name: "Next.js", image: img.next, shadow_color: "#ffffff" },
   redux: { name: "Redux", image: img.redux, shadow_color: "#764abc" },
   vite: { name: "Vite", image: img.vite, shadow_color: "#47caff" },
   yarn: { name: "Yarn", image: img.yarn, shadow_color: "#47caff" },
@@ -31,12 +31,12 @@ export const techStack = {
   },
 
   node: { name: "Node.js", image: img.node, shadow_color: "#3c873a" },
-  express: { name: "Express", image: img.express, shadow_color: "gray" },
+  express: { name: "Express", image: img.express, shadow_color: "#9D9D9D" },
   mongo: { name: "MongoDB", image: img.mongo, shadow_color: "#4DB33D" },
-  mysql: { name: "MySQL", image: img.mysql, shadow_color: "#F29111" },
+  mysql: { name: "MySQL", image: img.mysql, shadow_color: "#00758f" },
   firebase: { name: "Firebase", image: img.firebase, shadow_color: "#FFCB2B" },
 
-  github: { name: "GitHub", image: img.github, shadow_color: "white" },
+  github: { name: "GitHub", image: img.github, shadow_color: "#ffffff" },
   gitlab: { name: "GitLab", image: img.gitlab, shadow_color: "#fca326" },
   npm: { name: "NPM", image: img.npm, shadow_color: "#CC3534" },
   figma: { name: "Figma", image: img.figma, shadow_color: "#06B6D4" },
@@ -44,7 +44,7 @@ export const techStack = {
   ant: { name: "Ant", image: img.ant, shadow_color: "#1890FF" },
   jest: { name: "Jest", image: img.jest, shadow_color: "#C21325" },
   mocha: { name: "Mocha", image: img.mocha, shadow_color: "#9D7651" },
-  socket: { name: "Socket.io", image: img.socket, shadow_color: "#fff" },
+  socket: { name: "Socket.io", image: img.socket, shadow_color: "#ffffff" },
   // d3: { name: "D3.js", image: img.d3, shadow_color: "" },
   cypress: { name: "Cypress", image: img.cypress, shadow_color: "#6A7786" },
   graphql: { name: "GraphQL", image: img.graphql, shadow_color: "#E10098" },
