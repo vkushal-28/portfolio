@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,11 +7,25 @@
     <meta
       name="google-site-verification"
       content="k3ODOlOLi4mdbi3hzeh9drGrBQYH51yVkVg6KFPkU0c" />
+
+    <!-- Resource hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700&display=swap"
+      rel="preconnect"
+      href="https://kv-portfolio.s3.ca-central-1.amazonaws.com" />
+
+    <!-- Preload critical font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap"
       rel="stylesheet" />
+
+    <!-- Preload hero image (LCP critical) -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://kv-portfolio.s3.ca-central-1.amazonaws.com/skills/blob.webp" />
+
     <meta
       name="description"
       content="Kushal Vala is a Senior React Developer with 6+ years of experience building scalable E-Commerce, Enterprise Level, SaaS applications using React, TypeScript, Next.js,JavaScript and modern frontend architecture." />
@@ -25,23 +39,39 @@
     <meta name="robots" content="index, follow" />
 
     <title>Kushal Vala Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-CL0po04V.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C9-Isqq2.css">
+    <script type="module" crossorigin src="/assets/index-JNO466XN.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-CKHY2WOT.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BnUmmlDG.css">
   </head>
   <body>
     <div id="root"></div>
-    <!-- Google tag (gtag.js) -->
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-RD6DZN58VR"></script>
+
+    <!-- Google Analytics - load after page render using requestIdleCallback -->
     <script>
+      // Define gtag function immediately to avoid "window.gtag is not a function" errors
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
 
+      // Defer actual GA script loading to not block render
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(function () {
+          const script = document.createElement("script");
+          script.async = true;
+          script.src =
+            "https://www.googletagmanager.com/gtag/js?id=G-RD6DZN58VR";
+          document.head.appendChild(script);
+        });
+      } else {
+        // Fallback for browsers without requestIdleCallback
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-RD6DZN58VR";
+        document.head.appendChild(script);
+      }
+      // Configure GA after script loads
       gtag("config", "G-RD6DZN58VR");
     </script>
   </body>
