@@ -19,7 +19,7 @@ const Reveal = ({ children, direction, delay, className }) => {
       initial="hidden"
       ref={ref}
       animate={mainControls}
-      exit="hidded"
+      exit="hidden"
       transition={{ duration: 0.1, delay: 0.25 }}
       className={className}>
       {children}

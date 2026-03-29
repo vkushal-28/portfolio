@@ -6,7 +6,8 @@ const AI_TOOLS = [
   {
     name: "Cursor AI",
     imgKey: "cursor",
-    position: "top-[10px] lg:-top-[50px] -left-[16px] md:-left-[30px] xl:-left-[100px]",
+    position:
+      "top-[10px] lg:-top-[50px] -left-[16px] md:-left-[30px] xl:-left-[100px]",
     size: "w-10 h-10 md:w-16 md:h-16",
     delay: 0,
   },
@@ -20,7 +21,8 @@ const AI_TOOLS = [
   {
     name: "Claude",
     imgKey: "claude",
-    position: "top-[30px] lg:-top-[10px] -right-[0px] lg:-right-[30px] xl:-right-[80px]",
+    position:
+      "top-[30px] lg:-top-[10px] -right-[0px] lg:-right-[30px] xl:-right-[80px]",
     size: "w-10 h-10 md:w-16 md:h-16",
     delay: 0.2,
   },
@@ -39,7 +41,7 @@ const AIToolsDisplay = ({ images }) => {
             className={`absolute ${tool.position} ${tool.size} bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg flex items-center justify-center overflow-hidden`}
             animate={{ scale: [1, 1.1, 1] }}
             transition={{
-              duration: 0.8,
+              duration: 1.7,
               repeat: Infinity,
               delay: tool.delay,
             }}>
