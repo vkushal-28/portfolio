@@ -4,11 +4,6 @@
 import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useNav } from "../../hooks/useNav";
-import {
-  RiArrowDownDoubleFill,
-  RiFolder3Fill,
-  RiMailSendFill,
-} from "react-icons/ri";
 import { fadeIn } from "../../utils/variants";
 import Reveal from "../../components/Reveal";
 
@@ -17,12 +12,14 @@ import { profilebg, cursor, copilot, claude } from "../../assets/images/index";
 // Lazy load heavy 3D tilt component
 const TiltCard = lazy(() => import("react-parallax-tilt"));
 
-// Local components
+// Lazy load non-critical decorative components to reduce initial bundle load
+const AIToolsDisplay = lazy(() => import("./components/AIToolsDisplay"));
+const ScrollIndicator = lazy(() => import("./components/ScrollIndicator"));
+const FloatingParticles = lazy(() => import("./components/FloatingParticles"));
+
+// Eager load critical components
 import TypewriterText from "./components/TypewriterText";
-import AIToolsDisplay from "./components/AIToolsDisplay";
-import ScrollIndicator from "./components/ScrollIndicator";
 import AnimatedButton from "./components/AnimatedButton";
-import FloatingParticles from "./components/FloatingParticles";
 
 // Pre-computed URLs
 const RESUME_URL = `${import.meta.env.VITE_IMAGE_URL}resume/Resume-KUSHAL-VALA.pdf`;
@@ -35,6 +32,57 @@ const AI_TOOL_IMAGES = {
   claude: getS3Url(claude),
 };
 
+// Inline SVG icons to avoid react-icons dependency
+const ArrowDownIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="text-lg animate-bounce-fast">
+    <path d="M12 5v14M5 12l7 7 7-7" />
+  </svg>
+);
+
+const FolderIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="text-lg group-hover:scale-110 transition-transform">
+    <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.31l-2.3-.7a1 1 0 0 0-1.26 0L9.31 5.7A2 2 0 0 0 8.31 5H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2z" />
+    <path d="M2 10h20" />
+  </svg>
+);
+
+const MailIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="text-lg group-hover:rotate-12 transition-transform duration-300">
+    <rect width="20" height="16" x="2" y="4" rx="2" />
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+  </svg>
+);
+
 const Hero = () => {
   const homeRef = useNav("Home");
 
@@ -45,9 +93,14 @@ const Hero = () => {
         <FloatingParticles />
 
         <div className="text-center flex flex-col justify-center items-center md:text-left h-full container mx-auto transition-all delay-150 relative z-10">
-          <div className="grid grid-cols-1 sm:gap-2 lg:grid-cols-12 lg:gap-0">
-            {/* Content column (7 cols on large screens) */}
-            <div className="flex flex-col justify-center col-span-1 lg:col-span-7 h-full">
+        {/* Lazy load background particles - not critical for LCP */}
+        <Suspense fallback={null}>
+          <FloatingParticles />
+        </Suspense>
+
+        <div className="grid grid-cols-1 sm:gap-2 lg:grid-cols-12 lg:gap-0">
+          {/* Content column (7 cols on large screens) */}
+          <div className="flex flex-col justify-center col-span-1 lg:col-span-7 h-full">
               <Reveal direction="down" className="mb-3">
                 <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full max-sm:mt-3 bg-emerald-500/10 border border-emerald-400/30 text-emerald-300 text-xs md:text-sm font-medium backdrop-blur-sm shadow-lg shadow-emerald-500/10">
                   <span className="relative flex h-2 w-2">
@@ -108,9 +161,7 @@ const Hero = () => {
                       target="_blank"
                       rel="noreferrer"
                       variant="primary"
-                      icon={
-                        <RiArrowDownDoubleFill className="text-lg animate-bounce-fast" />
-                      }
+                      icon={<ArrowDownIcon />}
                       className="w-full md:w-auto">
                       Download CV
                     </AnimatedButton>
@@ -120,9 +171,7 @@ const Hero = () => {
                   <div className="flex flex-row md:flex-row gap-4 w-full md:w-auto">
                     <AnimatedButton
                       variant="secondary"
-                      icon={
-                        <RiFolder3Fill className="text-lg group-hover:scale-110 transition-transform" />
-                      }
+                      icon={<FolderIcon />}
                       iconPosition="right"
                       onClick={() => {
                         document
@@ -135,9 +184,7 @@ const Hero = () => {
                     <AnimatedButton
                       href="#contactSection"
                       variant="tertiary"
-                      icon={
-                        <RiMailSendFill className="text-lg group-hover:rotate-12 transition-transform duration-300" />
-                      }
+                      icon={<MailIcon />}
                       className="w-full md:w-auto">
                       Get in Touch
                     </AnimatedButton>
@@ -158,7 +205,9 @@ const Hero = () => {
                   transition={{ duration: 0.4, delay: 0.2 }}>
                   <TiltCard>
                     <div className="relative">
-                      <AIToolsDisplay images={AI_TOOL_IMAGES} />
+                      <Suspense fallback={null}>
+                        <AIToolsDisplay images={AI_TOOL_IMAGES} />
+                      </Suspense>
 
                       <img
                         src={profilebg}
@@ -199,8 +248,10 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <ScrollIndicator />
+        {/* Scroll indicator - lazy loaded */}
+        <Suspense fallback={null}>
+          <ScrollIndicator />
+        </Suspense>
       </div>
     </section>
   );
