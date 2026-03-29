@@ -71,7 +71,14 @@ const About = () => {
       className="min-h-full xl:h-[100vh] bg-blLight relative"
       ref={aboutRef}
       id="aboutSection">
-      <img src={dots} className="absolute lg:w-[25%]" alt="dots" />
+      <img
+        src={dots}
+        className="absolute lg:w-[25%]"
+        alt="dots"
+        loading="lazy"
+        width={400}
+        height={400}
+      />
       <div className=" h-full xl:h-full bg-bl py-32 text-center xl:text-left  lg:rounded-br-[100px] ">
         <div className="max-w-7xl mx-auto px-[15px] h-full flex flex-col items-start xl:flex-row gap-x-6 transition-all delay-150 ">
           <div className="flex-1 flex flex-col justify-center w-full transition-all delay-150">

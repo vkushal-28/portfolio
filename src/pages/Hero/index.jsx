@@ -163,7 +163,13 @@ const Hero = () => {
                       <img
                         src={profilebg}
                         alt="hero profile"
+                        width={400}
+                        height={400}
+                        fetchPriority="high"
+                        loading="eager"
+                        decoding="async"
                         className="w-64 lg:w-full drop-shadow-2xl relative z-10"
+                        style={{ aspectRatio: '1/1' }}
                       />
 
                       {/* Floating gradient accent blobs */}

@@ -19,14 +19,14 @@ const Section = ({
       className={clsx(
         "h-fit text-center",
         !isDark &&
-          "bg-blLight py-20 md:py-32 rounded-tl-none md:rounded-tl-[100px] rounded-br-none md:rounded-br-[100px]"
+          "bg-blLight py-20 md:py-32 rounded-tl-none md:rounded-tl-[100px] rounded-br-none md:rounded-br-[100px]",
       )}>
       {isDark ? (
         <div className="bg-blLight">
           <div
             className={clsx(
               "bg-bl py-20 md:py-32 rounded-tl-none md:rounded-tl-[100px] rounded-br-none",
-              id !== "contactSection" && "md:rounded-br-[100px]"
+              id !== "contactSection" && "md:rounded-br-[100px]",
             )}>
             <div className="max-w-7xl mx-auto px-[15px] transition-all delay-150">
               <CommonHeader

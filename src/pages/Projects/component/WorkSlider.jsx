@@ -50,6 +50,9 @@ const WorkSlider = ({ activeTab }) => {
                 }`}
                 alt={selectedProject.title}
                 className="w-full h-full object-cover"
+                loading="lazy"
+                width={800}
+                height={600}
               />
 
               {/* Content */}
@@ -148,6 +151,10 @@ const WorkSlider = ({ activeTab }) => {
                             data.path
                           }`}
                           alt={data.title}
+                          loading="lazy"
+                          width={600}
+                          height={400}
+                          style={{ aspectRatio: '3/2' }}
                         />
                         <div className="px-3 py-3">
                           {/* <div className="font-bold  text-left text-xl mb-2">

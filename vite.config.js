@@ -5,4 +5,27 @@ export default defineConfig(({ mode }) => ({
   plugins: [react()],
   base: mode === "github" ? "/portfolio/" : "/",
   assetsInclude: "**/*.docx",
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: [
+            "react",
+            "react-dom",
+            "react-router-dom",
+            "framer-motion",
+            "clsx",
+            "react-icons",
+            "react-animated-cursor",
+            "react-countup",
+            "react-hot-toast",
+            "react-parallax-tilt",
+            "typewriter-effect",
+          ],
+        },
+      },
+    },
+    // Ensure CSS is extracted to separate file for better caching
+    cssCodeSplit: true,
+  },
 }));
