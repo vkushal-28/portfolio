@@ -25,26 +25,29 @@ const TypewriterText = () => {
   useEffect(() => {
     const text = ROLES[index].text;
 
-    const timeout = setTimeout(() => {
-      if (!isDeleting) {
-        // Typing
-        if (displayedText.length < text.length) {
-          setDisplayedText(text.substring(0, displayedText.length + 1));
+    const timeout = setTimeout(
+      () => {
+        if (!isDeleting) {
+          // Typing
+          if (displayedText.length < text.length) {
+            setDisplayedText(text.substring(0, displayedText.length + 1));
+          } else {
+            // Pause before deleting
+            setTimeout(() => setIsDeleting(true), PAUSE_AFTER_COMPLETE);
+          }
         } else {
-          // Pause before deleting
-          setTimeout(() => setIsDeleting(true), PAUSE_AFTER_COMPLETE);
+          // Deleting
+          if (displayedText.length > 0) {
+            setDisplayedText(text.substring(0, displayedText.length - 1));
+          } else {
+            // Move to next role
+            setIsDeleting(false);
+            setIndex((prev) => (prev + 1) % ROLES.length);
+          }
         }
-      } else {
-        // Deleting
-        if (displayedText.length > 0) {
-          setDisplayedText(text.substring(0, displayedText.length - 1));
-        } else {
-          // Move to next role
-          setIsDeleting(false);
-          setIndex((prev) => (prev + 1) % ROLES.length);
-        }
-      }
-    }, isDeleting ? DELETING_SPEED : TYPING_SPEED);
+      },
+      isDeleting ? DELETING_SPEED : TYPING_SPEED,
+    );
 
     return () => clearTimeout(timeout);
   }, [displayedText, isDeleting, index]);

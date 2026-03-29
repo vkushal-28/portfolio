@@ -71,7 +71,7 @@ const Hero = () => {
 
               {/* Typewriter animation with rotating roles */}
               <Reveal
-                variants={fadeIn("down", 0.1)}
+                variants={fadeIn("down", 0.6)}
                 initial="hidden"
                 animate="show"
                 exit="hidden"
