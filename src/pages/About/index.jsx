@@ -32,19 +32,19 @@ const countUpCardData = [
   {
     id: 1,
     startCount: 0,
-    endCount: 6,
+    endCount: 8,
     title: "Years of experience",
   },
   {
     id: 2,
     startCount: 0,
-    endCount: 14,
+    endCount: 15,
     title: "Satisfied Clients",
   },
   {
     id: 3,
     startCount: 0,
-    endCount: 27,
+    endCount: 29,
     title: "Finished Projects",
   },
   // {
@@ -92,13 +92,18 @@ const About = () => {
               className="sm:w-full md:w-[700px] xl:w-[580px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
               <p>
                 My journey as a developer began with a passion for turning ideas
-                into interactive experiences. Over the past 6 years, I’ve grown
-                into a Full‑Stack Developer specializing in the MERN stack,
-                driven by the art of writing clean code and crafting thoughtful
-                designs. Every project has taught me the value of best
-                practices, collaboration, and constant learning — and that
-                curiosity continues to push me to build smarter, better, and
-                more meaningful digital solutions.
+                into interactive, high-impact experiences. Over the past 8+
+                years, I've grown into a Senior Full Stack Developer
+                specializing in the MERN stack — driven by the art of writing
+                clean, scalable code and building systems that perform under
+                real-world pressure across banking, energy, and technology
+                sectors. Every project has sharpened my understanding of what
+                truly matters: secure architecture, accessible design, and
+                engineering that delivers measurable results — 30% faster load
+                times, 50% quicker release cycles, and infrastructure that stays
+                up when it can't afford not to. That same curiosity and
+                commitment to best practices continues to push me to build
+                smarter, better, and more meaningful digital solutions.
               </p>
 
               {/* counters */}

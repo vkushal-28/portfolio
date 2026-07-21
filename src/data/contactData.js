@@ -10,14 +10,14 @@ export const contactData = [
   },
   {
     title: "Email me",
-    link: "mailto:vkushal28.ca@gmail.com",
-    linkText: "vkushal28.ca@gmail.com",
+    link: "mailto:kushal.vala.dev@gmail.com",
+    linkText: "kushal.vala.dev@gmail.com",
     icon: FaEnvelope,
   },
   {
     title: "LinkedIn",
-    link: "https://www.linkedin.com/in/kushal-vala/",
-    linkText: "linkedin.com/in/kushal-vala/",
+    link: "https://www.linkedin.com/in/kushalv-dev/",
+    linkText: "linkedin.com/in/kushalv-dev/",
     icon: FaLinkedin,
   },
   {
